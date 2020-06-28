@@ -1,0 +1,21 @@
+$maxWidthDesktop: 1280px;
+
+html,
+body,
+#main {
+  margin: 0;
+  padding: 0;
+}
+
+#main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#container {
+  flex: 1;
+  display: flex;
+  max-width: $maxWidthDesktop;
+}
