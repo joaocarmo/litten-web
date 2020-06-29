@@ -18,6 +18,6 @@ module.exports = {
     'react',
   ],
   rules: {
-    semi: 0,
+    semi: ['error', 'never'],
   },
-};
+}
