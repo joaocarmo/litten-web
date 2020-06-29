@@ -1,7 +1,9 @@
 {
   "name": "litten-web",
+  "title": "Litten",
   "version": "1.0.0",
   "description": "Web page for the litten app",
+  "homepage": "https://litten.netlify.app",
   "private": true,
   "main": "src/pages/index.js",
   "repository": "git@github.com:joaocarmo/litten-web.git",
@@ -15,6 +17,7 @@
   },
   "dependencies": {
     "gatsby": "^2.23.12",
+    "gatsby-plugin-manifest": "^2.4.14",
     "gatsby-plugin-react-helmet": "^3.3.6",
     "gatsby-plugin-sass": "^2.3.7",
     "i18next": "^19.5.1",
