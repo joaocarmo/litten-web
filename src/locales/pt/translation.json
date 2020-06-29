@@ -1,4 +1,6 @@
 {
-  "hello": "Olá!",
-  "notFound": "Não Encontrado!"
+  "hello": "Olá, estranho!",
+  "notFoundTitle": "Lamentamos o {{errorCode}}!",
+  "notFoundContent": "Ou não tens pinta suficiente ou esta página não existe... como a tua vida social.",
+  "notFoundButton": "Vai para casa"
 }

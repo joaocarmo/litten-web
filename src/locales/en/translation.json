@@ -1,4 +1,6 @@
 {
   "hello": "Hello There!",
-  "notFound": "Not Found!"
+  "notFoundTitle": "Sorry about the {{errorCode}}!",
+  "notFoundContent": "Either you aren't cool enough to visit this page or it doesn't exist... like your social life.",
+  "notFoundButton": "Go home"
 }
