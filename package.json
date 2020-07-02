@@ -13,10 +13,11 @@
   "scripts": {
     "start": "gatsby develop --port 8001",
     "build": "gatsby build",
+    "clean": "gatsby clean",
     "lint": "eslint ."
   },
   "dependencies": {
-    "gatsby": "^2.23.17",
+    "gatsby": "^2.23.18",
     "gatsby-plugin-manifest": "^2.4.17",
     "gatsby-plugin-react-helmet": "^3.3.9",
     "gatsby-plugin-sass": "^2.3.10",
