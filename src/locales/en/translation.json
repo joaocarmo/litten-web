@@ -1,5 +1,6 @@
 {
-  "hello": "Hello There!",
+  "homeHeroHeader": "A world of <span class=\"highlight\" role=\"mark\">pets</span> in your pocket",
+  "homeHeroSubHeader": "Where you can find your best friend",
   "notFoundTitle": "Sorry about the {{errorCode}}!",
   "notFoundContent": "Either you aren't cool enough to visit this page or it doesn't exist... like your social life.",
   "notFoundButton": "Go home"

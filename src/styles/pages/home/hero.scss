@@ -1,0 +1,43 @@
+$heroOffset: 160px;
+
+#hero {
+  position: relative;
+  flex: 1 0 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  height: $heroHeight;
+  border-radius: 24px;
+  background-color: $lightGray;
+  background-image: $hero-bg-img;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center right;
+  margin-bottom: $heroOffset;
+
+  .hero-text {
+    flex: 1;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+    max-width: 370px;
+    background-color: $lightGray;
+
+    > * {
+      margin-left: 15%;
+      margin-right: 15%;
+    }
+  }
+
+  .hero-main-img {
+    position: absolute;
+    top: $heroOffset;
+    right: 280px;
+    border: 8px solid white;
+    border-radius: 24px;
+    box-shadow: -12px 12px 42px -6px rgba(0, 0, 0, 0.15);
+    z-index: 1;
+  }
+}

@@ -1,5 +1,3 @@
-$maxWidthDesktop: 1280px;
-
 html,
 body,
 #main {
@@ -17,5 +15,6 @@ body,
 #container {
   flex: 1;
   display: flex;
+  width: 100%;
   max-width: $maxWidthDesktop;
 }

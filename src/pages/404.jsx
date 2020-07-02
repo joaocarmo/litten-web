@@ -3,7 +3,6 @@ import PropTypes from 'prop-types'
 import { Link } from 'gatsby'
 import { withTranslation } from 'react-i18next'
 import Layout from '../components/layout'
-import '../styles/pages/404.scss'
 
 const NotFound = ({ t }) => (
   <Layout>

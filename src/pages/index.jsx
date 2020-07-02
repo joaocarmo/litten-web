@@ -1,19 +1,23 @@
 import React from 'react'
-import PropTypes from 'prop-types'
-import { withTranslation } from 'react-i18next'
 import Layout from '../components/layout'
-import '../styles/pages/index.scss'
+import Hero from '../components/home/hero'
+import Features from '../components/home/features'
+import Synopsis from '../components/home/synopsis'
+import Team from '../components/home/team'
+import Careers from '../components/home/careers'
+import Footer from '../components/home/footer'
 
-const Home = ({ t }) => (
+const Home = () => (
   <Layout>
     <div className="page-padded" role="article">
-      <h1>{t('hello')}</h1>
+      <Hero />
+      <Features />
+      <Synopsis />
+      <Team />
+      <Careers />
+      <Footer />
     </div>
   </Layout>
 )
 
-Home.propTypes = {
-  t: PropTypes.func.isRequired,
-}
-
-export default withTranslation()(Home)
+export default Home

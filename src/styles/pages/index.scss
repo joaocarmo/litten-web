@@ -1,5 +1,23 @@
-$outterPadding: 48px;
+@import './home/careers.scss';
+@import './home/features.scss';
+@import './home/footer.scss';
+@import './home/hero.scss';
+@import './home/synopsis.scss';
+@import './home/team.scss';
+
+p {
+  color: $darkGray;
+}
+
+span.highlight {
+  color: $purple;
+}
+
+[class^="flex-"] {
+  display: flex;
+}
 
 .page-padded {
+  width: 100%;
   padding: $outterPadding;
 }
