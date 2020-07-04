@@ -1,32 +1,36 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { withTranslation } from 'react-i18next'
+import adoptionIcon from '../../images/adoption-icon.png'
+import matingIcon from '../../images/mating-icon.png'
+import lostIcon from '../../images/lost-icon.png'
+import foundIcon from '../../images/found-icon.png'
 
 const Features = ({ t }) => {
   const mainFeatures = [
     {
       key: 'adoption',
-      icon: '',
+      icon: adoptionIcon,
       title: t('featureAdoptionTitle'),
-      text: '',
+      text: t('featureAdoptionText'),
     },
     {
       key: 'mating',
-      icon: '',
+      icon: matingIcon,
       title: t('featureMatingTitle'),
-      text: '',
+      text: t('featureMatingText'),
     },
     {
       key: 'lost',
-      icon: '',
+      icon: lostIcon,
       title: t('featureLostTitle'),
-      text: '',
+      text: t('featureLostText'),
     },
     {
       key: 'found',
-      icon: '',
+      icon: foundIcon,
       title: t('featureFoundTitle'),
-      text: '',
+      text: t('featureFoundText'),
     },
   ]
 
@@ -37,8 +41,13 @@ const Features = ({ t }) => {
         <p>{t('featuresTagLineText')}</p>
       </div>
       <div className="main-features" role="grid">
-        {mainFeatures.map(({ key, title, text }) => (
+        {mainFeatures.map(({ key, icon, title, text }) => (
           <div className="feature" role="gridcell" key={key}>
+            <div className="feature-img" role="img">
+              {icon && (
+                <img src={icon} alt="" />
+              )}
+            </div>
             <h4>{title}</h4>
             <p>{text}</p>
           </div>

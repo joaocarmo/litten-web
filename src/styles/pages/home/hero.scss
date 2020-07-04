@@ -46,3 +46,14 @@
     z-index: 1;
   }
 }
+
+@media screen and (max-width: $maxWidthDesktop) {
+  #hero {
+    margin-bottom: 2.5em;
+    background-image: none;
+
+    .hero-main-img {
+      display: none;
+    }
+  }
+}

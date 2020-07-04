@@ -7,6 +7,10 @@
   "featureMatingTitle": "Mating",
   "featureLostTitle": "Lost",
   "featureFoundTitle": "Found",
+  "featureAdoptionText": "For adoption, add pet at any moment.",
+  "featureMatingText": "Choose an animal to mate your. Find your pet, to grow your family.",
+  "featureLostText": "Post your missing pet, including photos, location, and more information.",
+  "featureFoundText": "Post about a pet that you've found but don't know who owns it.",
   "notFoundTitle": "Sorry about the {{errorCode}}!",
   "notFoundContent": "Either you aren't cool enough to visit this page or it doesn't exist... like your social life.",
   "notFoundButton": "Go home"
