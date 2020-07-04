@@ -13,3 +13,11 @@ html {
 *::after {
   box-sizing: inherit;
 }
+
+p {
+  color: $darkGray;
+}
+
+span.highlight {
+  color: $purple;
+}

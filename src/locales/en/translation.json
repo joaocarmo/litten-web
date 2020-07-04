@@ -11,6 +11,8 @@
   "featureMatingText": "Choose an animal to mate your. Find your pet, to grow your family.",
   "featureLostText": "Post your missing pet, including photos, location, and more information.",
   "featureFoundText": "Post about a pet that you've found but don't know who owns it.",
+  "synopsisTitle": "Free and Collaborative",
+  "synopsisText": "Litten helps connect people looking for a new pet with the right partner for them. The app helps an adopter to find a pet that matches their lifestyle, considering factors including breed, gender, color, age, and a description of your actual owner. It also helps to look for couples to Mating a pet for them.",
   "notFoundTitle": "Sorry about the {{errorCode}}!",
   "notFoundContent": "Either you aren't cool enough to visit this page or it doesn't exist... like your social life.",
   "notFoundButton": "Go home"

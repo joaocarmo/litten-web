@@ -12,7 +12,7 @@ const Hero = ({ t }) => (
       <h1 dangerouslySetInnerHTML={{ __html: t('homeHeroHeader') }} />
       <p>{t('homeHeroSubHeader')}</p>
     </div>
-    <img src={heroMainImg} className="hero-main-img" alt="" />
+    <img src={heroMainImg} className="hero-main-img with-phone-border" alt="" />
   </section>
 )
 
