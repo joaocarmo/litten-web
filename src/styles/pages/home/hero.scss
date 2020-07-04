@@ -1,7 +1,5 @@
-$heroOffset: 160px;
-
 #hero {
-  position: relative;
+  position: static;
   flex: 1 0 100%;
   display: flex;
   align-items: center;
@@ -13,9 +11,10 @@ $heroOffset: 160px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center right;
-  margin-bottom: $heroOffset;
+  margin-bottom: $heroOffsetY;
+  overflow: hidden;
 
-  .hero-text {
+  .hero-left {
     flex: 1;
     display: flex;
     align-items: flex-start;
@@ -31,10 +30,16 @@ $heroOffset: 160px;
     }
   }
 
+  .hero-logo-img {
+    height: $heroLogoImgSize;
+    width: $heroLogoImgSize;
+    margin-top: -40px;
+  }
+
   .hero-main-img {
     position: absolute;
-    top: $heroOffset;
-    right: 280px;
+    top: $heroOffsetY;
+    right: $heroOffsetX;
     border: 8px solid white;
     border-radius: 24px;
     box-shadow: -12px 12px 42px -6px rgba(0, 0, 0, 0.15);

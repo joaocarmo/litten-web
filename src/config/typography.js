@@ -11,6 +11,7 @@ const typography = new Typography({
     'Open Sans',
     'sans-serif',
   ],
+  bodyWeight: 'lighter',
 })
 
 export default typography
