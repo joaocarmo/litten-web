@@ -1,0 +1,24 @@
+#careers {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 4%;
+
+  > * {
+    max-width: 80%;
+    text-align: center;
+  }
+
+  p {
+    line-height: 1.8em;
+  }
+
+  .cta {
+    color: black;
+    font-weight: 600;
+    text-decoration: none;
+    padding-bottom: 6px;
+    border-bottom: 2px solid black;
+  }
+}
