@@ -1,0 +1,47 @@
+$teamMemberSize: 260px;
+$teamPhotoSize: 0.75 * $teamMemberSize;
+
+#team {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 2%;
+
+  .team-board {
+    flex: 1;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+    .team-member {
+      width: $teamMemberSize;
+      flex: 0 0 $teamMemberSize;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      flex-direction: column;
+      padding-top: 4%;
+      margin-bottom: 4%;
+
+      [class^="photo-"] {
+        display: block;
+        height: $teamPhotoSize;
+        width: $teamPhotoSize;
+        border-radius: $teamPhotoSize / 2;
+        background-color: $lightGray;
+        margin-bottom: 10%;
+      }
+
+      h5 {
+        margin-bottom: 5%;
+      }
+
+      p {
+        font-size: 0.7em;
+      }
+    }
+  }
+}

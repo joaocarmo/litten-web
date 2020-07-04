@@ -4,7 +4,7 @@ import { withTranslation } from 'react-i18next'
 import synopsisImg from '../../images/synopsis-img.png'
 
 const Synopsis = ({ t }) => (
-  <section id="synopsis">
+  <section id="synopsis" role="grid">
     <div className="left-synopsis" role="gridcell">
       <img src={synopsisImg} className="with-phone-border" alt="" />
     </div>

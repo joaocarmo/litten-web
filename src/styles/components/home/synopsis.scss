@@ -6,7 +6,7 @@ $boxMinWidth: 300px;
 #synopsis {
   display: flex;
   flex-wrap: wrap;
-  margin: 1.4 * $synopsisImgOffset 0;
+  margin-top: 1.4 * $synopsisImgOffset;
 
   .left-synopsis {
     flex: 1 0 $boxMinWidth;
