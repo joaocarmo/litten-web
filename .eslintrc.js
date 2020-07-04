@@ -19,5 +19,9 @@ module.exports = {
   ],
   rules: {
     semi: ['error', 'never'],
+    'react/jsx-no-literals': [
+      'error',
+      { noStrings: true },
+    ],
   },
 }

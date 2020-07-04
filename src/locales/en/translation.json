@@ -17,6 +17,11 @@
   "careersHeader": "Join us",
   "careersText": "We're always looking for talented minds to join our quest.\nTake a look at the positions that we're currently looking for.",
   "careersCTA": "Learn more",
+  "footerNavHeader": "About",
+  "footerNavItemHelp": "Help and Contacts",
+  "footerNavItemTerms": "Terms and Conditions",
+  "footerNavItemPrivacy": "Privacy Policy",
+  "footerAttribution": "Copyright © 2020 João Carmo, Tãnia Matos. All Rights Reserved.",
   "notFoundTitle": "Sorry about the {{errorCode}}!",
   "notFoundContent": "Either you aren't cool enough to visit this page or it doesn't exist... like your social life.",
   "notFoundButton": "Go home"

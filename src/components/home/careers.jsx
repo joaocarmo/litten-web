@@ -7,9 +7,10 @@ const nToBR = (str) => {
   if (typeof str === 'string') {
     const content = []
     str.split('\n').forEach((v, i, a) => {
-      content.push(v)
+      const key = i
+      content.push(<span key={key} role="complementary">{v}</span>)
       if (i + 1 < a.length) {
-        content.push(<br />)
+        content.push(<br key={`br-${key}`} />)
       }
     })
     return content
