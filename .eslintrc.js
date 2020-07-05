@@ -21,7 +21,7 @@ module.exports = {
     semi: ['error', 'never'],
     'react/jsx-no-literals': [
       'error',
-      { noStrings: true },
+      { noStrings: true, ignoreProps: true },
     ],
   },
 }

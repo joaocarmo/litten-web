@@ -1,3 +1,4 @@
+const path = require('path')
 const config = require('./package.json')
 const colors = require('./src/config/colors')
 
@@ -9,6 +10,15 @@ module.exports = {
   },
   plugins: [
     'gatsby-plugin-react-helmet',
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        name: 'images',
+        path: path.join(__dirname, 'src', 'images'),
+      },
+    },
+    'gatsby-plugin-sharp',
+    'gatsby-transformer-sharp',
     'gatsby-plugin-sass',
     {
       resolve: 'gatsby-plugin-typography',

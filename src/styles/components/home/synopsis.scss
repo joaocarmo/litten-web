@@ -1,8 +1,3 @@
-$synopsisImgHeight: 520px;
-$synopsisContainerRatio: 0.75;
-$synopsisImgOffset: (1 - $synopsisContainerRatio) * $synopsisImgHeight / 2;
-$boxMinWidth: 300px;
-
 #synopsis {
   display: flex;
   flex-wrap: wrap;
@@ -16,7 +11,7 @@ $boxMinWidth: 300px;
     background-color: $lightGray;
     margin-bottom: 1.6 * $synopsisImgOffset;
 
-    img {
+    .synopsis-img {
       height: $synopsisImgHeight;
       margin: auto;
       margin-top: - $synopsisImgOffset;

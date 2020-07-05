@@ -1,6 +1,3 @@
-$teamMemberSize: 260px;
-$teamPhotoSize: 0.75 * $teamMemberSize;
-
 #team {
   display: flex;
   align-items: center;
@@ -28,8 +25,8 @@ $teamPhotoSize: 0.75 * $teamMemberSize;
 
       [class^="photo-"] {
         display: block;
-        height: $teamPhotoSize;
-        width: $teamPhotoSize;
+        height: $teamPhotoSize !important;
+        width: $teamPhotoSize !important;
         border-radius: $teamPhotoSize / 2;
         background-color: $lightGray;
         margin-bottom: 10%;

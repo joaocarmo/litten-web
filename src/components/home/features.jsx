@@ -1,10 +1,10 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { withTranslation } from 'react-i18next'
-import adoptionIcon from '../../images/adoption-icon.png'
-import matingIcon from '../../images/mating-icon.png'
-import lostIcon from '../../images/lost-icon.png'
-import foundIcon from '../../images/found-icon.png'
+import adoptionIcon from '../../images/adoption-icon.svg'
+import matingIcon from '../../images/mating-icon.svg'
+import lostIcon from '../../images/lost-icon.svg'
+import foundIcon from '../../images/found-icon.svg'
 
 const Features = ({ t }) => {
   const mainFeatures = [
