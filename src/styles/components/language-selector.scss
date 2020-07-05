@@ -1,0 +1,44 @@
+#language-selector-nav {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: #{($outterPadding / 2)} $outterPadding;
+
+  #language-selector {
+    position: relative;
+
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 0.4em;
+      left: 0.4em;
+      width: $globeIconSize;
+      height: $globeIconSize;
+      background-image: $globeIcon;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+
+    select {
+      appearance: none;
+      padding: 0.8em 2.6em;
+      padding-left: 3.4em;
+      font-size: 0.6em;
+      font-weight: 600;
+      background-color: $lightGray;
+      background-image: $chevronIcon;
+      background-repeat: no-repeat;
+      background-position: 80% 50%;
+      border: 0;
+      border-radius: 12px;
+      text-transform: uppercase;
+
+      option {
+        text-transform: uppercase;
+      }
+    }
+  }
+}

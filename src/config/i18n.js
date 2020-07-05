@@ -19,7 +19,7 @@ i18n
   .use(initReactI18next) // passes i18n down to react-i18next
   .init({
     resources,
-    fallbackLng: 'en', // use en if detected lng is not available
+    fallbackLng: ['en', 'pt'], // use en if detected lng is not available
 
     keySeparator: false, // doesn't use keys in form messages.welcome
 

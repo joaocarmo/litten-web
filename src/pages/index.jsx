@@ -1,5 +1,6 @@
 import React from 'react'
 import Layout from '../components/layout'
+import LanguageSelector from '../components/language-selector'
 import Hero from '../components/home/hero'
 import Features from '../components/home/features'
 import Synopsis from '../components/home/synopsis'
@@ -9,6 +10,7 @@ import Footer from '../components/home/footer'
 
 const Home = () => (
   <Layout>
+    <LanguageSelector />
     <div className="page-padded" role="article">
       <Hero />
       <Features />
