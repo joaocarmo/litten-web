@@ -4,6 +4,7 @@ import { useStaticQuery, graphql } from 'gatsby'
 import Img from 'gatsby-image'
 import BackgroundImage from 'gatsby-background-image'
 import { Trans, withTranslation } from 'react-i18next'
+import StoreBadges from '../store-badges'
 import colors from '../../config/colors'
 
 const Hero = ({ t }) => {
@@ -34,7 +35,7 @@ const Hero = ({ t }) => {
   `)
 
   return (
-    <div className="hero-container" role="heading" aria-level="1">
+    <div className="hero-container" role="banner">
       <BackgroundImage
         Tag="section"
         fluid={data?.bg?.childImageSharp?.fluid}
@@ -57,9 +58,11 @@ const Hero = ({ t }) => {
             </Trans>
           </h1>
           <p>{t('homeHeroSubHeader')}</p>
+          <StoreBadges className="store-badges-mobile" />
         </div>
         <Img fixed={data?.main?.childImageSharp?.fixed} className="hero-main-img with-phone-border" alt="" />
       </BackgroundImage>
+      <StoreBadges className="store-badges-desktop" />
     </div>
   )
 }

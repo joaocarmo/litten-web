@@ -22,7 +22,24 @@
   }
 
   .navigation {
+    display: flex;
     margin-bottom: 3em;
+
+    .left,
+    .right {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+    }
+
+    .left {
+      align-items: flex-start;
+    }
+
+    .right {
+      align-items: flex-end;
+    }
 
     .navigation-items {
       list-style-type: none;

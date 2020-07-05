@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 import { useStaticQuery, graphql } from 'gatsby'
 import Img from 'gatsby-image'
 import { withTranslation } from 'react-i18next'
+import StoreBadges from '../store-badges'
 
 const Synopsis = ({ t }) => {
   const data = useStaticQuery(graphql`
@@ -30,6 +31,7 @@ const Synopsis = ({ t }) => {
       <div className="right-synopsis" role="gridcell">
         <h3>{t('synopsisTitle')}</h3>
         <p>{t('synopsisText')}</p>
+        <StoreBadges />
       </div>
     </section>
   )

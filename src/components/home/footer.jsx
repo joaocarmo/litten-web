@@ -2,6 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { Link } from 'gatsby'
 import { withTranslation } from 'react-i18next'
+import StoreBadges from '../store-badges'
 
 const Footer = ({ t }) => {
   const navItems = [
@@ -25,14 +26,19 @@ const Footer = ({ t }) => {
   return (
     <section id="footer" role="grid">
       <div className="navigation" role="row">
-        <h6>{t('footerNavHeader')}</h6>
-        <ul className="navigation-items">
-          {navItems.map(({ key, text, to }) => (
-            <li key={key}>
-              <Link to={to} className="navigation-item">{text}</Link>
-            </li>
-          ))}
-        </ul>
+        <div className="left" role="gridcell">
+          <h6>{t('footerNavHeader')}</h6>
+          <ul className="navigation-items">
+            {navItems.map(({ key, text, to }) => (
+              <li key={key}>
+                <Link to={to} className="navigation-item">{text}</Link>
+              </li>
+            ))}
+          </ul>
+        </div>
+        <div className="right" role="gridcell">
+          <StoreBadges small />
+        </div>
       </div>
       <hr className="separator" />
       <div className="attribution" role="row">
