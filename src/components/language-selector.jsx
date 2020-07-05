@@ -18,11 +18,12 @@ const LanguageSelector = () => {
       <Helmet>
         <html lang={currentShortLang || 'en'} />
       </Helmet>
-      <div id="language-selector" role="button">
+      <div id="language-selector" role="form">
         <select
           name="language-selector"
           value={currentShortLang}
           onChange={changeLang}
+          aria-label="select language"
         >
           {i18n?.languages?.map((lang) => (
             <option value={lang} key={lang}>
