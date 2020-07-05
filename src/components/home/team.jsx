@@ -7,7 +7,7 @@ import { withTranslation } from 'react-i18next'
 const Team = ({ t }) => {
   const data = useStaticQuery(graphql`
     query TeamQuery {
-      joao: file(relativePath: { eq: "joao.png" }) {
+      joao: file(relativePath: { eq: "joao.jpg" }) {
         childImageSharp {
           fixed(height: 260, width: 260) {
             ...GatsbyImageSharpFixed_tracedSVG
@@ -49,11 +49,25 @@ const Team = ({ t }) => {
 
   const getPhotoHolder = (photo) => {
     if (photo?.childImageSharp?.fixed) {
-      return <Img fixed={photo.childImageSharp.fixed} className="photo-holder" alt="" />
+      return (
+        <Img
+          fixed={photo.childImageSharp.fixed}
+          className="photo-holder"
+          alt=""
+          loading="lazy"
+        />
+      )
     }
 
     if (photo?.publicURL) {
-      return <img src={photo.publicURL} className="photo-holder" alt="" />
+      return (
+        <img
+          src={photo.publicURL}
+          className="photo-holder"
+          alt=""
+          loading="lazy"
+        />
+      )
     }
 
     return <div className="photo-placeholder" role="img" />

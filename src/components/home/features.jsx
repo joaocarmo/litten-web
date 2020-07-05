@@ -47,7 +47,7 @@ const Features = ({ t }) => {
           <div className="feature" role="gridcell" key={key}>
             <div className="feature-img" role="img">
               {icon && (
-              <img src={icon} alt="" />
+                <img src={icon} alt="" loading="lazy" />
               )}
             </div>
             <h4>{title}</h4>

@@ -19,14 +19,14 @@ const Hero = ({ t }) => {
       main: file(relativePath: { eq: "hero-main.png" }) {
         childImageSharp {
           fixed(width: 220) {
-            ...GatsbyImageSharpFixed
+            ...GatsbyImageSharpFixed_tracedSVG
           }
         }
       }
       bg: file(relativePath: { eq: "hero-bg.jpg" }) {
         childImageSharp {
           fluid(quality: 90, maxWidth: 1280) {
-            ...GatsbyImageSharpFluid_withWebp
+            ...GatsbyImageSharpFluid_withWebp_tracedSVG
           }
         }
       }

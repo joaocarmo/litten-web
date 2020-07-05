@@ -17,6 +17,7 @@
   &::before,
   &::after {
     border-radius: 24px;
+    background-color: $lightGray;
   }
 
   .hero-left {

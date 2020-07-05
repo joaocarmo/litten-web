@@ -10,7 +10,7 @@ const Synopsis = ({ t }) => {
       file(relativePath: { eq: "synopsis-img.png" }) {
         childImageSharp {
           fixed(height: 520) {
-            ...GatsbyImageSharpFixed
+            ...GatsbyImageSharpFixed_tracedSVG
           }
         }
       }
@@ -20,7 +20,12 @@ const Synopsis = ({ t }) => {
   return (
     <section id="synopsis" role="grid">
       <div className="left-synopsis" role="gridcell">
-        <Img fixed={data?.file?.childImageSharp?.fixed} className="synopsis-img with-phone-border" alt="" />
+        <Img
+          fixed={data?.file?.childImageSharp?.fixed}
+          className="synopsis-img with-phone-border"
+          alt=""
+          loading="lazy"
+        />
       </div>
       <div className="right-synopsis" role="gridcell">
         <h3>{t('synopsisTitle')}</h3>
