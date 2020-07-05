@@ -20,12 +20,15 @@ i18n
   .init({
     resources,
     fallbackLng: ['en', 'pt'], // use en if detected lng is not available
+    nonExplicitSupportedLngs: true,
 
     keySeparator: false, // doesn't use keys in form messages.welcome
 
     interpolation: {
       escapeValue: false, // react is already safe from xss
     },
+
+    debug: process.env.NODE_ENV === 'development',
   })
 
 export default i18n

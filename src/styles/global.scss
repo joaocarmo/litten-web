@@ -19,6 +19,7 @@ p {
   color: $darkGray;
 }
 
-span.highlight {
+mark {
   color: $purple;
+  background-color: unset;
 }

@@ -15,7 +15,7 @@ const NotFound = ({ t }) => (
               __html: t(
                 'notFoundTitle',
                 {
-                  errorCode: '<span class="highlight" role="mark">404</span>',
+                  errorCode: '<mark>404</mark>',
                 },
               ),
             }
