@@ -1,5 +1,5 @@
 {
-  "homeHeroHeader": "O mundo dos <mark>animais</mark> no teu bolso",
+  "homeHeroHeader": "O mundo dos <1>animais</1> no teu bolso",
   "homeHeroSubHeader": "Onde vais encontrar o teu melhor amigo",
   "featuresTagLineHeader": "Encontra animais",
   "featuresTagLineText": "Cria perfis para os teus animais em adoção ou procura companheiros para criar.",
@@ -15,14 +15,14 @@
   "synopsisText": "A Litten ajuda pessoas com animais a se encontrarem com pessoas que procuram animais. Com a nossa app, podes encontrar o amigo ideal para ti, podendo filtrar por várias categorias como raça, género, cor, idade ou informações do dono actual. Podes também encontrar um parceiro para o teu amigo poder criar.",
   "teamHeader": "A nossa equipa",
   "careersHeader": "Trabalha connosco",
-  "careersText": "Estamos sempre à procura de novos colegas nesta aventura.\nDá uma vista de olhos nas oportunidades que temos disponíveis.",
+  "careersText": "Estamos sempre à procura de novos colegas nesta aventura.<1/>Dá uma vista de olhos nas oportunidades que temos disponíveis.",
   "careersCTA": "Descobre mais",
   "footerNavHeader": "Sobre",
   "footerNavItemHelp": "Ajuda e Contactos",
   "footerNavItemTerms": "Termos e Condições",
   "footerNavItemPrivacy": "Política de Privacidade",
   "footerAttribution": "Copyright © 2020 João Carmo, Tãnia Matos. Todos os direitos reservados.",
-  "notFoundTitle": "Lamentamos o {{errorCode}}!",
+  "notFoundTitle": "Lamentamos o <1>{{errorCode}}</1>!",
   "notFoundContent": "Ou não tens pinta suficiente ou esta página não existe... como a tua vida social.",
   "notFoundButton": "Vai para casa"
 }

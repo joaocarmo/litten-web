@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import { useStaticQuery, graphql } from 'gatsby'
 import Img from 'gatsby-image'
 import BackgroundImage from 'gatsby-background-image'
-import { withTranslation } from 'react-i18next'
+import { Trans, withTranslation } from 'react-i18next'
 import colors from '../../config/colors'
 
 const Hero = ({ t }) => {
@@ -49,8 +49,13 @@ const Hero = ({ t }) => {
       >
         <div className="hero-left" role="gridcell">
           <Img fixed={data?.logo?.childImageSharp?.fixed} className="hero-logo-img" alt="" />
-          {/* eslint-disable-next-line react/no-danger */}
-          <h1 dangerouslySetInnerHTML={{ __html: t('homeHeroHeader') }} />
+          <h1>
+            <Trans i18nKey="homeHeroHeader">
+              {/* eslint-disable */}
+              The world of <mark>pets</mark> in your pocket
+              {/* eslint-enable */}
+            </Trans>
+          </h1>
           <p>{t('homeHeroSubHeader')}</p>
         </div>
         <Img fixed={data?.main?.childImageSharp?.fixed} className="hero-main-img with-phone-border" alt="" />
