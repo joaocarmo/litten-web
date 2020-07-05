@@ -2,7 +2,9 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { useStaticQuery, graphql } from 'gatsby'
 import Img from 'gatsby-image'
+import BackgroundImage from 'gatsby-background-image'
 import { withTranslation } from 'react-i18next'
+import colors from '../../config/colors'
 
 const Hero = ({ t }) => {
   const data = useStaticQuery(graphql`
@@ -21,12 +23,30 @@ const Hero = ({ t }) => {
           }
         }
       }
+      bg: file(relativePath: { eq: "hero-bg.jpg" }) {
+        childImageSharp {
+          fluid(quality: 90, maxWidth: 1280) {
+            ...GatsbyImageSharpFluid_withWebp
+          }
+        }
+      }
     }
   `)
 
   return (
     <div className="hero-container" role="heading" aria-level="1">
-      <section id="hero" role="grid">
+      <BackgroundImage
+        Tag="section"
+        fluid={data?.bg?.childImageSharp?.fluid}
+        backgroundColor={colors?.background}
+        id="hero"
+        role="grid"
+        style={{
+          backgroundSize: 'cover',
+          backgroundPosition: 'center right',
+          backgroundRepeat: 'no-repeat',
+        }}
+      >
         <div className="hero-left" role="gridcell">
           <Img fixed={data?.logo?.childImageSharp?.fixed} className="hero-logo-img" alt="" />
           {/* eslint-disable-next-line react/no-danger */}
@@ -34,7 +54,7 @@ const Hero = ({ t }) => {
           <p>{t('homeHeroSubHeader')}</p>
         </div>
         <Img fixed={data?.main?.childImageSharp?.fixed} className="hero-main-img with-phone-border" alt="" />
-      </section>
+      </BackgroundImage>
     </div>
   )
 }
