@@ -15,7 +15,7 @@ const Team = ({ t }) => {
         }
         publicURL
       }
-      tania: file(relativePath: { eq: "tania.png" }) {
+      tania: file(relativePath: { eq: "tania.jpg" }) {
         childImageSharp {
           fixed(height: 260, width: 260) {
             ...GatsbyImageSharpFixed
