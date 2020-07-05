@@ -9,9 +9,9 @@ const NotFound = ({ t }) => (
     <div className="page-centered" role="article">
       <article className="error-container">
         <h1>
-          <Trans i18nKey="notFoundTitle">
+          <Trans i18nKey="notFoundTitle" values={{ errorCode: '404' }}>
             {/* eslint-disable */}
-            Sorry about the <mark>{{ errorCode: '404' }}</mark>!
+            Sorry about the <mark>errorCode</mark>!
             {/* eslint-enable */}
           </Trans>
         </h1>
