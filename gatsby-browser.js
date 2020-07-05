@@ -1,3 +1,4 @@
+import './src/config/i18n'
 import 'normalize.css'
 import './src/styles/global.scss'
 
