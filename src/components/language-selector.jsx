@@ -9,6 +9,7 @@ const LanguageSelector = () => {
 
   const changeLang = (event) => {
     const newLang = event?.target?.value
+
     if (newLang) {
       i18n.changeLanguage(newLang)
       setCurrentShortLang(newLang)

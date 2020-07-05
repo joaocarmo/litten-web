@@ -62,11 +62,11 @@
 @media screen and (max-width: 0.9 * $maxWidthDesktop) {
   .hero-container {
     .store-badges-desktop {
-      display: none;
+      display: none !important;
     }
 
     .store-badges-mobile {
-      display: inherit;
+      display: inherit !important;
     }
   }
 
