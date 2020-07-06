@@ -24,6 +24,21 @@
   }
 }
 
+@media screen and (max-width: $tabletBreakpoint) {
+  #synopsis {
+    #store-badges:not(.small) {
+      display: flex;
+      flex-direction: column;
+
+      img {
+        height: inherit !important;
+        width: 140px !important;
+        margin-left: 0 !important;
+      }
+    }
+  }
+}
+
 @media screen and (max-width: $mobileBreakpoint) {
   #store-badges:not(.small) {
     display: flex;

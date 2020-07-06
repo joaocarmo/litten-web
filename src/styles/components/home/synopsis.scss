@@ -39,11 +39,20 @@
   }
 }
 
+@media screen and (max-width: $tabletBreakpoint) {
+  #synopsis {
+    .right-synopsis {
+      padding-top: 0;
+    }
+  }
+}
+
 @media screen and (max-width: $mobileBreakpoint) {
   #synopsis {
     .right-synopsis {
       align-items: center;
       text-align: center;
+      padding-top: 10%;
     }
   }
 }

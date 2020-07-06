@@ -38,6 +38,24 @@
     height: 100%;
     max-width: 370px;
 
+    .mobile-container {
+      display: flex;
+
+      .mobile-left,
+      .mobile-right {
+        flex: 1;
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        flex-direction: column;
+      }
+
+      .mobile-right {
+        display: none;
+        margin-left: 8%;
+      }
+    }
+
     > * {
       margin-left: 16%;
       margin-right: 16%;
@@ -47,15 +65,32 @@
   .hero-logo-img {
     height: $heroLogoImgSize;
     width: $heroLogoImgSize;
-    margin-top: -40px;
   }
 
-  .hero-main-img {
-    position: absolute !important;
+  .img-cutter {
+    display: none;
+    height: 2.186 * 0.7 * $heroMainImageWidth * 0.6;
+    border-bottom: 0;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    overflow-y: hidden;
+  }
+
+  .hero-main-img,
+  .hero-secondary-img {
     width: $heroMainImageWidth;
-    top: $heroOffsetY;
-    right: $heroOffsetX;
-    z-index: 1;
+
+    &.desktop {
+      position: absolute !important;
+      top: $heroOffsetY;
+      right: $heroOffsetX;
+      z-index: 1;
+    }
+
+    &.mobile {
+      height: 2.186 * 0.7 * $heroMainImageWidth !important;
+      width: 0.7 * $heroMainImageWidth !important;
+    }
   }
 }
 
@@ -68,19 +103,61 @@
     .store-badges-mobile {
       display: inherit !important;
     }
-  }
 
-  #hero {
-    margin-bottom: 2.5em;
-    background-image: none !important;
-
-    &::before,
-    &::after {
+    #hero {
+      margin-bottom: 2.5em;
       background-image: none !important;
-    }
 
-    .hero-main-img {
-      display: none !important;
+      &::before,
+      &::after {
+        background-image: none !important;
+      }
+
+      .hero-main-img,
+      .hero-secondary-img {
+        &.desktop {
+          display: none !important;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $mobileBreakpoint) {
+  .hero-container {
+    #hero {
+      height: inherit !important;
+      overflow: hidden;
+
+      h1 {
+        max-width: 70%;
+      }
+
+      .hero-left {
+        max-width: inherit !important;
+
+        .mobile-left,
+        .mobile-right {
+          flex: 1 1 50%;
+        }
+
+        .mobile-right {
+          display: inherit !important;
+        }
+
+        > * {
+          margin-left: 8%;
+          margin-right: 8%;
+        }
+      }
+
+      .img-cutter {
+        display: inherit !important;
+      }
+
+      .hero-logo-img {
+        margin-top: 8%;
+      }
     }
   }
 }

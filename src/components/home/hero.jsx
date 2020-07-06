@@ -24,6 +24,13 @@ const Hero = ({ t }) => {
           }
         }
       }
+      secondary: file(relativePath: { eq: "hero-secondary.png" }) {
+        childImageSharp {
+          fixed(width: 220) {
+            ...GatsbyImageSharpFixed_tracedSVG
+          }
+        }
+      }
       bg: file(relativePath: { eq: "hero-bg.jpg" }) {
         childImageSharp {
           fluid(quality: 90, maxWidth: 1280) {
@@ -57,10 +64,20 @@ const Hero = ({ t }) => {
               {/* eslint-enable */}
             </Trans>
           </h1>
-          <p>{t('homeHeroSubHeader')}</p>
-          <StoreBadges className="store-badges-mobile" />
+          <div className="mobile-container" role="grid">
+            <div className="mobile-left" role="gridcell">
+              <p>{t('homeHeroSubHeader')}</p>
+              <StoreBadges className="store-badges-mobile" />
+              <div className="img-cutter with-phone-border" role="img">
+                <Img fixed={data?.main?.childImageSharp?.fixed} className="hero-main-img mobile" alt="" />
+              </div>
+            </div>
+            <div className="mobile-right" role="gridcell">
+              <Img fixed={data?.secondary?.childImageSharp?.fixed} className="hero-secondary-img with-phone-border mobile" alt="" />
+            </div>
+          </div>
         </div>
-        <Img fixed={data?.main?.childImageSharp?.fixed} className="hero-main-img with-phone-border" alt="" />
+        <Img fixed={data?.main?.childImageSharp?.fixed} className="hero-main-img with-phone-border desktop" alt="" />
       </BackgroundImage>
       <StoreBadges className="store-badges-desktop" />
     </div>
