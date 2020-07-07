@@ -24,5 +24,6 @@
   "footerAttribution": "Copyright © 2020 João Carmo, Tãnia Matos. All Rights Reserved.",
   "notFoundTitle": "Sorry about the <1>{{errorCode}}</1>!",
   "notFoundContent": "Either you aren't cool enough to visit this page or it doesn't exist... like your social life.",
-  "notFoundButton": "Go home"
+  "notFoundButton": "Go home",
+  "lastUpdatedOn": "Last updated"
 }

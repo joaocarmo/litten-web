@@ -16,15 +16,16 @@ const Layout = ({ children }) => {
     }
   `)
 
+  const title = data?.site?.siteMetadata?.title
+
   return (
     <div id="main" role="main">
-      <Helmet>
+      <Helmet titleTemplate={`${title} - %s`} defaultTitle={title}>
         <meta charSet="utf-8" />
         <meta
           name="description"
           content={data?.site?.siteMetadata?.description}
         />
-        <title>{data?.site?.siteMetadata?.title}</title>
         <link rel="canonical" href={data?.site?.siteMetadata?.siteUrl} />
       </Helmet>
       <div id="container" role="grid">
