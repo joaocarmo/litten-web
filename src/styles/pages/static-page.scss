@@ -5,21 +5,31 @@
   margin: 0 auto;
   padding: 45px;
 
+  .page-content {
+    ul,
+    ol {
+      li {
+        margin-bottom: $mdListBottomMargin;
+      }
+    }
+  }
+
   .page-toc {
     margin: 3em 0;
 
     .page-toc-content {
-      ul {
+      ul,
+      ol {
         li {
           text-transform: lowercase;
-          margin-bottom: 0.5em;
+          margin-bottom: $mdListBottomMargin;
 
           &::first-letter {
             text-transform: uppercase;
           }
 
           p {
-            margin-bottom: 0.5em;
+            margin-bottom: $mdListBottomMargin;
           }
 
           ul {
