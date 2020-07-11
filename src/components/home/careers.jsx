@@ -2,6 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { Link } from 'gatsby'
 import { Trans, withTranslation } from 'react-i18next'
+import { CAREERS } from '../../config/link-refs'
 
 const Careers = ({ t }) => (
   <section id="careers">
@@ -15,7 +16,7 @@ const Careers = ({ t }) => (
         {/* eslint-enable */}
       </Trans>
     </p>
-    <Link to="#top" className="cta">{t('careersCTA')}</Link>
+    <Link to={CAREERS} className="cta">{t('careersCTA')}</Link>
   </section>
 )
 

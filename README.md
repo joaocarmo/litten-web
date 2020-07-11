@@ -4,6 +4,14 @@
 
 Web page for the litten app
 
+## Development
+
+A development server will start on port `8001`.
+
+```sh
+yarn start
+```
+
 ## License
 
 The project's source code is licensed as [MIT](./LICENSE), but the images and

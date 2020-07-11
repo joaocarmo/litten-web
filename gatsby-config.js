@@ -1,12 +1,20 @@
 const path = require('path')
+const enCommon = require('./src/locales/en/common.json')
 const config = require('./package.json')
 const colors = require('./src/config/colors')
+
+const description = [
+  enCommon.featureAdoptionText,
+  enCommon.featureMatingText,
+  enCommon.featureLostText,
+  enCommon.featureFoundText,
+].join(' ')
 
 module.exports = {
   siteMetadata: {
     title: config.title,
     siteUrl: config.homepage,
-    description: config.description,
+    description,
   },
   plugins: [
     'gatsby-plugin-react-helmet',
