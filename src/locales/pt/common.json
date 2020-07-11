@@ -25,5 +25,6 @@
   "notFoundTitle": "Lamentamos o <1>{{errorCode}}</1>!",
   "notFoundContent": "Ou não tens pinta suficiente ou esta página não existe... como a tua vida social.",
   "notFoundButton": "Vai para casa",
-  "lastUpdatedOn": "Última revisão"
+  "lastUpdatedOn": "Última revisão",
+  "tableOfContents": "Tabela de conteúdos"
 }

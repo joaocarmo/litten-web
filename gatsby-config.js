@@ -25,7 +25,19 @@ module.exports = {
         path: path.join(__dirname, 'src', 'markdown-pages'),
       },
     },
-    'gatsby-transformer-remark',
+    {
+      resolve: 'gatsby-transformer-remark',
+      options: {
+        plugins: [
+          {
+            resolve: 'gatsby-remark-autolink-headers',
+            options: {
+              maintainCase: false,
+            },
+          },
+        ],
+      },
+    },
     {
       resolve: 'gatsby-source-filesystem',
       options: {

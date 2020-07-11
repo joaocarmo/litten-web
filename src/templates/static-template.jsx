@@ -6,7 +6,7 @@ import { withTranslation } from 'react-i18next'
 import Layout from '../components/layout'
 
 const StaticTemplate = ({ data, t }) => {
-  const { markdownRemark: { frontmatter, html } } = data
+  const { markdownRemark: { frontmatter, html, tableOfContents } } = data
 
   return (
     <Layout>
@@ -15,9 +15,19 @@ const StaticTemplate = ({ data, t }) => {
       </Helmet>
       <section id="static-page" className="page-container">
         <article className="page">
-          <h1>{frontmatter.title}</h1>
+          <h1 className="uppercase">{frontmatter.title}</h1>
           {/* eslint-disable-next-line react/jsx-no-literals */}
           <p>{`${t('lastUpdatedOn')} ${frontmatter.date}`}</p>
+          {frontmatter.toc && (
+            <div className="page-toc" role="navigation">
+              <h2 className="uppercase">{t('tableOfContents')}</h2>
+              <div
+                className="page-toc-content"
+                // eslint-disable-next-line react/no-danger
+                dangerouslySetInnerHTML={{ __html: tableOfContents }}
+              />
+            </div>
+          )}
           <div
             className="page-content"
             // eslint-disable-next-line react/no-danger
@@ -34,10 +44,12 @@ StaticTemplate.propTypes = {
     markdownRemark: PropTypes.shape({
       frontmatter: PropTypes.shape({
         title: PropTypes.string,
-        date: PropTypes.string,
         slug: PropTypes.string,
+        date: PropTypes.string,
+        toc: PropTypes.bool,
       }),
       html: PropTypes.string,
+      tableOfContents: PropTypes.string,
     }),
   }),
   t: PropTypes.func.isRequired,
@@ -53,10 +65,15 @@ export const pageQuery = graphql`
   query($slug: String!) {
     markdownRemark(frontmatter: { slug: { eq: $slug } }) {
       html
+      tableOfContents(
+        absolute: false
+        maxDepth: 3
+      )
       frontmatter {
-        date(formatString: "DD/MM/YYYY")
-        slug
         title
+        slug
+        date(formatString: "DD/MM/YYYY")
+        toc
       }
     }
   }

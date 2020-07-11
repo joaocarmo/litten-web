@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 import { Link } from 'gatsby'
 import { Trans, withTranslation } from 'react-i18next'
 import Layout from '../components/layout'
+import { HOME } from '../config/link-refs'
 
 const NotFound = ({ t }) => (
   <Layout>
@@ -18,7 +19,7 @@ const NotFound = ({ t }) => (
         <p>
           {t('notFoundContent')}
         </p>
-        <Link to="/" className="button">
+        <Link to={HOME} className="button">
           {t('notFoundButton')}
         </Link>
       </article>

@@ -2,6 +2,7 @@
 slug: "/privacy-policy"
 date: "2020-07-07"
 title: "Privacy Policy"
+toc: true
 ---
 
 ## INTRODUCTION

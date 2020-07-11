@@ -17,6 +17,21 @@ html {
   box-sizing: inherit;
 }
 
+a {
+  color: $defaultLinkColor;
+  text-decoration: none;
+  background-color: initial;
+
+  &:active,
+  &:hover {
+    outline-width: 0;
+  }
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
 p {
   color: $darkGray;
 }
@@ -24,4 +39,8 @@ p {
 mark {
   color: $purple;
   background-color: unset;
+}
+
+.uppercase {
+  text-transform: uppercase;
 }
