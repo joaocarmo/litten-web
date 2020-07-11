@@ -31,7 +31,7 @@ const Hero = ({ t }) => {
           }
         }
       }
-      bg: file(relativePath: { eq: "hero-bg.jpg" }) {
+      bg: file(relativePath: { eq: "hero-bg.png" }) {
         childImageSharp {
           fluid(quality: 90, maxWidth: 1280) {
             ...GatsbyImageSharpFluid_withWebp_tracedSVG
