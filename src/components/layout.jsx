@@ -2,6 +2,8 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { useStaticQuery, graphql } from 'gatsby'
 import { Helmet } from 'react-helmet'
+import UpgradeBrowserNotice from './upgrade-browser-notice'
+import { isIE11 } from '../config/utils'
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -29,7 +31,7 @@ const Layout = ({ children }) => {
         <link rel="canonical" href={data?.site?.siteMetadata?.siteUrl} />
       </Helmet>
       <div id="container" role="grid">
-        {children}
+        {isIE11() ? <UpgradeBrowserNotice /> : children}
       </div>
     </div>
   )

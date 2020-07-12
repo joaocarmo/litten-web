@@ -26,5 +26,7 @@
   "notFoundContent": "Ou não tens pinta suficiente ou esta página não existe... como a tua vida social.",
   "notFoundButton": "Vai para casa",
   "lastUpdatedOn": "Última revisão",
-  "tableOfContents": "Tabela de conteúdos"
+  "tableOfContents": "Tabela de conteúdos",
+  "upgradeBrowserNotice": "Estás a utilizar um navegador desatualizado que não suportamos. Considera atualizar para uma technologia de navegação mais moderna e segura.",
+  "upgradeBrowserNoticeClickHere": "Clica aqui para mais informação."
 }

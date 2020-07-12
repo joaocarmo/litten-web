@@ -7,3 +7,5 @@ export const TERMS_AND_CONDITIONS = '#top'
 export const PRIVACY_POLICY = '/privacy-policy'
 
 export const CAREERS = '#top'
+
+export const UPGRADE_BROWSER = 'https://browsehappy.com'

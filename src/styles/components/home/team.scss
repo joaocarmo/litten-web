@@ -42,3 +42,16 @@
     }
   }
 }
+
+/* Fix for MS Edge (legacy) */
+@supports (-ms-ime-align: auto) {
+  #team {
+    .team-board {
+      justify-content: center !important;
+
+      .team-member {
+        margin: auto;
+      }
+    }
+  }
+}

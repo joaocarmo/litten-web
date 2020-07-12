@@ -16,6 +16,16 @@
     "clean": "gatsby clean",
     "lint": "eslint ."
   },
+  "browserslist": {
+    "production": [
+      "> 0.25%",
+      "not dead"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version"
+    ]
+  },
   "dependencies": {
     "classnames": "^2.2.6",
     "gatsby": "^2.24.2",

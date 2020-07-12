@@ -26,5 +26,7 @@
   "notFoundContent": "Either you aren't cool enough to visit this page or it doesn't exist... like your social life.",
   "notFoundButton": "Go home",
   "lastUpdatedOn": "Last updated",
-  "tableOfContents": "Table of contents"
+  "tableOfContents": "Table of contents",
+  "upgradeBrowserNotice": "You are using an outdated browser that we do not currently support. Please consider upgrading to a newer and safer browsing technology.",
+  "upgradeBrowserNoticeClickHere": "Click here for more information."
 }

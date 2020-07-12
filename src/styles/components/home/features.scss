@@ -48,8 +48,8 @@
         background-color: white;
 
         img {
-          max-height: $featureImgRatio * $featureSize;
-          max-width: $featureImgRatio * $featureSize;
+          height: $featureImgRatio * $featureSize;
+          width: $featureImgRatio * $featureSize;
           margin: auto;
         }
       }
