@@ -3,14 +3,18 @@ import PropTypes from 'prop-types'
 import { Link } from 'gatsby'
 import { withTranslation } from 'react-i18next'
 import StoreBadges from '../store-badges'
-import { HELP_CONTACTS, TERMS_AND_CONDITIONS, PRIVACY_POLICY } from '../../config/link-refs'
+import {
+  HELP_AND_CONTACTS,
+  TERMS_AND_CONDITIONS,
+  PRIVACY_POLICY,
+} from '../../config/link-refs'
 
 const Footer = ({ t }) => {
   const navItems = [
     {
-      key: 'HELP_CONTACTS',
+      key: 'HELP_AND_CONTACTS',
       text: t('footerNavItemHelp'),
-      to: HELP_CONTACTS,
+      to: HELP_AND_CONTACTS,
     },
     {
       key: 'TERMS_AND_CONDITIONS',
