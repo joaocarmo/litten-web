@@ -202,4 +202,4 @@ If you are under 18 years of age, reside in California, and have a registered ac
 
 If you have questions or comments about this Privacy Policy, please contact us at:
 
-Email: info [at] joaocarmo [dot] com
+Email: help@litten.app

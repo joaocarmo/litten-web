@@ -19,7 +19,7 @@ If you encountered a problem with our web app, please create a new GitHub Issue 
 
 If you have questions, comments or suggestions regarding either the web app or our mobile app, please contact us at:
 
-Email: info [at] joaocarmo [dot] com
+Email: [help@litten.app][helpmail]
 
 <!-- References -->
 
@@ -27,3 +27,4 @@ Email: info [at] joaocarmo [dot] com
 [mobileapp]: https://github.com/joaocarmo/litten-ios
 [mobileappissue]: https://github.com/joaocarmo/litten-ios/issues/new
 [webappissue]: https://github.com/joaocarmo/litten-web/issues/new
+[helpmail]: mailto:help@litten.app

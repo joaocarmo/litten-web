@@ -1,6 +1,6 @@
 ---
 slug: "/join-us"
-date: "2020-07-12"
+date: "2020-07-13"
 title: "Join us"
 toc: true
 ---
@@ -32,6 +32,10 @@ Choose your own job title! _Jedi Knight_ is acceptable.
 The unique opportunity to join a tech project right from the start and help to shape its future.
 
 Endless kitten photos!
+
+## How to apply
+
+Just [contact us][contactus] directly!
 
 ## Open positions
 
@@ -97,3 +101,7 @@ We need a marketing advisor to lead our marketing campaings, own our marketing m
 
 - Create marketing materials and campaigns
 - Study marketing data and provide useful insights based on it
+
+<!-- References -->
+
+[contactus]: /help-and-contacts

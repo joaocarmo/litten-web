@@ -3,7 +3,7 @@
   "title": "Litten",
   "version": "1.0.0",
   "description": "Web page for the litten app",
-  "homepage": "https://litten.netlify.app",
+  "homepage": "https://litten.app",
   "private": true,
   "main": "src/pages/index.js",
   "repository": "git@github.com:joaocarmo/litten-web.git",
@@ -59,7 +59,7 @@
     "eslint-plugin-import": "^2.22.0",
     "eslint-plugin-jsx-a11y": "^6.3.1",
     "eslint-plugin-react": "^7.20.3",
-    "eslint-plugin-react-hooks": "^4.0.7",
+    "eslint-plugin-react-hooks": "^4.0.8",
     "stylelint": "^13.6.1",
     "stylelint-config-standard": "^20.0.0"
   }
