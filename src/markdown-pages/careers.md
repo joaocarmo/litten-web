@@ -1,6 +1,6 @@
 ---
 slug: "/join-us"
-date: "2020-07-13"
+date: "2020-07-17"
 title: "Join us"
 toc: true
 ---
@@ -62,6 +62,7 @@ We need a Portuguese content reviewer for the Portuguese content available in th
 #### Requirements
 
 - Native Portuguese speaker
+- Ability to comply with the Portuguese Language Orthographic Agreement of 1990
 - Knowledge of or willing to learn version control systems (e.g., _git_)
 - Knowledge of or willing to learn data formats (e.g., _JSON_)
 - Knowledge of or willing to learn development practices (e.g., _continuous integration_)
