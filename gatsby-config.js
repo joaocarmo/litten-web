@@ -35,6 +35,9 @@ module.exports = {
               maintainCase: false,
             },
           },
+          {
+            resolve: 'gatsby-remark-external-links',
+          },
         ],
       },
     },
