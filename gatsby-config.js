@@ -17,6 +17,13 @@ module.exports = {
     description,
   },
   plugins: [
+    {
+      resolve: 'gatsby-plugin-nprogress',
+      options: {
+        color: colors.theme,
+        showSpinner: false,
+      },
+    },
     'gatsby-plugin-react-helmet',
     {
       resolve: 'gatsby-source-filesystem',
