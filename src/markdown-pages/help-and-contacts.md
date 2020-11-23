@@ -24,7 +24,7 @@ Email: [help@litten.app][helpmail]
 <!-- References -->
 
 [webapp]: https://github.com/joaocarmo/litten-web
-[mobileapp]: https://github.com/joaocarmo/litten-ios
-[mobileappissue]: https://github.com/joaocarmo/litten-ios/issues/new
+[mobileapp]: https://github.com/joaocarmo/litten-app
+[mobileappissue]: https://github.com/joaocarmo/litten-app/issues/new
 [webappissue]: https://github.com/joaocarmo/litten-web/issues/new
 [helpmail]: mailto:help@litten.app
