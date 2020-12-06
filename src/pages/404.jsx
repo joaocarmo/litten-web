@@ -7,17 +7,14 @@ import { HOME } from '../config/link-refs'
 const NotFound = ({ t }) => (
   <Layout>
     <div className="page-centered" role="article">
-      <article className="error-container">
+      <article className="contained title-container">
         <h1>
           <Trans i18nKey="notFoundTitle" values={{ errorCode: '404' }}>
             {/* eslint-disable */}
-            Sorry about the <mark>errorCode</mark>!
-            {/* eslint-enable */}
+            Sorry about the <mark>errorCode</mark>!{/* eslint-enable */}
           </Trans>
         </h1>
-        <p>
-          {t('notFoundContent')}
-        </p>
+        <p>{t('notFoundContent')}</p>
         <Link to={HOME} className="button">
           {t('notFoundButton')}
         </Link>

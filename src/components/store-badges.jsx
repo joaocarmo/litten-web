@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react'
 import PropTypes from 'prop-types'
 import { useTranslation } from 'react-i18next'
 import cx from 'classnames'
@@ -13,7 +13,9 @@ const StoreBadges = ({ className, small, disabled }) => {
 
   const getIcons = async (suffix, ext = 'svg') => {
     try {
-      const appStore = await import(`../images/app-store-black-${suffix}.${ext}`)
+      const appStore = await import(
+        `../images/app-store-black-${suffix}.${ext}`
+      )
       setAppStoreBadge(appStore?.default)
     } catch (err) {
       setAppStoreBadge(null)
@@ -23,7 +25,9 @@ const StoreBadges = ({ className, small, disabled }) => {
         // eslint-disable-next-line no-param-reassign
         ext = 'png'
       }
-      const playStore = await import(`../images/play-store-black-${suffix}.${ext}`)
+      const playStore = await import(
+        `../images/play-store-black-${suffix}.${ext}`
+      )
       setPlayStoreBadge(playStore?.default)
     } catch (err) {
       setPlayStoreBadge(null)

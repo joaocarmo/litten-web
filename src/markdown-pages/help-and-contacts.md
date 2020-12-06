@@ -1,7 +1,7 @@
 ---
-slug: "/help-and-contacts"
-date: "2020-07-12"
-title: "Help and Contacts"
+slug: '/help-and-contacts'
+date: '2020-07-12'
+title: 'Help and Contacts'
 toc: false
 ---
 

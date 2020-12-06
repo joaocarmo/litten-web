@@ -40,14 +40,10 @@ const Features = ({ t }) => {
         <p>{t('featuresTagLineText')}</p>
       </div>
       <div className="main-features" role="grid">
-        {mainFeatures.map(({
-          key, icon, title, text,
-        }) => (
+        {mainFeatures.map(({ key, icon, title, text }) => (
           <div className="feature" role="gridcell" key={key}>
             <div className="feature-img" role="img">
-              {icon && (
-                <img src={icon} alt="" loading="lazy" />
-              )}
+              {icon && <img src={icon} alt="" loading="lazy" />}
             </div>
             <h4>{title}</h4>
             <p>{text}</p>

@@ -76,9 +76,7 @@ const Team = ({ t }) => {
     <section id="team">
       <h3>{t('teamHeader')}</h3>
       <div className="team-board" role="grid">
-        {teamMembers.map(({
-          key, photo, name, jobTitle,
-        }) => (
+        {teamMembers.map(({ key, photo, name, jobTitle }) => (
           <div className="team-member" role="gridcell" key={key}>
             {getPhotoHolder(photo)}
             <h5>{name}</h5>

@@ -3,7 +3,9 @@ const path = require('path')
 exports.createPages = async ({ actions, graphql, reporter }) => {
   const { createPage } = actions
 
-  const staticPageTemplate = require.resolve(path.join(__dirname, 'src', 'templates', 'static-template.jsx'))
+  const staticPageTemplate = require.resolve(
+    path.join(__dirname, 'src', 'templates', 'static-template.jsx'),
+  )
 
   const result = await graphql(`
     {

@@ -1,7 +1,7 @@
 ---
-slug: "/join-us"
-date: "2020-07-17"
-title: "Join us"
+slug: '/join-us'
+date: '2020-07-17'
+title: 'Join us'
 toc: true
 ---
 

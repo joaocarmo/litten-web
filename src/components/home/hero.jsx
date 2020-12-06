@@ -52,10 +52,13 @@ const Hero = ({ t }) => {
           backgroundSize: 'cover',
           backgroundPosition: 'center right',
           backgroundRepeat: 'no-repeat',
-        }}
-      >
+        }}>
         <div className="hero-left" role="gridcell">
-          <Img fixed={data?.logo?.childImageSharp?.fixed} className="hero-logo-img" alt="" />
+          <Img
+            fixed={data?.logo?.childImageSharp?.fixed}
+            className="hero-logo-img"
+            alt=""
+          />
           <h1>
             <Trans i18nKey="homeHeroHeader">
               {/* eslint-disable */}
@@ -68,15 +71,27 @@ const Hero = ({ t }) => {
               <p>{t('homeHeroSubHeader')}</p>
               <StoreBadges className="store-badges-mobile" />
               <div className="img-cutter with-phone-border" role="img">
-                <Img fixed={data?.main?.childImageSharp?.fixed} className="hero-main-img mobile" alt="" />
+                <Img
+                  fixed={data?.main?.childImageSharp?.fixed}
+                  className="hero-main-img mobile"
+                  alt=""
+                />
               </div>
             </div>
             <div className="mobile-right" role="gridcell">
-              <Img fixed={data?.secondary?.childImageSharp?.fixed} className="hero-secondary-img with-phone-border mobile" alt="" />
+              <Img
+                fixed={data?.secondary?.childImageSharp?.fixed}
+                className="hero-secondary-img with-phone-border mobile"
+                alt=""
+              />
             </div>
           </div>
         </div>
-        <Img fixed={data?.main?.childImageSharp?.fixed} className="hero-main-img with-phone-border desktop" alt="" />
+        <Img
+          fixed={data?.main?.childImageSharp?.fixed}
+          className="hero-main-img with-phone-border desktop"
+          alt=""
+        />
       </BackgroundImage>
       <StoreBadges className="store-badges-desktop" />
     </div>

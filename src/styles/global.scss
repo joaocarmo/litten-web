@@ -1,10 +1,12 @@
 /* Global Styles */
 @import './variables.scss';
 @import './components/layout.scss';
+@import './components/form.scss';
 @import './components/language-selector.scss';
 @import './components/store-badges.scss';
 @import './pages/index.scss';
 @import './pages/404.scss';
+@import './pages/join-beta.scss';
 @import './pages/static-page.scss';
 
 html {

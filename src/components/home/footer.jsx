@@ -8,7 +8,7 @@ import {
   PRIVACY_POLICY,
 } from '../../config/link-refs'
 
-const Footer = ({ t }) => {
+const Footer = ({ t, className }) => {
   const navItems = [
     {
       key: 'HELP_AND_CONTACTS',
@@ -28,14 +28,16 @@ const Footer = ({ t }) => {
   ]
 
   return (
-    <section id="footer" role="grid">
+    <section id="footer" role="grid" className={className}>
       <div className="navigation" role="row">
         <div className="left" role="gridcell">
           <h6>{t('footerNavHeader')}</h6>
           <ul className="navigation-items">
             {navItems.map(({ key, text, to }) => (
               <li key={key}>
-                <Link to={to} className="navigation-item">{text}</Link>
+                <Link to={to} className="navigation-item">
+                  {text}
+                </Link>
               </li>
             ))}
           </ul>
@@ -54,6 +56,11 @@ const Footer = ({ t }) => {
 
 Footer.propTypes = {
   t: PropTypes.func.isRequired,
+  className: PropTypes.string,
+}
+
+Footer.defaultProps = {
+  className: undefined,
 }
 
 export default withTranslation()(Footer)

@@ -13,7 +13,10 @@
   "scripts": {
     "build": "gatsby build",
     "clean": "gatsby clean",
+    "lint:fix": "eslint --fix .",
     "lint": "eslint .",
+    "pretty:fix": "prettier --write .",
+    "pretty": "prettier --check .",
     "push": "git add . && gitmoji -c && git push",
     "start": "gatsby develop --port 8001"
   },
@@ -59,11 +62,14 @@
   "devDependencies": {
     "eslint": "^7.14.0",
     "eslint-config-airbnb": "^18.2.1",
+    "eslint-config-prettier": "^7.0.0",
     "eslint-plugin-import": "^2.22.1",
     "eslint-plugin-jsx-a11y": "^6.4.1",
     "eslint-plugin-react": "^7.21.5",
     "eslint-plugin-react-hooks": "^4.2.0",
+    "prettier": "^2.2.1",
     "stylelint": "^13.8.0",
+    "stylelint-config-prettier": "^8.0.2",
     "stylelint-config-standard": "^20.0.0"
   }
 }

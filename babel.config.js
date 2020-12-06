@@ -1,11 +1,10 @@
 module.exports = {
-  plugins: [
-
-  ],
+  plugins: [],
   presets: [
     'babel-preset-gatsby',
     [
-      '@babel/preset-react', {
+      '@babel/preset-react',
+      {
         runtime: 'automatic',
       },
     ],

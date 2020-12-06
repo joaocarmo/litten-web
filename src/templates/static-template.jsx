@@ -5,7 +5,9 @@ import { withTranslation } from 'react-i18next'
 import Layout from '../components/layout'
 
 const StaticTemplate = ({ data, t }) => {
-  const { markdownRemark: { frontmatter, html, tableOfContents } } = data
+  const {
+    markdownRemark: { frontmatter, html, tableOfContents },
+  } = data
 
   return (
     <Layout>
@@ -64,10 +66,7 @@ export const pageQuery = graphql`
   query($slug: String!) {
     markdownRemark(frontmatter: { slug: { eq: $slug } }) {
       html
-      tableOfContents(
-        absolute: false
-        maxDepth: 3
-      )
+      tableOfContents(absolute: false, maxDepth: 3)
       frontmatter {
         title
         slug

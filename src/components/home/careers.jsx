@@ -10,12 +10,14 @@ const Careers = ({ t }) => (
       <Trans i18nKey="careersText">
         {/* eslint-disable */}
         We're always looking for talented minds to join our quest.
-        <br/>
+        <br />
         Take a look at the positions that we're currently looking for.
         {/* eslint-enable */}
       </Trans>
     </p>
-    <Link to={CAREERS} className="cta">{t('careersCTA')}</Link>
+    <Link to={CAREERS} className="cta">
+      {t('careersCTA')}
+    </Link>
   </section>
 )
 
