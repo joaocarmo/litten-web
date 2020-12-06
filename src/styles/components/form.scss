@@ -2,17 +2,27 @@ form {
   width: 100%;
   padding: $globalPadding;
 
+  select {
+    appearance: none;
+    background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100' height='100' fill='%236a6767'><polygon points='0,0 100,0 50,50'/></svg>")
+      no-repeat;
+    background-size: 12px;
+    background-position: calc(100% - #{$formElementPadding}) center;
+    background-repeat: no-repeat;
+  }
+
   input,
   select {
     width: 100%;
     height: 48px;
-    padding-left: 16px;
-    padding-right: 16px;
+    padding-left: $formElementPadding;
+    padding-right: $formElementPadding;
+    border-bottom-color: $gray;
     border-bottom-width: 2px;
+    border-bottom-style: solid;
     border-left-width: 0;
     border-right-width: 0;
     border-top-width: 0;
-    border-color: $gray;
     border-radius: 2px;
     background-color: transparent;
 
