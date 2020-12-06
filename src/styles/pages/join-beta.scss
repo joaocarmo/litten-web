@@ -7,3 +7,13 @@ form.join-beta {
   margin-top: 0;
   margin-bottom: $outterPadding;
 }
+
+@media screen and (max-width: $mobileBreakpoint) {
+  form.join-beta {
+    padding: $globalPadding * 2;
+  }
+
+  #footer.join-beta {
+    padding: $globalPadding * 2;
+  }
+}
