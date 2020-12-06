@@ -5,6 +5,7 @@ import { Trans, withTranslation } from 'react-i18next'
 import Layout from '../components/layout'
 import Footer from '../components/home/footer'
 import Form from '../components/form'
+import Input from '../components/input'
 import Select from '../components/select'
 
 const encode = (data) =>
@@ -95,8 +96,7 @@ const JoinBeta = ({ t }) => {
             name="join-beta"
             action="/thank-you/"
             onSubmit={handleOnSubmit}
-            className="join-beta"
-          >
+            className="join-beta">
             <p>{t('joinBetaFormHelp')}</p>
             <p hidden>
               <label htmlFor="bot-field">
@@ -111,7 +111,7 @@ const JoinBeta = ({ t }) => {
               </label>
             </p>
             <p>
-              <input
+              <Input
                 id="name"
                 type="text"
                 name="name"
@@ -121,7 +121,7 @@ const JoinBeta = ({ t }) => {
               />
             </p>
             <p>
-              <input
+              <Input
                 id="email"
                 type="email"
                 name="email"

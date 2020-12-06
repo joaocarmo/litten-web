@@ -13,6 +13,7 @@ module.exports = {
   },
   plugins: ['react'],
   rules: {
+    'react/jsx-closing-bracket-location': 'off',
     'react/jsx-no-literals': ['error', { noStrings: true, ignoreProps: true }],
     'react/jsx-props-no-spreading': 'off',
     'react/jsx-uses-react': 'off',
