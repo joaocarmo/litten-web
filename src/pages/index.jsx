@@ -1,4 +1,3 @@
-import React from 'react'
 import Layout from '../components/layout'
 import LanguageSelector from '../components/language-selector'
 import Hero from '../components/home/hero'
