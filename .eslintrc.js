@@ -23,5 +23,7 @@ module.exports = {
       'error',
       { noStrings: true, ignoreProps: true },
     ],
+    'react/jsx-uses-react': 'off',
+    'react/react-in-jsx-scope': 'off',
   },
 }
