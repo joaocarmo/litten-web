@@ -1,0 +1,39 @@
+{
+  "applinks": {
+    "apps": [],
+    "details": [
+      {
+        "appIDs": [
+          "P5MX362AFR.com.joaocarmo.litten"
+        ],
+        "components": [
+          {
+            "/": "/open/litten/*",
+            "?": {
+              "littenUid": "????????????????????"
+            },
+            "comment": "Matches any URL whose path starts with /open/ and which has a query item with name 'littenUid' and a value of exactly 20 characters"
+          },
+          {
+            "/": "/open/*",
+            "comment": "Matches any URL whose path starts with /open/"
+          },
+          {
+            "/": "/*",
+            "exclude": true,
+            "comment": "Matches any URL whose path starts with / and instructs the system not to open it as a universal link"
+          },
+          {
+            "#": "no_universal_links",
+            "exclude": true,
+            "comment": "Matches any URL whose fragment equals no_universal_links and instructs the system not to open it as a universal link"
+          }
+        ]
+      },
+			{
+				"appID": "P5MX362AFR.com.joaocarmo.litten",
+				"paths": ["/open/*", "/open/litten/*"]
+			}
+    ]
+  }
+}
