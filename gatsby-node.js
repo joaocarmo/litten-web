@@ -3,6 +3,16 @@ const path = require('path')
 exports.createPages = async ({ actions, graphql, reporter }) => {
   const { createPage } = actions
 
+  const staticUniversalLinksTemplate = require.resolve(
+    path.join(__dirname, 'src', 'templates', 'open-template.jsx'),
+  )
+
+  createPage({
+    path: '/open',
+    matchPath: '/open/*',
+    component: staticUniversalLinksTemplate,
+  })
+
   const staticPageTemplate = require.resolve(
     path.join(__dirname, 'src', 'templates', 'static-template.jsx'),
   )
