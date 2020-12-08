@@ -1,9 +1,12 @@
-[{
-  "relation": ["delegate_permission/common.handle_all_urls"],
-  "target": {
-    "namespace": "android_app",
-    "package_name": "com.litten",
-    "sha256_cert_fingerprints":
-    ["73:5C:53:03:7B:A9:98:15:95:13:6D:E0:4D:AD:2A:11:D1:A1:F5:9A:DA:C5:4B:4C:45:34:49:66:FC:45:8D:A9"]
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.litten",
+      "sha256_cert_fingerprints": [
+        "73:5C:53:03:7B:A9:98:15:95:13:6D:E0:4D:AD:2A:11:D1:A1:F5:9A:DA:C5:4B:4C:45:34:49:66:FC:45:8D:A9"
+      ]
+    }
   }
-}]
+]

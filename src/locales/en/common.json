@@ -1,4 +1,7 @@
 {
+  "appNotInstalledButton": "Install Now",
+  "appNotInstalledContent": "It appears that you've not installed our app yet. Take a moment to see what it's all about and start using.",
+  "appNotInstalledTitle": "Why not <1>Litten</1> ?",
   "careersCTA": "Learn more",
   "careersHeader": "Join Us",
   "careersText": "We're always looking for talented minds to join our quest.<1/>Take a look at the positions we're currently looking to fill.",

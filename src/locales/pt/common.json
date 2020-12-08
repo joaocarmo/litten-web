@@ -1,4 +1,7 @@
 {
+  "appNotInstalledButton": "Instalar Agora",
+  "appNotInstalledContent": "Parece que ainda não estás a usar a nossa app. Aproveita para ver de que se trata e começa a usar.",
+  "appNotInstalledTitle": "Porque não a <1>Litten</1> ?",
   "careersCTA": "Descobre mais",
   "careersHeader": "Trabalha connosco",
   "careersText": "Estamos sempre à procura de novos colegas nesta aventura.<1/>Dá uma vista de olhos nas oportunidades que temos disponíveis.",
