@@ -18,7 +18,7 @@ const redirectOnLink = ({ search } = {}) => {
       const homepageUrl = new URL(config.homepage)
       const linkUrl = new URL(link)
       if (linkUrl.hostname === homepageUrl.hostname) {
-        window.location.href = `${linkUrl.pathname}${linkUrl.search}`
+        window.open(link)
       }
     }
   }
