@@ -11,14 +11,20 @@ const polyfillIntersectionObserver = () => {
 }
 
 const redirectOnLink = ({ search } = {}) => {
+  const dynamicLinkPrefix = '/open'
+
   if (search) {
     const searchParams = new URLSearchParams(search)
     const link = searchParams.get('link')
     if (link) {
       const homepageUrl = new URL(config.homepage)
       const linkUrl = new URL(link)
-      if (linkUrl.hostname === homepageUrl.hostname) {
-        window.open(link)
+      if (linkUrl.hostname === homepageUrl.hostname
+          && linkUrl.pathname.includes(dynamicLinkPrefix)) {
+
+        const dynamicPath = `${linkUrl.pathname}`.replace(dynamicLinkPrefix, '')
+        const dynamicLink = `litten:/${dynamicPath}${linkUrl.search}`
+        window.location.href = dynamicLink
       }
     }
   }
