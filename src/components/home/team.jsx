@@ -6,6 +6,14 @@ import { withTranslation } from 'react-i18next'
 const Team = ({ t }) => {
   const data = useStaticQuery(graphql`
     query TeamQuery {
+      ana: file(relativePath: { eq: "ana.jpg" }) {
+        childImageSharp {
+          fixed(height: 260, width: 260) {
+            ...GatsbyImageSharpFixed_tracedSVG
+          }
+        }
+        publicURL
+      }
       joao: file(relativePath: { eq: "joao.jpg" }) {
         childImageSharp {
           fixed(height: 260, width: 260) {
@@ -17,7 +25,7 @@ const Team = ({ t }) => {
       tania: file(relativePath: { eq: "tania.jpg" }) {
         childImageSharp {
           fixed(height: 260, width: 260) {
-            ...GatsbyImageSharpFixed
+            ...GatsbyImageSharpFixed_tracedSVG
           }
         }
         publicURL
@@ -43,6 +51,15 @@ const Team = ({ t }) => {
       },
       name: 'João Carmo',
       jobTitle: 'co-CEO & Lead Engineer',
+    },
+    {
+      key: 'ana',
+      photo: {
+        childImageSharp: data?.ana?.childImageSharp,
+        publicURL: data?.ana?.publicURL,
+      },
+      name: 'Ana Cláudia',
+      jobTitle: 'Word Wizard',
     },
   ]
 

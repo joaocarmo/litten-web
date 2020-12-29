@@ -17,7 +17,11 @@
             "?": {
               "littenUid": "????????????????????"
             },
-            "comment": "Matches any URL whose path starts with /open/ and which has a query item with name 'littenUid' and a value of exactly 20 characters"
+            "comment": "Matches any URL whose path starts with /open/litten and which has a query item with name 'littenUid' and a value of exactly 20 characters"
+          },
+          {
+            "/": "/open/verification",
+            "comment": "Matches any URL whose path starts with /open/verification"
           },
           {
             "/": "/open/*",
