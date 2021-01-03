@@ -39,10 +39,10 @@
           }
         ]
       },
-			{
-				"appID": "P5MX362AFR.com.joaocarmo.litten",
-				"paths": ["/open/*", "/open/litten/*"]
-			}
+      {
+        "appID": "P5MX362AFR.com.joaocarmo.litten",
+        "paths": ["/open/*", "/open/litten/*"]
+      }
     ]
   }
 }
