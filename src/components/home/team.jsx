@@ -14,6 +14,14 @@ const Team = ({ t }) => {
         }
         publicURL
       }
+      james: file(relativePath: { eq: "james.jpg" }) {
+        childImageSharp {
+          fixed(height: 260, width: 260) {
+            ...GatsbyImageSharpFixed_tracedSVG
+          }
+        }
+        publicURL
+      }
       joao: file(relativePath: { eq: "joao.jpg" }) {
         childImageSharp {
           fixed(height: 260, width: 260) {
@@ -35,6 +43,15 @@ const Team = ({ t }) => {
 
   const teamMembers = [
     {
+      key: 'joao',
+      photo: {
+        childImageSharp: data?.joao?.childImageSharp,
+        publicURL: data?.joao?.publicURL,
+      },
+      name: 'João Carmo',
+      jobTitle: 'co-CEO & Lead Engineer',
+    },
+    {
       key: 'tania',
       photo: {
         childImageSharp: data?.tania?.childImageSharp,
@@ -44,13 +61,13 @@ const Team = ({ t }) => {
       jobTitle: 'co-CEO & Lead Designer',
     },
     {
-      key: 'joao',
+      key: 'james',
       photo: {
-        childImageSharp: data?.joao?.childImageSharp,
-        publicURL: data?.joao?.publicURL,
+        childImageSharp: data?.james?.childImageSharp,
+        publicURL: data?.james?.publicURL,
       },
-      name: 'João Carmo',
-      jobTitle: 'co-CEO & Lead Engineer',
+      name: 'James Briscoe',
+      jobTitle: 'Editing Expert',
     },
     {
       key: 'ana',
