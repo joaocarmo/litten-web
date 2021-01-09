@@ -2,9 +2,9 @@
   img {
     height: 40px;
 
-    &:not(:first-child) {
-      margin-left: 20px;
-    }
+  }
+  & >:not(:first-child) {
+    margin-left: 20px;
   }
 
   &.disabled {
@@ -17,9 +17,9 @@
     img {
       height: 32px;
 
-      &:not(:first-child) {
-        margin-left: 10px;
-      }
+    }
+    & >:not(:first-child) {
+      margin-left: 10px;
     }
   }
 }

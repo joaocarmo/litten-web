@@ -3,11 +3,14 @@ import PropTypes from 'prop-types'
 import { useTranslation } from 'react-i18next'
 import cx from 'classnames'
 
+const appStoreURL = '/join-beta'
+const playStoreURL = '/join-beta'
+
 const StoreBadges = ({ className, small, disabled }) => {
   const [appStoreBadge, setAppStoreBadge] = useState(null)
   const [playStoreBadge, setPlayStoreBadge] = useState(null)
 
-  const { i18n } = useTranslation()
+  const { i18n, t } = useTranslation()
 
   const lang = i18n?.language?.substring(0, 2)
 
@@ -44,8 +47,16 @@ const StoreBadges = ({ className, small, disabled }) => {
 
   return (
     <aside id="store-badges" className={cx([className, { small, disabled }])}>
-      {appStoreBadge && <img src={appStoreBadge} alt="" />}
-      {playStoreBadge && <img src={playStoreBadge} alt="" />}
+      {appStoreBadge && (
+        <a href={appStoreURL}>
+          <img src={appStoreBadge} alt={t('appStoreImgAlt')} />
+        </a>
+      )}
+      {playStoreBadge && (
+        <a href={playStoreURL}>
+          <img src={playStoreBadge} alt={t('playStoreImgAlt')} />
+        </a>
+      )}
     </aside>
   )
 }
