@@ -118,7 +118,8 @@
       .hero-main-img,
       .hero-secondary-img {
         &.desktop {
-          display: none !important;
+          top: $heroOffsetYTablet;
+          right: $heroOffsetXTablet;
         }
       }
     }
@@ -159,6 +160,10 @@
 
       .hero-logo-img {
         margin-top: 8%;
+      }
+
+      .hero-main-img.desktop {
+        display: none !important;
       }
     }
   }

@@ -1,10 +1,12 @@
 #store-badges {
-  img {
-    height: 40px;
+  a {
+    img {
+      height: 40px;
+    }
 
-  }
-  & >:not(:first-child) {
-    margin-left: 20px;
+    &:not(:first-child) {
+      margin-left: 20px;
+    }
   }
 
   &.disabled {
@@ -14,12 +16,14 @@
   }
 
   &.small {
-    img {
-      height: 32px;
-
-    }
-    & >:not(:first-child) {
-      margin-left: 10px;
+    a {
+      img {
+        height: 32px;
+      }
+      
+      &:not(:first-child) {
+        margin-left: 10px;
+      }
     }
   }
 }
@@ -33,6 +37,9 @@
       img {
         height: inherit !important;
         width: 140px !important;
+      }
+
+      a {
         margin-left: 0 !important;
       }
     }
@@ -47,6 +54,9 @@
     img {
       height: inherit !important;
       width: 140px !important;
+    }
+
+    a {
       margin-left: 0 !important;
     }
   }
