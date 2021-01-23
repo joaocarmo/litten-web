@@ -1,3 +1,5 @@
 {
-  "maintenanceMode": false
+  "announcements": [],
+  "maintenanceMode": false,
+  "minimumVersion": "1.0.0"
 }

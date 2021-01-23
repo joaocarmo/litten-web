@@ -1,4 +1,7 @@
 {
+  "accountVerification": "<1>Verificação</1> de conta",
+  "accountVerificationButton": "Continuar",
+  "accountVerificationContent": "Obrigado por verificares a tua conta. Carrega no botão para continuar na app.",
   "appNotInstalledButton": "Instalar Agora",
   "appNotInstalledContent": "Parece que ainda não estás a usar a nossa app. Aproveita para ver de que se trata e começa a usá-la.",
   "appNotInstalledTitle": "Por que não a <1>Litten</1> ?",

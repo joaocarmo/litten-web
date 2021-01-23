@@ -23,9 +23,7 @@ const redirectOnLink = ({ search } = {}) => {
         linkUrl.hostname === homepageUrl.hostname &&
         linkUrl.pathname.includes(dynamicLinkPrefix)
       ) {
-        const dynamicPath = `${linkUrl.pathname}`.replace(dynamicLinkPrefix, '')
-        const dynamicLink = `litten:/${dynamicPath}${linkUrl.search}`
-        window.location.href = dynamicLink
+        window.location.href = linkUrl
       }
     }
   }
