@@ -21,12 +21,7 @@
       ul,
       ol {
         li {
-          text-transform: lowercase;
           margin-bottom: $mdListBottomMargin;
-
-          &::first-letter {
-            text-transform: uppercase;
-          }
 
           p {
             margin-bottom: $mdListBottomMargin;

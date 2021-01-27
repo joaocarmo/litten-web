@@ -1,6 +1,6 @@
 ---
 slug: '/help-and-contacts'
-date: '2021-01-09'
+date: '2021-01-27'
 title: 'Help and Contacts'
 toc: false
 ---
@@ -9,6 +9,11 @@ toc: false
 
 Litten is a non-profit open-source project. We keep public repositories for both
 the [web app][webapp] and our [mobile app][mobileapp] in GitHub.
+
+## FAQ
+
+Check our [Frequently Asked Questions][faq] to see if your question already has
+an answer!
 
 ## Report an issue
 
@@ -28,8 +33,9 @@ Email: [help@litten.app][helpmail]
 
 <!-- References -->
 
-[webapp]: https://github.com/joaocarmo/litten-web
+[faq]: /faq
+[helpmail]: mailto:help@litten.app
 [mobileapp]: https://github.com/joaocarmo/litten-app
 [mobileappissue]: https://github.com/joaocarmo/litten-app/issues/new
+[webapp]: https://github.com/joaocarmo/litten-web
 [webappissue]: https://github.com/joaocarmo/litten-web/issues/new
-[helpmail]: mailto:help@litten.app

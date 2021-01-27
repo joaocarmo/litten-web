@@ -16,6 +16,7 @@ module.exports = {
     siteUrl: config.homepage,
     description,
   },
+  flags: { PRESERVE_WEBPACK_CACHE: true },
   plugins: [
     {
       resolve: 'gatsby-plugin-nprogress',

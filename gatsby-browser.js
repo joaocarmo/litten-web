@@ -6,7 +6,8 @@ import './src/styles/global.scss'
 const polyfillIntersectionObserver = () => {
   // IntersectionObserver polyfill for gatsby-background-image (Safari, IE)
   if (!('IntersectionObserver' in window)) {
-    import('intersection-observer')
+    // eslint-disable-next-line global-require
+    require('intersection-observer')
   }
 }
 
