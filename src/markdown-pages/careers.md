@@ -1,6 +1,6 @@
 ---
 slug: '/join-us'
-date: '2020-07-17'
+date: '2021-01-29'
 title: 'Join us'
 toc: true
 ---
@@ -39,38 +39,22 @@ Just [contact us][contactus] directly!
 
 ## Open positions
 
-### English Content Reviewer
+### Translator
 
-We need an English content reviewer for the English content available in the web app and our mobile app.
+We need translators! If you speak any language at all, you're probably the right
+choice.
 
 #### Requirements
 
-- Native English speaker
+- Native speaker
 - Knowledge of or willing to learn version control systems (e.g., _git_)
 - Knowledge of or willing to learn data formats (e.g., _JSON_)
 - Knowledge of or willing to learn development practices (e.g., _continuous integration_)
 
 #### Responsibilities
 
-- Curate the existing English content
-- Help create and mantain future English content
-
-### Portuguese Content Reviewer
-
-We need a Portuguese content reviewer for the Portuguese content available in the web app and our mobile app.
-
-#### Requirements
-
-- Native Portuguese speaker
-- Ability to comply with the Portuguese Language Orthographic Agreement of 1990
-- Knowledge of or willing to learn version control systems (e.g., _git_)
-- Knowledge of or willing to learn data formats (e.g., _JSON_)
-- Knowledge of or willing to learn development practices (e.g., _continuous integration_)
-
-#### Responsibilities
-
-- Curate the existing Portuguese content
-- Help create and mantain future Portuguese content
+- Curate the existing content, if any
+- Help create and mantain new and future content
 
 ### Legal Advisor
 

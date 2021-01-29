@@ -1,5 +1,26 @@
 import Bowser from 'bowser'
 
+export const debugLog = (...args) => {
+  if (process.env.NODE_ENV === 'development') {
+    // eslint-disable-next-line no-console
+    console.log(...args)
+  }
+}
+
+export const getWindow = () => {
+  if (typeof window !== 'undefined') {
+    return window
+  }
+
+  return null
+}
+
+export const useShare = async (shareData) => {
+  if (typeof window !== 'undefined') {
+    await window.navigator.share(shareData)
+  }
+}
+
 export const getUserAgent = () => {
   if (typeof window !== 'undefined') {
     return window.navigator.userAgent
