@@ -39,6 +39,13 @@ export const getSearchParams = () => {
   return {}
 }
 
+export const appendInAppClassToBody = () => {
+  const inAppClass = 'in-app'
+
+  if (typeof document !== 'undefined' && !document.body.classList.contains(inAppClass)) {
+    document.body.classList.add(inAppClass)
+  }
+}
 
 export const i18nUpdateLocation = (userLang, pageLang, { slug = '' } = {}) => {
   if (userLang !== pageLang) {

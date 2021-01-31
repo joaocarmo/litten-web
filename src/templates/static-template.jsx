@@ -3,14 +3,14 @@ import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 import { Helmet } from 'react-helmet'
 import { withTranslation } from 'react-i18next'
-import cx from 'classnames'
 import useEventListener from '../hooks/use-event-listener'
 import Layout from '../components/layout'
 import useCurrentShortLang from '../hooks/use-current-short-lang'
 import {
+  appendInAppClassToBody,
   debugLog,
-  i18nUpdateLocation,
   getSearchParams,
+  i18nUpdateLocation,
   useShare,
 } from '../config/utils'
 import config from '../../package.json'
@@ -58,6 +58,12 @@ const StaticTemplate = ({
   useEventListener('click', handleClick)
 
   useEffect(() => {
+    if (inApp) {
+      appendInAppClassToBody()
+    }
+  }, [inApp])
+
+  useEffect(() => {
     i18nUpdateLocation(currentShortLang, langKey, { slug })
   }, [currentShortLang, langKey, slug])
 
@@ -66,7 +72,7 @@ const StaticTemplate = ({
   }
 
   return (
-    <Layout className={cx({ 'in-app': inApp })}>
+    <Layout>
       <Helmet>
         <title>{frontmatter.title}</title>
       </Helmet>
