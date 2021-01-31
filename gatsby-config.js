@@ -2,6 +2,7 @@ const path = require('path')
 const enCommon = require('./src/locales/en/common.json')
 const config = require('./package.json')
 const colors = require('./src/config/colors')
+const languages = require('./src/locales')
 
 const description = [
   enCommon.featureAdoptionText,
@@ -15,6 +16,7 @@ module.exports = {
     title: config.title,
     siteUrl: config.homepage,
     description,
+    languages,
   },
   flags: { PRESERVE_WEBPACK_CACHE: true },
   plugins: [
@@ -47,6 +49,33 @@ module.exports = {
             resolve: 'gatsby-remark-external-links',
           },
         ],
+      },
+    },
+    {
+      resolve: 'gatsby-plugin-i18n',
+      options: {
+        langKeyForNull: 'en',
+        langKeyDefault: languages.defaultLangKey,
+        useLangKeyLayout: false,
+        prefixDefault: false,
+        pagesPaths: [path.join(__dirname, 'src', 'markdown-pages')],
+        markdownRemark: {
+          postPage: 'src/templates/static-template.jsx',
+          query: `
+            {
+              allMarkdownRemark {
+                edges {
+                  node {
+                    fields {
+                      slug
+                      langKey
+                    }
+                  }
+                }
+              }
+            }
+          `
+        },
       },
     },
     {

@@ -1,5 +1,4 @@
 ---
-slug: '/faq'
 date: '2021-01-29'
 title: 'Frequently Asked Questions'
 toc: true

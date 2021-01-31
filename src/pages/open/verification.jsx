@@ -12,6 +12,7 @@ const Verification = ({ t }) => {
   const dynamicLink = useRef(`${scheme}://${optionalPath}`)
 
   useEffect(() => {
+    // eslint-disable-next-line react-hooks/rules-of-hooks
     if (useIntent()) {
       dynamicLink.current = buildIntent(scheme, androidPackageName, {
         optionalPath,

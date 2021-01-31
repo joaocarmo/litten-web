@@ -1,4 +1,5 @@
 import Bowser from 'bowser'
+import { defaultLangKey } from '../locales'
 
 export const debugLog = (...args) => {
   if (process.env.NODE_ENV === 'development') {
@@ -27,6 +28,25 @@ export const getUserAgent = () => {
   }
 
   return 'Zombie//1.0 (Server)'
+}
+
+export const i18nUpdateLocation = (userLang, pageLang, { slug = '' } = {}) => {
+  if (userLang !== pageLang) {
+    let langPrefix = ''
+    let currentLocation = slug
+
+    if (!currentLocation && typeof window !== 'undefined') {
+      currentLocation = window.location.pathname
+    }
+
+    if (userLang !== defaultLangKey) {
+      langPrefix = `/${userLang}`
+    }
+
+    const newLocation = `${langPrefix}${currentLocation.replace(/^\/[a-zA-Z]{2}\//, '/')}`
+
+    window.location.replace(newLocation)
+  }
 }
 
 export const buildIntent = (

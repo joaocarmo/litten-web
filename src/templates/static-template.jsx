@@ -1,11 +1,12 @@
-import { useCallback } from 'react'
+import { useCallback, useEffect } from 'react'
 import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 import { Helmet } from 'react-helmet'
 import { withTranslation } from 'react-i18next'
 import useEventListener from '../hooks/use-event-listener'
 import Layout from '../components/layout'
-import { debugLog, useShare } from '../config/utils'
+import useCurrentShortLang from '../hooks/use-current-short-lang'
+import { debugLog, i18nUpdateLocation, useShare } from '../config/utils'
 import config from '../../package.json'
 
 const shareData = {
@@ -14,16 +15,28 @@ const shareData = {
   url: config.homepage,
 }
 
-const StaticTemplate = ({ data, t }) => {
-  const {
-    markdownRemark: { frontmatter, html, tableOfContents },
-  } = data
+const StaticTemplate = ({
+  data: {
+    markdownRemark: {
+      fields: { langKey, slug },
+      frontmatter,
+      html,
+      tableOfContents,
+    },
+  },
+  i18n,
+  t,
+}) => {
+  const [currentShortLang] = useCurrentShortLang(i18n)
 
-  const handleClick = useCallback(async ({ target = {} } = {}) => {
-    const { nodeName = '', href = '' } = target
-
+  const handleClick = useCallback(async (event) => {    
+    const { target: { nodeName = '', href = '' } } = event
+    
     if (nodeName === 'A' && href.endsWith('#share')) {
+      event.preventDefault()
+
       try {
+        // eslint-disable-next-line react-hooks/rules-of-hooks
         await useShare(shareData)
       } catch (err) {
         debugLog(err)
@@ -33,6 +46,14 @@ const StaticTemplate = ({ data, t }) => {
 
   useEventListener('click', handleClick)
 
+  useEffect(() => {
+    i18nUpdateLocation(currentShortLang, langKey, { slug })
+  }, [currentShortLang, langKey, slug])
+
+  if (currentShortLang !== langKey) {
+    return null
+  }
+
   return (
     <Layout>
       <Helmet>
@@ -40,7 +61,9 @@ const StaticTemplate = ({ data, t }) => {
       </Helmet>
       <section id="static-page" className="page-container">
         <article className="page">
-          <h1 className="uppercase">{frontmatter.title}</h1>
+          <h1 className="uppercase">
+            {frontmatter.title}
+          </h1>
           {/* eslint-disable-next-line react/jsx-no-literals */}
           <p>{`${t('lastUpdatedOn')} ${frontmatter.date}`}</p>
           {frontmatter.toc && (
@@ -67,9 +90,12 @@ const StaticTemplate = ({ data, t }) => {
 StaticTemplate.propTypes = {
   data: PropTypes.shape({
     markdownRemark: PropTypes.shape({
+      fields: PropTypes.shape({
+        langKey: PropTypes.string,
+        slug: PropTypes.string,
+      }),
       frontmatter: PropTypes.shape({
         title: PropTypes.string,
-        slug: PropTypes.string,
         date: PropTypes.string,
         toc: PropTypes.bool,
       }),
@@ -77,6 +103,8 @@ StaticTemplate.propTypes = {
       tableOfContents: PropTypes.string,
     }),
   }),
+  // eslint-disable-next-line react/forbid-prop-types
+  i18n: PropTypes.object.isRequired,
   t: PropTypes.func.isRequired,
 }
 
@@ -88,14 +116,17 @@ export default withTranslation()(StaticTemplate)
 
 export const pageQuery = graphql`
   query($slug: String!) {
-    markdownRemark(frontmatter: { slug: { eq: $slug } }) {
+    markdownRemark(fields: { slug: { eq: $slug } }) {
       html
       tableOfContents(absolute: false, maxDepth: 3)
       frontmatter {
         title
-        slug
         date(formatString: "DD/MM/YYYY")
         toc
+      }
+      fields {
+        langKey
+        slug
       }
     }
   }

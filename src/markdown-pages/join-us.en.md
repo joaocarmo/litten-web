@@ -1,5 +1,4 @@
 ---
-slug: '/join-us'
 date: '2021-01-29'
 title: 'Join us'
 toc: true

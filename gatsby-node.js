@@ -25,8 +25,9 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
       ) {
         edges {
           node {
-            frontmatter {
+            fields {
               slug
+              langKey
             }
           }
         }
@@ -40,13 +41,16 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
     return
   }
 
-  result.data.allMarkdownRemark.edges.forEach(({ node }) => {
+  result.data.allMarkdownRemark.edges.forEach(({
+    node: { fields: { slug, langKey } },
+}) => {
     createPage({
-      path: node.frontmatter.slug,
+      path: slug,
       component: staticPageTemplate,
       context: {
-        // additional data can be passed via context
-        slug: node.frontmatter.slug,
+        // Additional data can be passed via context
+        slug,
+        langKey,
       },
     })
   })

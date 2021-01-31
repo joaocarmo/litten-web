@@ -1,19 +1,16 @@
-import { useState } from 'react'
 import { Helmet } from 'react-helmet'
 import { useTranslation } from 'react-i18next'
+import useCurrentShortLang from '../hooks/use-current-short-lang'
 
 const LanguageSelector = () => {
   const { i18n } = useTranslation()
 
-  const [currentShortLang, setCurrentShortLang] = useState(
-    i18n?.language?.substring(0, 2),
-  )
+  const [currentShortLang, setCurrentShortLang] = useCurrentShortLang(i18n)
 
   const changeLang = (event) => {
     const newLang = event?.target?.value
 
     if (newLang) {
-      i18n.changeLanguage(newLang)
       setCurrentShortLang(newLang)
     }
   }

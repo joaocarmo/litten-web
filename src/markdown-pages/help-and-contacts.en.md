@@ -1,5 +1,4 @@
 ---
-slug: '/help-and-contacts'
 date: '2021-01-27'
 title: 'Help and Contacts'
 toc: false
