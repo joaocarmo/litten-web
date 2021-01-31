@@ -1,12 +1,18 @@
-import { useCallback, useEffect } from 'react'
+import { useCallback, useEffect, useMemo } from 'react'
 import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 import { Helmet } from 'react-helmet'
 import { withTranslation } from 'react-i18next'
+import cx from 'classnames'
 import useEventListener from '../hooks/use-event-listener'
 import Layout from '../components/layout'
 import useCurrentShortLang from '../hooks/use-current-short-lang'
-import { debugLog, i18nUpdateLocation, useShare } from '../config/utils'
+import {
+  debugLog,
+  i18nUpdateLocation,
+  getSearchParams,
+  useShare,
+} from '../config/utils'
 import config from '../../package.json'
 
 const shareData = {
@@ -28,6 +34,11 @@ const StaticTemplate = ({
   t,
 }) => {
   const [currentShortLang] = useCurrentShortLang(i18n)
+
+  const inApp = useMemo(() => {
+    const { inapp } = getSearchParams()
+    return inapp === 'true'
+  }, [])
 
   const handleClick = useCallback(async (event) => {    
     const { target: { nodeName = '', href = '' } } = event
@@ -55,7 +66,7 @@ const StaticTemplate = ({
   }
 
   return (
-    <Layout>
+    <Layout className={cx({ 'in-app': inApp })}>
       <Helmet>
         <title>{frontmatter.title}</title>
       </Helmet>

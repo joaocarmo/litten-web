@@ -19,6 +19,7 @@
     "pretty:fix": "prettier --write .",
     "pretty": "prettier --check .",
     "push": "git add . && gitmoji -c && git push",
+    "serve": "gatsby serve",
     "start": "gatsby develop --port 8001"
   },
   "browserslist": {

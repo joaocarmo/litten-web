@@ -30,13 +30,27 @@ export const getUserAgent = () => {
   return 'Zombie//1.0 (Server)'
 }
 
+export const getSearchParams = () => {
+  if (typeof window !== 'undefined') {
+    const url = new URL(window.location.href)
+    return Object.fromEntries(url.searchParams.entries())
+  }
+
+  return {}
+}
+
+
 export const i18nUpdateLocation = (userLang, pageLang, { slug = '' } = {}) => {
   if (userLang !== pageLang) {
     let langPrefix = ''
     let currentLocation = slug
 
-    if (!currentLocation && typeof window !== 'undefined') {
-      currentLocation = window.location.pathname
+    if (typeof window !== 'undefined') {
+      if (!currentLocation) {
+        currentLocation = window.location.pathname
+      }
+
+      currentLocation = `${currentLocation}${window.location.search}`
     }
 
     if (userLang !== defaultLangKey) {

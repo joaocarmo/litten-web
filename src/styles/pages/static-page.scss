@@ -35,3 +35,16 @@
     }
   }
 }
+
+.in-app {
+  min-height: 100vh;
+  background-color: $lightGray;
+
+  #static-page {
+    padding: 20px;
+
+    article h1 {
+      display: none;
+    }
+  }
+}

@@ -4,7 +4,7 @@ import { Helmet } from 'react-helmet'
 import UpgradeBrowserNotice from './upgrade-browser-notice'
 import { isIE11 } from '../config/utils'
 
-const Layout = ({ children }) => {
+const Layout = ({ children, ...otherProps }) => {
   const data = useStaticQuery(graphql`
     query LayoutMetaQuery {
       site {
@@ -20,7 +20,7 @@ const Layout = ({ children }) => {
   const title = data?.site?.siteMetadata?.title
 
   return (
-    <div id="main" role="main">
+    <div id="main" role="main" {...otherProps}>
       <Helmet titleTemplate={`${title} - %s`} defaultTitle={title}>
         <meta charSet="utf-8" />
         <meta
