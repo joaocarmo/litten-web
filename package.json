@@ -49,7 +49,7 @@
     "gatsby-source-filesystem": "^2.10.0",
     "gatsby-transformer-remark": "^2.15.0",
     "gatsby-transformer-sharp": "^2.11.0",
-    "i18next": "^19.8.5",
+    "i18next": "^19.8.6",
     "i18next-browser-languagedetector": "^6.0.1",
     "intersection-observer": "^0.12.0",
     "node-sass": "5.0.0",
@@ -63,7 +63,7 @@
     "typography": "^0.16.19"
   },
   "devDependencies": {
-    "eslint": "^7.18.0",
+    "eslint": "^7.19.0",
     "eslint-config-airbnb": "^18.2.1",
     "eslint-config-prettier": "^7.2.0",
     "eslint-plugin-import": "^2.22.1",
