@@ -1,5 +1,5 @@
 ---
-date: '2020-07-12'
+date: '2021-02-03'
 title: 'Terms and Conditions'
 toc: false
 ---
@@ -32,5 +32,6 @@ Violation of any of the terms below will result in the termination of your Accou
 1. You understand that the technical processing and transmission of the Service, including your Content, may be transfered unencrypted and involve (a) transmissions over various networks; and (b) changes to conform and adapt to technical requirements of connecting networks or devices.
 1. Litten does not warrant that (i) the service will meet your specific requirements, (ii) the service will be uninterrupted, timely, secure, or error-free, (iii) the results that may be obtained from the use of the service will be accurate or reliable, (iv) the quality of any products, services, information, or other material purchased or obtained by you through the service will meet your expectations, and (v) any errors in the Service will be corrected.
 1. You expressly understand and agree that Litten shall not be liable for any direct, indirect, incidental, special, consequential or exemplary damages, including but not limited to, damages for loss of profits, goodwill, use, data or other intangible losses (even if Litten has been advised of the possibility of such damages), resulting from: (i) the use or the inability to use the service; (ii) the cost of procurement of substitute goods and services resulting from any goods, data, information or services purchased or obtained or messages received or transactions entered into through or from the service; (iii) unauthorized access to or alteration of your transmissions or data; (iv) statements or conduct of any third party on the service; (v) or any other matter relating to the service.
-1. The failure of Litten to exercise or enforce any right or provision of the Terms of Service shall not constitute a waiver of such right or provision. The Terms of Service constitutes the entire agreement between you and Litten and govern your use of the Service, superseding any prior agreements between you and Litten (including, but not limited to, any prior versions of the Terms of Service). You agree that these Terms of Service and Your use of the Service are governed under California law.
+1. The failure of Litten to exercise or enforce any right or provision of the Terms of Service shall not constitute a waiver of such right or provision. The Terms of Service constitutes the entire agreement between you and Litten and govern your use of the Service, superseding any prior agreements between you and Litten (including, but not limited to, any prior versions of the Terms of Service). You agree that these Terms of Service and Your use of the Service are governed under applicable local law.
 1. Questions about the Terms of Service should be sent to help@litten.app.
+1. Any translation into other language of the Terms of Service shall be deemed as reference and the English version shall prevail in any case.
