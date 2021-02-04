@@ -1,12 +1,12 @@
 ---
-date: '2021-01-27'
+date: '2021-02-04'
 title: 'Help and Contacts'
 toc: false
 ---
 
 ## About
 
-Litten is a non-profit open-source project. We keep public repositories for both
+Litten is a non-profit, open-source project. We keep public archives for our
 the [web app][webapp] and our [mobile app][mobileapp] in GitHub.
 
 ## FAQ
@@ -20,13 +20,13 @@ We encourage you to report all issues, comments and suggestions using the in-app
 dedicated form.
 
 If you're a developer and encountered a problem with our mobile or web app,
-please create a new GitHub Issue in the mobile app's repository
-[here][mobileappissue] or the web app's repository [here][webappissue].
+please create a new GitHub Issue in the mobile app's archive
+[here][mobileappissue] or the web app's archive [here][webappissue].
 
 ## Contacts
 
-If you have questions, comments or suggestions regarding either the web app or
-our mobile app, please contact us at:
+If you have questions, comments or suggestions regarding our web app or mobile
+app, please contact us at:
 
 Email: [help@litten.app][helpmail]
 
