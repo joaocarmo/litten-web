@@ -42,13 +42,16 @@ export const getSearchParams = () => {
 export const appendInAppClassToBody = () => {
   const inAppClass = 'in-app'
 
-  if (typeof document !== 'undefined' && !document.body.classList.contains(inAppClass)) {
+  if (
+    typeof document !== 'undefined' &&
+    !document.body.classList.contains(inAppClass)
+  ) {
     document.body.classList.add(inAppClass)
   }
 }
 
 export const i18nUpdateLocation = (userLang, pageLang, { slug = '' } = {}) => {
-  if (userLang !== pageLang) {
+  if (userLang && pageLang && userLang !== pageLang) {
     let langPrefix = ''
     let currentLocation = slug
 
@@ -64,7 +67,10 @@ export const i18nUpdateLocation = (userLang, pageLang, { slug = '' } = {}) => {
       langPrefix = `/${userLang}`
     }
 
-    const newLocation = `${langPrefix}${currentLocation.replace(/^\/[a-zA-Z]{2}\//, '/')}`
+    const newLocation = `${langPrefix}${currentLocation.replace(
+      /^\/[a-zA-Z]{2}\//,
+      '/',
+    )}`
 
     window.location.replace(newLocation)
   }

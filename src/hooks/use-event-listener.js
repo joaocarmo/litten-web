@@ -32,7 +32,7 @@ const useEventListener = (eventName, handler, element = getWindow()) => {
       }
     },
     // Execute if eventName or element changes
-    [eventName, element]
+    [eventName, element],
   )
 }
 

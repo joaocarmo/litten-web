@@ -2,8 +2,16 @@
   flex: 1;
   display: flex;
   align-items: center;
-  justify-content: flex-end;
   padding: #{($outterPadding / 2)} $outterPadding;
+
+  &.static-page {
+    padding-left: $staticPadding;
+    padding-right: $staticPadding;
+  }
+
+  #go-back-home {
+    flex: 1;
+  }
 
   #language-selector {
     position: relative;

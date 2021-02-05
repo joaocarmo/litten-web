@@ -1,10 +1,19 @@
-#static-page {
+@mixin static-page {
   width: 100%;
   min-width: 200px;
   max-width: 980px;
   margin: 0 auto;
-  padding: 45px;
+  padding-bottom: $staticPadding;
+  padding-left: $staticPadding;
+  padding-right: $staticPadding;
+  padding-top: $mobilePadding;
+}
 
+.static-page {
+  @include static-page;
+}
+
+#static-page {
   .page-content {
     ul,
     ol {
@@ -40,7 +49,10 @@
   background-color: $lightGray;
 
   #static-page {
-    padding: 20px;
+    padding-bottom: $mobilePadding;
+    padding-left: $mobilePadding;
+    padding-right: $mobilePadding;
+    padding-top: $mobilePadding;
 
     article h1 {
       display: none;

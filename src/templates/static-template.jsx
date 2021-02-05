@@ -5,6 +5,7 @@ import { Helmet } from 'react-helmet'
 import { withTranslation } from 'react-i18next'
 import useEventListener from '../hooks/use-event-listener'
 import Layout from '../components/layout'
+import StaticContainer from '../components/static-container'
 import useCurrentShortLang from '../hooks/use-current-short-lang'
 import {
   appendInAppClassToBody,
@@ -30,19 +31,20 @@ const StaticTemplate = ({
       tableOfContents,
     },
   },
-  i18n,
   t,
 }) => {
-  const [currentShortLang] = useCurrentShortLang(i18n)
+  const [currentShortLang] = useCurrentShortLang()
 
   const inApp = useMemo(() => {
     const { inapp } = getSearchParams()
     return inapp === 'true'
   }, [])
 
-  const handleClick = useCallback(async (event) => {    
-    const { target: { nodeName = '', href = '' } } = event
-    
+  const handleClick = useCallback(async (event) => {
+    const {
+      target: { nodeName = '', href = '' },
+    } = event
+
     if (nodeName === 'A' && href.endsWith('#share')) {
       event.preventDefault()
 
@@ -76,30 +78,30 @@ const StaticTemplate = ({
       <Helmet>
         <title>{frontmatter.title}</title>
       </Helmet>
-      <section id="static-page" className="page-container">
-        <article className="page">
-          <h1 className="uppercase">
-            {frontmatter.title}
-          </h1>
-          {/* eslint-disable-next-line react/jsx-no-literals */}
-          <p>{`${t('lastUpdatedOn')} ${frontmatter.date}`}</p>
-          {frontmatter.toc && (
-            <div className="page-toc" role="navigation">
-              <h2 className="uppercase">{t('tableOfContents')}</h2>
-              <div
-                className="page-toc-content"
-                // eslint-disable-next-line react/no-danger
-                dangerouslySetInnerHTML={{ __html: tableOfContents }}
-              />
-            </div>
-          )}
-          <div
-            className="page-content"
-            // eslint-disable-next-line react/no-danger
-            dangerouslySetInnerHTML={{ __html: html }}
-          />
-        </article>
-      </section>
+      <StaticContainer inApp={inApp}>
+        <section id="static-page" className="page-container static-page">
+          <article className="page">
+            <h1 className="uppercase">{frontmatter.title}</h1>
+            {/* eslint-disable-next-line react/jsx-no-literals */}
+            <p>{`${t('lastUpdatedOn')} ${frontmatter.date}`}</p>
+            {frontmatter.toc && (
+              <div className="page-toc" role="navigation">
+                <h2 className="uppercase">{t('tableOfContents')}</h2>
+                <div
+                  className="page-toc-content"
+                  // eslint-disable-next-line react/no-danger
+                  dangerouslySetInnerHTML={{ __html: tableOfContents }}
+                />
+              </div>
+            )}
+            <div
+              className="page-content"
+              // eslint-disable-next-line react/no-danger
+              dangerouslySetInnerHTML={{ __html: html }}
+            />
+          </article>
+        </section>
+      </StaticContainer>
     </Layout>
   )
 }
@@ -120,8 +122,6 @@ StaticTemplate.propTypes = {
       tableOfContents: PropTypes.string,
     }),
   }),
-  // eslint-disable-next-line react/forbid-prop-types
-  i18n: PropTypes.object.isRequired,
   t: PropTypes.func.isRequired,
 }
 

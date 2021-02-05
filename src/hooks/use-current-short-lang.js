@@ -1,16 +1,23 @@
-import { useCallback, useState } from 'react'
+import { useCallback, useEffect, useState } from 'react'
+import { useTranslation } from 'react-i18next'
 
-const useCurrentShortLang = (i18n) => {
-  const [currentShortLang, setCurrentShortLang] = useState(
-    i18n?.language?.substring(0, 2),
+const useCurrentShortLang = () => {
+  const { i18n } = useTranslation()
+
+  const [currentShortLang, setCurrentShortLang] = useState('')
+
+  const setShortLang = useCallback(
+    (newLang) => {
+      if (newLang) {
+        i18n.changeLanguage(newLang)
+      }
+    },
+    [i18n],
   )
 
-  const setShortLang = useCallback((newLang) => {
-    if (newLang) {
-      i18n.changeLanguage(newLang)
-      setCurrentShortLang(newLang)
-    }
-  }, [i18n])
+  useEffect(() => {
+    setCurrentShortLang(i18n?.language?.substring(0, 2))
+  }, [i18n?.language])
 
   return [currentShortLang, setShortLang]
 }
