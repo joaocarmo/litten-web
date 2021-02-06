@@ -1,5 +1,5 @@
 ---
-date: '2021-01-31'
+date: '2021-02-06'
 title: 'Ajuda e Contactos'
 toc: false
 ---
@@ -7,7 +7,7 @@ toc: false
 ## Sobre
 
 A Litten é um projecto open-source e sem fins lucrativos. Mantemos repositórios
-individuais para a nossas apps [web][webapp] e [mobile][mobileapp] no GitHub.
+individuais para a nossas apps, [web][webapp] e [mobile][mobileapp], no GitHub.
 
 ## Perguntas frequentes
 
@@ -17,10 +17,10 @@ encontra respondida!
 ## Comunicar um problema
 
 Encorajamos-te a comunicar todos os problemas, comentários e sugestões que
-tenhas através do menu dedicado na app.
+tenhas através do menu indicado na app.
 
 Se és developer e encontraste um problema com uma das nossas apps, podes criar
-um _issue_ directamente no repositório respectivo [mobile][mobileappissue] ou
+um _issue_ diretamente no repositório respectivo: [mobile][mobileappissue] ou
 [web][webappissue].
 
 ## Contactos
