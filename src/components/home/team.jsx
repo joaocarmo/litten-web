@@ -67,7 +67,7 @@ const Team = ({ t }) => {
         publicURL: data?.james?.publicURL,
       },
       name: 'James Briscoe',
-      jobTitle: 'Editing Expert',
+      jobTitle: 'Lead English Editor',
     },
     {
       key: 'ana',
