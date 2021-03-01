@@ -18,7 +18,13 @@ module.exports = {
     description,
     languages,
   },
-  flags: { PRESERVE_WEBPACK_CACHE: true },
+  flags: {
+    DEV_SSR: true,
+    FAST_DEV: true,
+    FAST_REFRESH: true,
+    PRESERVE_FILE_DOWNLOAD_CACHE: true,
+    PRESERVE_WEBPACK_CACHE: true,
+  },
   plugins: [
     {
       resolve: 'gatsby-plugin-nprogress',

@@ -9,7 +9,7 @@ import colors from '../../config/colors'
 const Hero = ({ t }) => {
   const data = useStaticQuery(graphql`
     query HeroQuery {
-      logo: file(relativePath: { eq: "hero-logo.png" }) {
+      logo: file(relativePath: { eq: "square-logo.png" }) {
         childImageSharp {
           fixed(height: 72, width: 72) {
             ...GatsbyImageSharpFixed_tracedSVG
