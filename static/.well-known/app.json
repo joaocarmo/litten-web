@@ -1,5 +1,5 @@
 {
   "announcements": [],
-  "maintenanceMode": false,
+  "maintenanceMode": true,
   "minimumVersion": "1.0.0"
 }

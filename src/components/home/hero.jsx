@@ -62,7 +62,7 @@ const Hero = ({ t }) => {
           <h1>
             <Trans i18nKey="homeHeroHeader">
               {/* eslint-disable */}
-              The world of <mark>pets</mark> in your pocket
+              A world of <mark>pets</mark> in your pocket
               {/* eslint-enable */}
             </Trans>
           </h1>
