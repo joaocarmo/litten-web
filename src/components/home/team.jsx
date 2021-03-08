@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types'
 import { useStaticQuery, graphql } from 'gatsby'
-import Img from 'gatsby-image'
+import { GatsbyImage } from 'gatsby-plugin-image'
 import { withTranslation } from 'react-i18next'
 
 const Team = ({ t }) => {
@@ -8,33 +8,25 @@ const Team = ({ t }) => {
     query TeamQuery {
       ana: file(relativePath: { eq: "ana.jpg" }) {
         childImageSharp {
-          fixed(height: 260, width: 260) {
-            ...GatsbyImageSharpFixed_tracedSVG
-          }
+          gatsbyImageData(height: 260, width: 260, placeholder: TRACED_SVG, layout: FIXED)
         }
         publicURL
       }
       james: file(relativePath: { eq: "james.jpg" }) {
         childImageSharp {
-          fixed(height: 260, width: 260) {
-            ...GatsbyImageSharpFixed_tracedSVG
-          }
+          gatsbyImageData(height: 260, width: 260, placeholder: TRACED_SVG, layout: FIXED)
         }
         publicURL
       }
       joao: file(relativePath: { eq: "joao.jpg" }) {
         childImageSharp {
-          fixed(height: 260, width: 260) {
-            ...GatsbyImageSharpFixed_tracedSVG
-          }
+          gatsbyImageData(height: 260, width: 260, placeholder: TRACED_SVG, layout: FIXED)
         }
         publicURL
       }
       tania: file(relativePath: { eq: "tania.jpg" }) {
         childImageSharp {
-          fixed(height: 260, width: 260) {
-            ...GatsbyImageSharpFixed_tracedSVG
-          }
+          gatsbyImageData(height: 260, width: 260, placeholder: TRACED_SVG, layout: FIXED)
         }
         publicURL
       }
@@ -83,8 +75,8 @@ const Team = ({ t }) => {
   const getPhotoHolder = (photo) => {
     if (photo?.childImageSharp?.fixed) {
       return (
-        <Img
-          fixed={photo.childImageSharp.fixed}
+        <GatsbyImage
+          image={photo.childImageSharp.gatsbyImageData}
           className="photo-holder"
           alt=""
           loading="lazy"

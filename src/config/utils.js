@@ -97,3 +97,41 @@ export const isIE11 = () => {
   const browser = Bowser.getParser(getUserAgent())
   return browser.satisfies({ windows: { 'internet explorer': '>10' } })
 }
+
+/**
+ * Helper functions to use the `BackgroundImage` component with the new
+ * `gatsby-plugin-image` plugin
+ */
+export const getBgImageType = imageData => imageData.layout === 'fixed' ? 'fixed' : 'fluid'
+export const getAspectRatio = imageData => imageData.width / imageData.height
+export const getPlaceholder = imageData => {
+  if (imageData.placeholder) {
+    return imageData.placeholder.fallback.includes(`base64`) ?
+      { base64: imageData.placeholder.fallback }
+      : { tracedSvg: imageData.placeholder.fallback }
+  }
+  return {}
+}
+
+/**
+ * Tries to Backport the new `gatsbyImageData` type to the classic `fluid` /
+ * `fixed` form
+ *
+ * @param imageData {object} The image data to convert
+ * @returns {{}}
+ */
+export const convertToBgImage = imageData => {
+  if (imageData && imageData.layout) {
+    const returnBgObject = {}
+    const bgType = getBgImageType(imageData)
+    const aspectRatio = getAspectRatio(imageData)
+    const placeholder = getPlaceholder(imageData)
+    returnBgObject[bgType] = {
+      ...imageData.images.fallback,
+      ...placeholder,
+      aspectRatio,
+    }
+    return returnBgObject
+  }
+  return {}
+}
