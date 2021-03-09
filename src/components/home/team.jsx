@@ -8,25 +8,45 @@ const Team = ({ t }) => {
     query TeamQuery {
       ana: file(relativePath: { eq: "ana.jpg" }) {
         childImageSharp {
-          gatsbyImageData(height: 260, width: 260, placeholder: TRACED_SVG, layout: FIXED)
+          gatsbyImageData(
+            height: 260
+            width: 260
+            placeholder: TRACED_SVG
+            layout: FIXED
+          )
         }
         publicURL
       }
       james: file(relativePath: { eq: "james.jpg" }) {
         childImageSharp {
-          gatsbyImageData(height: 260, width: 260, placeholder: TRACED_SVG, layout: FIXED)
+          gatsbyImageData(
+            height: 260
+            width: 260
+            placeholder: TRACED_SVG
+            layout: FIXED
+          )
         }
         publicURL
       }
       joao: file(relativePath: { eq: "joao.jpg" }) {
         childImageSharp {
-          gatsbyImageData(height: 260, width: 260, placeholder: TRACED_SVG, layout: FIXED)
+          gatsbyImageData(
+            height: 260
+            width: 260
+            placeholder: TRACED_SVG
+            layout: FIXED
+          )
         }
         publicURL
       }
       tania: file(relativePath: { eq: "tania.jpg" }) {
         childImageSharp {
-          gatsbyImageData(height: 260, width: 260, placeholder: TRACED_SVG, layout: FIXED)
+          gatsbyImageData(
+            height: 260
+            width: 260
+            placeholder: TRACED_SVG
+            layout: FIXED
+          )
         }
         publicURL
       }

@@ -1,5 +1,6 @@
 import Bowser from 'bowser'
 import { defaultLangKey } from '../locales'
+import { deepLinkPrefix, inAppClass } from './constants'
 
 export const debugLog = (...args) => {
   if (process.env.NODE_ENV === 'development') {
@@ -39,9 +40,16 @@ export const getSearchParams = () => {
   return {}
 }
 
-export const appendInAppClassToBody = () => {
-  const inAppClass = 'in-app'
+export const getDeepLinkPath = () => {
+  if (typeof window !== 'undefined') {
+    const { pathname, search } = new URL(window.location.href)
+    return `${pathname.replace(`${deepLinkPrefix}/`, '')}${search}`
+  }
 
+  return ''
+}
+
+export const appendInAppClassToBody = () => {
   if (
     typeof document !== 'undefined' &&
     !document.body.classList.contains(inAppClass)
@@ -98,16 +106,22 @@ export const isIE11 = () => {
   return browser.satisfies({ windows: { 'internet explorer': '>10' } })
 }
 
+export const formEncode = (data) =>
+  Object.keys(data)
+    .map((key) => `${encodeURIComponent(key)}=${encodeURIComponent(data[key])}`)
+    .join('&')
+
 /**
  * Helper functions to use the `BackgroundImage` component with the new
  * `gatsby-plugin-image` plugin
  */
-export const getBgImageType = imageData => imageData.layout === 'fixed' ? 'fixed' : 'fluid'
-export const getAspectRatio = imageData => imageData.width / imageData.height
-export const getPlaceholder = imageData => {
+export const getBgImageType = (imageData) =>
+  imageData.layout === 'fixed' ? 'fixed' : 'fluid'
+export const getAspectRatio = (imageData) => imageData.width / imageData.height
+export const getPlaceholder = (imageData) => {
   if (imageData.placeholder) {
-    return imageData.placeholder.fallback.includes(`base64`) ?
-      { base64: imageData.placeholder.fallback }
+    return imageData.placeholder.fallback.includes(`base64`)
+      ? { base64: imageData.placeholder.fallback }
       : { tracedSvg: imageData.placeholder.fallback }
   }
   return {}
@@ -120,7 +134,7 @@ export const getPlaceholder = imageData => {
  * @param imageData {object} The image data to convert
  * @returns {{}}
  */
-export const convertToBgImage = imageData => {
+export const convertToBgImage = (imageData) => {
   if (imageData && imageData.layout) {
     const returnBgObject = {}
     const bgType = getBgImageType(imageData)

@@ -12,7 +12,12 @@ const Hero = ({ t }) => {
     query HeroQuery {
       logo: file(relativePath: { eq: "square-logo.png" }) {
         childImageSharp {
-          gatsbyImageData(height: 72, width: 72, placeholder: TRACED_SVG, layout: FIXED)
+          gatsbyImageData(
+            height: 72
+            width: 72
+            placeholder: TRACED_SVG
+            layout: FIXED
+          )
         }
       }
       main: file(relativePath: { eq: "hero-main.png" }) {
@@ -27,7 +32,11 @@ const Hero = ({ t }) => {
       }
       bg: file(relativePath: { eq: "hero-bg.png" }) {
         childImageSharp {
-          gatsbyImageData(quality: 90, placeholder: TRACED_SVG, layout: FULL_WIDTH)
+          gatsbyImageData(
+            quality: 90
+            placeholder: TRACED_SVG
+            layout: FULL_WIDTH
+          )
         }
       }
     }
@@ -57,8 +66,7 @@ const Hero = ({ t }) => {
           />
           <h1>
             <Trans i18nKey="homeHeroHeader">
-              {/* eslint-disable */}
-              A world of <mark>pets</mark> in your pocket
+              {/* eslint-disable */}A world of <mark>pets</mark> in your pocket
               {/* eslint-enable */}
             </Trans>
           </h1>

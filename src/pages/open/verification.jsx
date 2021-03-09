@@ -3,19 +3,20 @@ import PropTypes from 'prop-types'
 import { Trans, withTranslation } from 'react-i18next'
 import Layout from '../../components/layout'
 import { buildIntent, useIntent } from '../../config/utils'
-
-const scheme = 'litten'
-const androidPackageName = 'com.litten'
-const optionalPath = 'verification'
+import {
+  androidPackageName,
+  scheme,
+  verificationPath,
+} from '../../config/constants'
 
 const Verification = ({ t }) => {
-  const dynamicLink = useRef(`${scheme}://${optionalPath}`)
+  const dynamicLink = useRef(`${scheme}://${verificationPath}`)
 
   useEffect(() => {
     // eslint-disable-next-line react-hooks/rules-of-hooks
     if (useIntent()) {
       dynamicLink.current = buildIntent(scheme, androidPackageName, {
-        optionalPath,
+        verificationPath,
       })
     }
 
