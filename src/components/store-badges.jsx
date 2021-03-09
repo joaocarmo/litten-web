@@ -2,9 +2,7 @@ import { useState, useEffect } from 'react'
 import PropTypes from 'prop-types'
 import { useTranslation } from 'react-i18next'
 import cx from 'classnames'
-
-const appStoreURL = '/join-beta'
-const playStoreURL = '/join-beta'
+import { appStoreURL, playStoreURL } from '../config/constants'
 
 const StoreBadges = ({ className, small, disabled }) => {
   const [appStoreBadge, setAppStoreBadge] = useState(null)

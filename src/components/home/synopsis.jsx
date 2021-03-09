@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types'
 import { useStaticQuery, graphql } from 'gatsby'
-import Img from 'gatsby-image'
+import { GatsbyImage } from 'gatsby-plugin-image'
 import { withTranslation } from 'react-i18next'
 import StoreBadges from '../store-badges'
 
@@ -9,9 +9,7 @@ const Synopsis = ({ t }) => {
     query SynopsisQuery {
       file(relativePath: { eq: "synopsis-img.png" }) {
         childImageSharp {
-          fixed(height: 520) {
-            ...GatsbyImageSharpFixed_tracedSVG
-          }
+          gatsbyImageData(height: 520, placeholder: TRACED_SVG, layout: FIXED)
         }
       }
     }
@@ -20,12 +18,13 @@ const Synopsis = ({ t }) => {
   return (
     <section id="synopsis" role="grid">
       <div className="left-synopsis" role="gridcell">
-        <Img
-          fixed={data?.file?.childImageSharp?.fixed}
-          className="synopsis-img with-phone-border"
-          alt=""
-          loading="lazy"
-        />
+        <div className="synopsis-img with-phone-border" role="img">
+          <GatsbyImage
+            image={data?.file?.childImageSharp?.gatsbyImageData}
+            loading="lazy"
+            alt=""
+          />
+        </div>
       </div>
       <div className="right-synopsis" role="gridcell">
         <h3>{t('synopsisTitle')}</h3>

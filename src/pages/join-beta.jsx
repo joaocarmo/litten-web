@@ -7,11 +7,7 @@ import Footer from '../components/home/footer'
 import Form from '../components/form'
 import Input from '../components/input'
 import Select from '../components/select'
-
-const encode = (data) =>
-  Object.keys(data)
-    .map((key) => `${encodeURIComponent(key)}=${encodeURIComponent(data[key])}`)
-    .join('&')
+import { formEncode } from '../config/utils'
 
 const JoinBeta = ({ t }) => {
   const [formValues, setFormValues] = useState({
@@ -42,7 +38,7 @@ const JoinBeta = ({ t }) => {
     fetch('/', {
       method: 'POST',
       headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-      body: encode({
+      body: formEncode({
         'form-name': form.getAttribute('name'),
         ...formValues,
       }),

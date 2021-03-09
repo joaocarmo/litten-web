@@ -1,3 +1,4 @@
+import { useEffect, useState } from 'react'
 import PropTypes from 'prop-types'
 import { Helmet } from 'react-helmet'
 import { useTranslation } from 'react-i18next'
@@ -5,6 +6,8 @@ import { Link } from 'gatsby'
 import useCurrentShortLang from '../hooks/use-current-short-lang'
 
 const LanguageSelector = ({ withHome, ...otherProps }) => {
+  const [languages, setLanguages] = useState([])
+
   const { i18n, t } = useTranslation()
 
   const [currentShortLang, setCurrentShortLang] = useCurrentShortLang()
@@ -16,6 +19,10 @@ const LanguageSelector = ({ withHome, ...otherProps }) => {
       setCurrentShortLang(newLang)
     }
   }
+
+  useEffect(() => {
+    setLanguages(i18n?.languages || [])
+  }, [i18n?.languages])
 
   return (
     <>
@@ -38,7 +45,7 @@ const LanguageSelector = ({ withHome, ...otherProps }) => {
             value={currentShortLang}
             onChange={changeLang}
             aria-label="select language">
-            {i18n?.languages?.map((lang) => (
+            {languages.map((lang) => (
               <option value={lang} key={lang}>
                 {lang}
               </option>
