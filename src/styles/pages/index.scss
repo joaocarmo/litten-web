@@ -33,14 +33,71 @@
   max-width: 980px;
 }
 
+$phoneButtonBorderWidth: 8px;
+$phoneButtonBorderRadius: 8px;
+$phoneButtonLeftHeight: 200px;
+$phoneButtonRightHeight: 80px;
+$phoneButtonWidth: 2px;
+$phoneMobileMultiplier: 0.75;
+
+@mixin phone-button {
+  display: block;
+  position: absolute;
+  content: " ";
+  width: $phoneButtonWidth;
+  z-index: 1;
+}
+
 .with-phone-border {
-  border: 8px solid white;
+  position: relative;
+  border: $phoneButtonBorderWidth solid $white;
   border-radius: 24px;
   box-shadow: -12px 12px 42px -6px rgba(0, 0, 0, 0.15);
+  box-sizing: content-box;
+
+  &::before {
+    @include phone-button;
+
+    height: $phoneButtonLeftHeight;
+    top: 16%;
+    left: -($phoneButtonBorderWidth + $phoneButtonWidth);
+    background-image: linear-gradient(
+      180deg,
+      $white 0% 10%,
+      transparent 10% 20%,
+      $white 20% 40%,
+      transparent 40% 50%,
+      $white 50% 70%,
+      transparent 70% 100%,
+    );
+  }
+
+  &::after {
+    @include phone-button;
+
+    height: $phoneButtonRightHeight;
+    top: 24%;
+    right: -($phoneButtonBorderWidth + $phoneButtonWidth);
+    background-color: $white;
+  }
 }
 
 @media screen and (max-width: $mobileBreakpoint) {
   .title-container {
     padding: $globalPadding * 2;
+  }
+
+  .mobile-container .with-phone-border {
+    border-width: $phoneButtonBorderWidth * $phoneMobileMultiplier;
+
+    &::before {
+      height: $phoneButtonLeftHeight * $phoneMobileMultiplier;
+      left: -($phoneButtonBorderWidth * $phoneMobileMultiplier + $phoneButtonWidth);
+    }
+
+    &::after {
+      height: $phoneButtonRightHeight * $phoneMobileMultiplier;
+      right: -($phoneButtonBorderWidth * $phoneMobileMultiplier + $phoneButtonWidth);
+    }
   }
 }

@@ -83,19 +83,23 @@ const Hero = ({ t }) => {
               </div>
             </div>
             <div className="mobile-right" role="gridcell">
-              <GatsbyImage
-                image={data?.secondary?.childImageSharp?.gatsbyImageData}
-                className="hero-secondary-img with-phone-border mobile"
-                alt=""
-              />
+              <div className="with-phone-border" role="img">
+                <GatsbyImage
+                  image={data?.secondary?.childImageSharp?.gatsbyImageData}
+                  className="hero-secondary-img mobile"
+                  alt=""
+                />
+              </div>
             </div>
           </div>
         </div>
-        <GatsbyImage
-          image={data?.main?.childImageSharp?.gatsbyImageData}
-          className="hero-main-img with-phone-border desktop"
-          alt=""
-        />
+        <div className="hero-main-img with-phone-border desktop" role="img">
+          <GatsbyImage
+            image={data?.main?.childImageSharp?.gatsbyImageData}
+            className=""
+            alt=""
+          />
+        </div>
       </BackgroundImage>
       <StoreBadges className="store-badges-desktop" />
     </div>

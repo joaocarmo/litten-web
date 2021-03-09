@@ -18,12 +18,13 @@ const Synopsis = ({ t }) => {
   return (
     <section id="synopsis" role="grid">
       <div className="left-synopsis" role="gridcell">
-        <GatsbyImage
-          image={data?.file?.childImageSharp?.gatsbyImageData}
-          className="synopsis-img with-phone-border"
-          alt=""
-          loading="lazy"
-        />
+        <div className="synopsis-img with-phone-border" role="img">
+          <GatsbyImage
+            image={data?.file?.childImageSharp?.gatsbyImageData}
+            loading="lazy"
+            alt=""
+          />
+        </div>
       </div>
       <div className="right-synopsis" role="gridcell">
         <h3>{t('synopsisTitle')}</h3>

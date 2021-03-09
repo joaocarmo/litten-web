@@ -45,7 +45,7 @@
         width: $featureImgOutRatio * $featureSize;
         margin-bottom: 2em;
         border-radius: 12px;
-        background-color: white;
+        background-color: $white;
 
         img {
           height: $featureImgRatio * $featureSize;
