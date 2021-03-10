@@ -66,6 +66,11 @@
       height: $heroLogoImgSize;
       width: $heroLogoImgSize;
       border-radius: 20%;
+      overflow: hidden;
+
+      * {
+        border-radius: 20%;
+      }
     }
 
     .img-cutter {

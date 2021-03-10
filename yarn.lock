@@ -1155,9 +1155,9 @@
     tslib "~2.0.1"
 
 "@graphql-tools/utils@^7.0.0", "@graphql-tools/utils@^7.0.2", "@graphql-tools/utils@^7.1.2", "@graphql-tools/utils@^7.1.5", "@graphql-tools/utils@^7.1.6", "@graphql-tools/utils@^7.2.1", "@graphql-tools/utils@^7.5.0":
-  version "7.5.1"
-  resolved "https://registry.yarnpkg.com/@graphql-tools/utils/-/utils-7.5.1.tgz#1c77ca69ffeb428e8ec51e661413bc6a5594268b"
-  integrity sha512-FYhSdJrU5cZ8BRuzCVV+YixLx3mXYVzowpKGPfI7re9/WvQPjlyIcjG+hd0C4u/L9Dxx46nBkiqZxZZknE6/lA==
+  version "7.5.2"
+  resolved "https://registry.yarnpkg.com/@graphql-tools/utils/-/utils-7.5.2.tgz#34b676a734eeed6064ba598b132d8018f539501c"
+  integrity sha512-/ml6AUCmtjvvxR9JX9/xyV52759SqbFR74K8i+AzyOzqM3Ns0c0ZpBFdIMiKzh6UYULPsoHblzfj0ES1yrrtGw==
   dependencies:
     "@ardatan/aggregate-error" "0.0.6"
     camel-case "4.1.2"
@@ -3309,9 +3309,9 @@ caniuse-api@^3.0.0:
     lodash.uniq "^4.5.0"
 
 caniuse-lite@^1.0.0, caniuse-lite@^1.0.30001109, caniuse-lite@^1.0.30001125, caniuse-lite@^1.0.30001181, caniuse-lite@^1.0.30001196:
-  version "1.0.30001197"
-  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001197.tgz#47ad15b977d2f32b3ec2fe2b087e0c50443771db"
-  integrity sha512-8aE+sqBqtXz4G8g35Eg/XEaFr2N7rd/VQ6eABGBmNtcB8cN6qNJhMi6oSFy4UWWZgqgL3filHT8Nha4meu3tsw==
+  version "1.0.30001198"
+  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001198.tgz#ed2d9b5f060322ba2efa42afdc56dee3255473f4"
+  integrity sha512-r5GGgESqOPZzwvdLVER374FpQu2WluCF1Z2DSiFJ89KSmGjT0LVKjgv4NcAqHmGWF9ihNpqRI9KXO9Ex4sKsgA==
 
 caseless@~0.12.0:
   version "0.12.0"
@@ -3975,15 +3975,15 @@ css-declaration-sorter@^4.0.1:
     timsort "^0.3.0"
 
 css-loader@^5.0.1:
-  version "5.1.1"
-  resolved "https://registry.yarnpkg.com/css-loader/-/css-loader-5.1.1.tgz#9362d444a0f7c08c148a109596715c904e252879"
-  integrity sha512-5FfhpjwtuRgxqmusDidowqmLlcb+1HgnEDMsi2JhiUrZUcoc+cqw+mUtMIF/+OfeMYaaFCLYp1TaIt9H6I/fKA==
+  version "5.1.2"
+  resolved "https://registry.yarnpkg.com/css-loader/-/css-loader-5.1.2.tgz#b93dba498ec948b543b49d4fab5017205d4f5c3e"
+  integrity sha512-T7vTXHSx0KrVEg/xjcl7G01RcVXpcw4OELwDPvkr7izQNny85A84dK3dqrczuEfBcu7Yg7mdTjJLSTibRUoRZg==
   dependencies:
     camelcase "^6.2.0"
     cssesc "^3.0.0"
     icss-utils "^5.1.0"
     loader-utils "^2.0.0"
-    postcss "^8.2.6"
+    postcss "^8.2.8"
     postcss-modules-extract-imports "^3.0.0"
     postcss-modules-local-by-default "^4.0.0"
     postcss-modules-scope "^3.0.0"
@@ -6050,9 +6050,9 @@ gatsby-plugin-i18n@^1.0.1:
     ptz-i18n "^1.0.0"
 
 gatsby-plugin-image@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-image/-/gatsby-plugin-image-1.0.0.tgz#100ab670549c1b4b742034d09944c19b6a5cd4ee"
-  integrity sha512-qPfydip7atF+rlESv1HLDmbwmmQvC8aU7W6GwO62hWcuGcIFJD3lcn6B8xF55f4rxE99vxbO5gUwRUwj+fUH1A==
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-image/-/gatsby-plugin-image-1.0.1.tgz#b2b46ec7b2203c05b3511e1440100bcd3d2af68a"
+  integrity sha512-Aa8CV+bt5kboHDWPaZZ9OWDDnlZp7Ut+cx5nMfoXAq5fPgAFtausiLzyBfsYcikjZxgYIc4VBXaUJoi0I7sjTA==
   dependencies:
     "@babel/parser" "^7.12.5"
     "@babel/traverse" "^7.12.5"
@@ -6116,9 +6116,9 @@ gatsby-plugin-sass@^4.0.2:
     sass-loader "^10.1.1"
 
 gatsby-plugin-sharp@^3.0.0:
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-sharp/-/gatsby-plugin-sharp-3.0.0.tgz#276557883ccfc9ea5503bb16b2fcd24f7a55928e"
-  integrity sha512-gmIzHjv+JaW1Gyyrz81s43yBkqtMpgvGb6qbPzH2ZX8V2YTyd9LnfUxKx/uTwluEB5oz/om4jtHSCH5DSUsTFA==
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-sharp/-/gatsby-plugin-sharp-3.0.1.tgz#994a2a2a0305bd7d3e4aa698e30532c0b7cfba96"
+  integrity sha512-HL519LIhTmTySUPFO2IuwIHBlgo/0N7gJng2gu2XwD/DJ3ENgw5+SXmiVTwvERx7Pr5YVPECgYuszWdlYgJmgw==
   dependencies:
     "@babel/runtime" "^7.12.5"
     async "^3.2.0"
@@ -8851,9 +8851,9 @@ map-obj@^1.0.0, map-obj@^1.0.1:
   integrity sha1-2TPOuSBdgr3PSIb2dCvcK03qFG0=
 
 map-obj@^4.0.0:
-  version "4.1.0"
-  resolved "https://registry.yarnpkg.com/map-obj/-/map-obj-4.1.0.tgz#b91221b542734b9f14256c0132c897c5d7256fd5"
-  integrity sha512-glc9y00wgtwcDmp7GaE/0b0OnxpNJsVf3ael/An6Fe2Q51LLwN1er6sdomLRzz5h0+yMpiYLhWYF5R7HeqVd4g==
+  version "4.2.0"
+  resolved "https://registry.yarnpkg.com/map-obj/-/map-obj-4.2.0.tgz#0e8bc823e2aaca8a0942567d12ed14f389eec153"
+  integrity sha512-NAq0fCmZYGz9UFEQyndp7sisrow4GroyGeKluyKC/chuITZsPyOyC1UJZPJlVFImhXdROIP5xqouRLThT3BbpQ==
 
 map-visit@^1.0.0:
   version "1.0.0"
@@ -9907,9 +9907,9 @@ p-cancelable@^1.0.0:
   integrity sha512-s73XxOZ4zpt1edZYZzvhqFa6uvQc1vwUa0K0BdtIZgQMAJj9IbebH+JkgKZc9h+B05PKHLOTl4ajG1BmNrVZlw==
 
 p-cancelable@^2.0.0:
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/p-cancelable/-/p-cancelable-2.0.0.tgz#4a3740f5bdaf5ed5d7c3e34882c6fb5d6b266a6e"
-  integrity sha512-wvPXDmbMmu2ksjkB4Z3nZWTSkJEb9lqVdMaCKpZUGJG9TMiNp9XcbG3fn9fPKjem04fJMJnXoyFPk2FmgiaiNg==
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/p-cancelable/-/p-cancelable-2.1.0.tgz#4d51c3b91f483d02a0d300765321fca393d758dd"
+  integrity sha512-HAZyB3ZodPo+BDpb4/Iu7Jv4P6cSazBz9ZM0ChhEXp70scx834aWCEjQRwgt41UzzejUAPdbqqONfRWTPYrPAQ==
 
 p-defer@^1.0.0:
   version "1.0.0"
@@ -10878,10 +10878,10 @@ postcss@^7.0.0, postcss@^7.0.1, postcss@^7.0.14, postcss@^7.0.2, postcss@^7.0.21
     source-map "^0.6.1"
     supports-color "^6.1.0"
 
-postcss@^8.2.6:
-  version "8.2.7"
-  resolved "https://registry.yarnpkg.com/postcss/-/postcss-8.2.7.tgz#48ed8d88b4de10afa0dfd1c3f840aa57b55c4d47"
-  integrity sha512-DsVLH3xJzut+VT+rYr0mtvOtpTjSyqDwPf5EZWXcb0uAKfitGpTY9Ec+afi2+TgdN8rWS9Cs88UDYehKo/RvOw==
+postcss@^8.2.8:
+  version "8.2.8"
+  resolved "https://registry.yarnpkg.com/postcss/-/postcss-8.2.8.tgz#0b90f9382efda424c4f0f69a2ead6f6830d08ece"
+  integrity sha512-1F0Xb2T21xET7oQV9eKuctbM9S7BC0fetoHCc4H13z0PT6haiRLP4T0ZY4XWh7iLP0usgqykT6p9B2RtOf4FPw==
   dependencies:
     colorette "^1.2.2"
     nanoid "^3.1.20"
@@ -14491,9 +14491,9 @@ yargs-parser@^18.1.2:
     decamelize "^1.2.0"
 
 yargs-parser@^20.2.2, yargs-parser@^20.2.3:
-  version "20.2.6"
-  resolved "https://registry.yarnpkg.com/yargs-parser/-/yargs-parser-20.2.6.tgz#69f920addf61aafc0b8b89002f5d66e28f2d8b20"
-  integrity sha512-AP1+fQIWSM/sMiET8fyayjx/J+JmTPt2Mr0FkrgqB4todtfa53sOsrSAcIrJRD5XS20bKUwaDIuMkWKCEiQLKA==
+  version "20.2.7"
+  resolved "https://registry.yarnpkg.com/yargs-parser/-/yargs-parser-20.2.7.tgz#61df85c113edfb5a7a4e36eb8aa60ef423cbc90a"
+  integrity sha512-FiNkvbeHzB/syOjIUxFDCnhSfzAL8R5vs40MgLFBorXACCOAEaWu0gRZl14vG8MR9AOJIZbmkjhusqBYZ3HTHw==
 
 yargs@^13.3.2:
   version "13.3.2"
