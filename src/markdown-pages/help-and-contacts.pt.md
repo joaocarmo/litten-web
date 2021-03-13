@@ -23,6 +23,16 @@ Se és developer e encontraste um problema com uma das nossas apps, podes criar
 um _issue_ diretamente no repositório respectivo: [mobile][mobileappissue] ou
 [web][webappissue].
 
+## Redes sociais
+
+Podes seguir-nos em qualquer um destes serviços para acompanhares as últimas
+novidades:
+
+[Facebook][facebook] |
+[Instagram][instagram] |
+[LinkedIn][linkedin] |
+[Twitter][twitter]
+
 ## Contactos
 
 Se tiveres qualquer questão, comentário ou sugestão, podes sempre entrar em
@@ -38,3 +48,7 @@ Email: [help@litten.app][helpmail]
 [mobileappissue]: https://github.com/joaocarmo/litten-app/issues/new
 [webapp]: https://github.com/joaocarmo/litten-web
 [webappissue]: https://github.com/joaocarmo/litten-web/issues/new
+[facebook]: https://www.facebook.com/littenapp
+[instagram]: https://www.instagram.com/littenapp
+[linkedin]: https://www.linkedin.com/company/litten
+[twitter]: https://twitter.com/littenapp

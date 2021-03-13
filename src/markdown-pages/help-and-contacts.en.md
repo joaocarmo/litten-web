@@ -23,6 +23,15 @@ If you're a developer and encountered a problem with our mobile or web app,
 please create a new GitHub Issue in the mobile app's archive
 [here][mobileappissue] or the web app's archive [here][webappissue].
 
+## Social media
+
+You can follow us for the latest news and updates in any of these services:
+
+[Facebook][facebook] |
+[Instagram][instagram] |
+[LinkedIn][linkedin] |
+[Twitter][twitter]
+
 ## Contacts
 
 If you have questions, comments or suggestions regarding our web app or mobile
@@ -38,3 +47,7 @@ Email: [help@litten.app][helpmail]
 [mobileappissue]: https://github.com/joaocarmo/litten-app/issues/new
 [webapp]: https://github.com/joaocarmo/litten-web
 [webappissue]: https://github.com/joaocarmo/litten-web/issues/new
+[facebook]: https://www.facebook.com/littenapp
+[instagram]: https://www.instagram.com/littenapp
+[linkedin]: https://www.linkedin.com/company/litten
+[twitter]: https://twitter.com/littenapp

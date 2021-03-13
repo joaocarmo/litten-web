@@ -43,7 +43,7 @@ $phoneMobileMultiplier: 0.75;
 @mixin phone-button {
   display: block;
   position: absolute;
-  content: " ";
+  content: ' ';
   width: $phoneButtonWidth;
   z-index: 1;
 }
@@ -68,7 +68,7 @@ $phoneMobileMultiplier: 0.75;
       $white 20% 40%,
       transparent 40% 50%,
       $white 50% 70%,
-      transparent 70% 100%,
+      transparent 70% 100%
     );
   }
 
@@ -92,12 +92,14 @@ $phoneMobileMultiplier: 0.75;
 
     &::before {
       height: $phoneButtonLeftHeight * $phoneMobileMultiplier;
-      left: -($phoneButtonBorderWidth * $phoneMobileMultiplier + $phoneButtonWidth);
+      left: -($phoneButtonBorderWidth * $phoneMobileMultiplier +
+            $phoneButtonWidth);
     }
 
     &::after {
       height: $phoneButtonRightHeight * $phoneMobileMultiplier;
-      right: -($phoneButtonBorderWidth * $phoneMobileMultiplier + $phoneButtonWidth);
+      right: -($phoneButtonBorderWidth * $phoneMobileMultiplier +
+            $phoneButtonWidth);
     }
   }
 }
