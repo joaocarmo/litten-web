@@ -1,0 +1,11 @@
+[[redirects]]
+  from = "/app-store"
+  to = "https://apps.apple.com/pt/app/litten/id1543915955?l=en"
+  status = 301
+  force = false
+
+[[redirects]]
+  from = "/play-store"
+  to = "https://play.google.com/store/apps/details?id=com.litten"
+  status = 301
+  force = false
