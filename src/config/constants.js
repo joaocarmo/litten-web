@@ -10,8 +10,6 @@ export const verificationPath = 'verification'
 
 export const betaEnabled = false
 
-export const appStoreURL =
-  'https://apps.apple.com/pt/app/litten/id1543915955?l=en'
+export const appStoreURL = '/app-store'
 
-export const playStoreURL =
-  'https://play.google.com/store/apps/details?id=com.litten'
+export const playStoreURL = '/play-store'

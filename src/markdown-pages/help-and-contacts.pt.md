@@ -1,5 +1,5 @@
 ---
-date: '2021-02-06'
+date: '2021-03-14'
 title: 'Ajuda e Contactos'
 toc: false
 ---
@@ -13,6 +13,13 @@ individuais para a nossas apps, [web][webapp] e [mobile][mobileapp], no GitHub.
 
 Verifica as nossas [Perguntas Frequentes][faq] para veres se a tua questão já se
 encontra respondida!
+
+## Guias
+
+Verifica um dos nossos guias abaixo se precisares de ajuda para usar a Litten.
+
+- [Criar uma nova conta para uma organização][setup-organization-account]
+- [Criar um novo Litten][create-new-litten]
 
 ## Comunicar um problema
 
@@ -43,6 +50,8 @@ Email: [help@litten.app][helpmail]
 <!-- References -->
 
 [faq]: /faq
+[setup-organization-account]: /setup-organization-account
+[create-new-litten]: /create-new-litten
 [helpmail]: mailto:help@litten.app
 [mobileapp]: https://github.com/joaocarmo/litten-app
 [mobileappissue]: https://github.com/joaocarmo/litten-app/issues/new
