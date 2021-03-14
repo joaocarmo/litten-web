@@ -21,8 +21,8 @@ you should enable this to make it clear to other users.
 It's very easy to do so. From the `Profile & Definitions` screen, you can
 access your account's details and enable the option `Organization profile`.
 
-| Profile & Definitions | Account Details |
-| --------------------- | --------------- |
+| Profile & Definitions                                         | Account Details                                         |
+| ------------------------------------------------------------- | ------------------------------------------------------- |
 | ![Profile & Definitions Screen][setup-organization-account-1] | ![Account Details Screen][setup-organization-account-2] |
 
 <!-- References -->

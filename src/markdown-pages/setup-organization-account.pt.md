@@ -22,9 +22,9 @@ deves ativar esta opção para deixar isso bem claro.
 `Perfil & Definições`, podes aceder aos detalhes da tua conta e ativar a opção
 `Perfil organizacional`.
 
-| Perfil & Definições | Detalhes da conta |
-| ------------------- | ----------------- |
-| ![Profile & Definitions Screen][setup-organization-account-1] | ![Account Details Screen][setup-organization-account-2] |
+| Perfil & Definições                                       | Detalhes da conta                                       |
+| --------------------------------------------------------- | ------------------------------------------------------- |
+| ![Ecrã Perfil & Definições][setup-organization-account-1] | ![Ecrã Detalhes da conta][setup-organization-account-2] |
 
 <!-- References -->
 [setup-organization-account-1]: /img/guides/setup-organization-account-1.png
