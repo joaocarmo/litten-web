@@ -102,9 +102,6 @@ const StaticTemplate = ({
           </article>
         </section>
       </StaticContainer>
-      <footer className="static attribution">
-        <p>{t('footerAttribution')}</p>
-      </footer>
     </Layout>
   )
 }
