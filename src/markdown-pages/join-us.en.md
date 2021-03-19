@@ -1,5 +1,5 @@
 ---
-date: '2021-01-29'
+date: '2021-03-19'
 title: 'Join us'
 toc: true
 ---
@@ -40,8 +40,7 @@ Just [contact us][contactus] directly!
 
 ### Translator
 
-We need translators! If you speak any language at all, you're probably the right
-choice.
+We need translators! If you speak any language at all, you're probably the right choice.
 
 #### Requirements
 
@@ -53,7 +52,7 @@ choice.
 #### Responsibilities
 
 - Curate the existing content, if any
-- Help create and mantain new and future content
+- Help create and maintain new and future content
 
 ### Legal Advisor
 
@@ -74,7 +73,7 @@ We need a legal advisor to maintain our _Privacy Policy_ and _Terms of Service_ 
 
 ### Marketing Advisor
 
-We need a marketing advisor to lead our marketing campaings, own our marketing materials and analyse marketing data.
+We need a marketing advisor to lead our marketing campaigns, own our marketing materials and analyse marketing data.
 
 #### Requirements
 

@@ -1,90 +1,89 @@
 ---
-date: '2021-01-29'
-title: 'Join us'
+date: '2021-03-19'
+title: 'Junta-te a nós'
 toc: true
 ---
 
-## Who we are
+## Quem somos
 
-Litten is a non-profit open-source project. It is kept alive by the love, effort and dedication of the team behind it. We're constantly looking forward to grow our family. And, of course, we love animals.
+Litten é um projeto de código aberto sem fins lucrativos. É mantido com o amor, esforço e dedicação de toda a equipa. Estamos sempre ansiosos para fazer nossa família crescer. E, claro, amamos animais.
 
-At the moment, we all work _pro bono_. We're not looking into making a profit and may have to rely on donations from our users and patrons in the future.
+De momento, todos nós trabalhamos _pro bono_. Não pretendemos lucrar e podemos depender das doações dos nossos utilizadores no futuro.
 
-If you're still with us, please find the vacancies we're currently looking to fill. Nonetheless, feel free to contact us if you don't meet the requirements but still want to help!
+Se ainda estás connosco, encontra as vagas que temos disponíveis. No entanto, não hesites em contactar-nos, se não cumprires os requisitos e ainda assim quiseres ajudar!
 
-## What we offer
+## O que oferecemos
 
-As a team members of Litten you join the family immediately and without bureaucracy.
+Como membro da equipa Litten, juntas-te à família imediatamente e sem burocracia.
 
-There are no extensive interviews, just be yourself, kind and bring your talents!
+Não há entrevistas extensas, apenas tens de ser tu, gentil e trazer os teus talentos!
 
-We care not for your academic background, we only want you to be motivated into improving our society and contributing to a better relationship between humans and animals.
+Não nos importamos com a tua formação acadêmica, queremos apenas que te se motives a melhorar nossa sociedade e a contribuir para uma melhor relação entre humanos e animais.
 
-We're young and full of energy and always eager to learn and improve with one another.
+Somos jovens cheios de energia, sempre desejosos de aprender e melhorar uns com os outros.
 
-We're open to whichever technology you feel more comfortable working with.
+Estamos abertos para qualquer tecnologia com a qual te sintas mais confortável em trabalhar.
 
-Work whenever and wherever you feel like to! Our pipeline is very flexible.
+Trabalha quando e onde quiseres! Os nosso ciclos são muito flexíveis.
 
-Choose your own job title! _Jedi Knight_ is acceptable.
+Escolhe o teu próprio cargo! _Jedi Knight_ é aceitável.
 
-The unique opportunity to join a tech project right from the start and help to shape its future.
+A oportunidade única de participar num projeto tecnológico desde o início e ajudar a moldar o seu futuro.
 
-Endless kitten photos!
+Fotografias infindáveis de gatinhos!
 
-## How to apply
+## Como enviar uma aplicação
 
-Just [contact us][contactus] directly!
+É muito simples. Só tens de nos [contactar][contactus] diretamente!
 
-## Open positions
+## Oportunidades em aberto
 
-### Translator
+### Tradutor
 
-We need translators! If you speak any language at all, you're probably the right
-choice.
+Precisamos de tradutores! Se falas qualquer idioma, provavelmente é a escolha certa.
 
-#### Requirements
+#### Requisitos
 
-- Native speaker
-- Knowledge of or willing to learn version control systems (e.g., _git_)
-- Knowledge of or willing to learn data formats (e.g., _JSON_)
-- Knowledge of or willing to learn development practices (e.g., _continuous integration_)
+- Nativo
+- Conhecimento ou vontade de aprender sistemas de controlo de versão (e.g., _git_)
+- Conhecimento ou vontade de aprender formatos de dados (e.g., _JSON_)
+- Conhecimento ou vontade de aprender práticas de desenvolvimento (e.g., _continuous integration_)
 
-#### Responsibilities
+#### Responsabilidades
 
-- Curate the existing content, if any
-- Help create and mantain new and future content
+- Organizar o conteúdo existente, se houver
+- Ajudar a criar e manter conteúdo novo e futuro
 
-### Legal Advisor
+### Consultorx jurídico
 
-We need a legal advisor to maintain our _Privacy Policy_ and _Terms of Service_ as well as ensure our services comply with all the legal requirements in the jurisdictions in which we operate and offer our services.
+Precisamos de um consultorx jurídico para manter nossa _Política de Privacidade_ e _Termos de Serviço_, bem como garantir que nossos serviços cumpram todos os requisitos legais nas jurisdições em que operamos e oferecemos nossos serviços.
 
-#### Requirements
+#### Requisitos
 
-- Knowledge of or willing to learn International Law including data protection regulations (e.g., _GDPR_)
-- Knowledge of or willing to learn Portuguese Law
-- Knowledge of or willing to learn European Law
-- Knowledge of or willing to learn U.S. Law
+- Conhecimento ou vontade de aprender Direito Internacional, incluindo regulamentos de proteção de dados (e.g., _GDPR_)
+- Conhecimento ou vontade de aprender Direito Português
+- Conhecimento ou vontade de aprender Direito Europeu
+- Conhecimento ou vontade de aprender a legislação dos EUA
 
-#### Responsibilities
+#### Responsabilidades
 
-- Curate the existing _Privacy Policy_
-- Curate the existing _Terms of Service_
-- Help create and mantain future legal documents
+- Organizar e manter a _Política de Privacidade_ existente
+- Organizar e manter os _Termos de Serviço_ existentes
+- Ajudar a criar e manter documentos legais futuros
 
-### Marketing Advisor
+### Consultorx de marketing
 
-We need a marketing advisor to lead our marketing campaings, own our marketing materials and analyse marketing data.
+Precisamos de umx consultor de marketing para liderar as nossas campanhas, tomar posse dos nossos materiais de marketing e fazer análise de dados.
 
-#### Requirements
+#### Requisitos
 
-- Knowledge of or willing to learn Marketing
-- Knowledge of or willing to learn Data Analysis
+- Conhecimento ou vontade de aprender Marketing
+- Conhecimento ou vontade de aprender Análise de Dados
 
-#### Responsibilities
+#### Responsabilidades
 
-- Create marketing materials and campaigns
-- Study marketing data and provide useful insights based on it
+- Criar materiais de marketing e campanhas
+- Estudar os dados de marketing e fornecer visões úteis sobre o mercado e público
 
 <!-- References -->
 
