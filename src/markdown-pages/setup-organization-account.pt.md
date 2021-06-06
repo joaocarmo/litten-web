@@ -27,5 +27,6 @@ deves ativar esta opção para deixar isso bem claro.
 | ![Ecrã Perfil & Definições][setup-organization-account-1] | ![Ecrã Detalhes da conta][setup-organization-account-2] |
 
 <!-- References -->
+
 [setup-organization-account-1]: /img/guides/setup-organization-account-1.png
 [setup-organization-account-2]: /img/guides/setup-organization-account-2.png

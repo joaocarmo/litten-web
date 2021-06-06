@@ -26,5 +26,6 @@ access your account's details and enable the option `Organization profile`.
 | ![Profile & Definitions Screen][setup-organization-account-1] | ![Account Details Screen][setup-organization-account-2] |
 
 <!-- References -->
+
 [setup-organization-account-1]: /img/guides/setup-organization-account-1.png
 [setup-organization-account-2]: /img/guides/setup-organization-account-2.png

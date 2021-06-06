@@ -34,4 +34,5 @@ button on the bottom navigation bar.
 | ![New litten Screen][create-new-litten-1] |
 
 <!-- References -->
+
 [create-new-litten-1]: /img/guides/create-new-litten-1.png

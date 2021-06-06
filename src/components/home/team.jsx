@@ -6,17 +6,6 @@ import { withTranslation } from 'react-i18next'
 const Team = ({ t }) => {
   const data = useStaticQuery(graphql`
     query TeamQuery {
-      ana: file(relativePath: { eq: "ana.jpg" }) {
-        childImageSharp {
-          gatsbyImageData(
-            height: 260
-            width: 260
-            placeholder: TRACED_SVG
-            layout: FIXED
-          )
-        }
-        publicURL
-      }
       james: file(relativePath: { eq: "james.jpg" }) {
         childImageSharp {
           gatsbyImageData(
@@ -80,15 +69,6 @@ const Team = ({ t }) => {
       },
       name: 'James Briscoe',
       jobTitle: 'Lead English Editor',
-    },
-    {
-      key: 'ana',
-      photo: {
-        childImageSharp: data?.ana?.childImageSharp,
-        publicURL: data?.ana?.publicURL,
-      },
-      name: 'Ana Cláudia',
-      jobTitle: 'Word Wizard',
     },
   ]
 

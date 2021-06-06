@@ -132,7 +132,7 @@ StaticTemplate.defaultProps = {
 export default withTranslation()(StaticTemplate)
 
 export const pageQuery = graphql`
-  query($slug: String!) {
+  query ($slug: String!) {
     markdownRemark(fields: { slug: { eq: $slug } }) {
       html
       tableOfContents(absolute: false, maxDepth: 3)

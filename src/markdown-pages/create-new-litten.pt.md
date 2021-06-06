@@ -34,4 +34,5 @@ botão `+` da barra de navegação ao fundo.
 | ![Ecrã Novo Litten][create-new-litten-1] |
 
 <!-- References -->
+
 [create-new-litten-1]: /img/guides/create-new-litten-1.png

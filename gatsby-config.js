@@ -6,7 +6,7 @@ const languages = require('./src/locales')
 
 const description = [
   enCommon.featureAdoptionText,
-  enCommon.featureMatingText,
+  // enCommon.featureMatingText,
   enCommon.featureLostText,
   enCommon.featureFoundText,
 ].join(' ')
