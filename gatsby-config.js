@@ -6,7 +6,6 @@ const languages = require('./src/locales')
 
 const description = [
   enCommon.featureAdoptionText,
-  // enCommon.featureMatingText,
   enCommon.featureLostText,
   enCommon.featureFoundText,
 ].join(' ')
@@ -15,7 +14,6 @@ module.exports = {
   siteMetadata: {
     title: config.title,
     titleTemplate: `${config.title} - %s`,
-    url: config.homepage,
     siteUrl: config.homepage,
     description,
     languages,
