@@ -6,7 +6,6 @@ const languages = require('./src/locales')
 
 const description = [
   enCommon.featureAdoptionText,
-  // enCommon.featureMatingText,
   enCommon.featureLostText,
   enCommon.featureFoundText,
 ].join(' ')
@@ -14,17 +13,18 @@ const description = [
 module.exports = {
   siteMetadata: {
     title: config.title,
+    titleTemplate: `${config.title} - %s`,
     siteUrl: config.homepage,
     description,
     languages,
+    image: '/img/seo/social-preview.jpg',
+    twitterUsername: '@littenapp',
   },
   flags: {
     DEV_SSR: true,
     FAST_DEV: true,
-    FUNCTIONS: false,
     PARALLEL_SOURCING: false,
     PRESERVE_FILE_DOWNLOAD_CACHE: true,
-    PRESERVE_WEBPACK_CACHE: true,
   },
   plugins: [
     {

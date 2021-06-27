@@ -1,7 +1,6 @@
 import PropTypes from 'prop-types'
 import { withTranslation } from 'react-i18next'
 import adoptionIcon from '../../images/adoption-icon.svg'
-// import matingIcon from '../../images/mating-icon.svg'
 import lostIcon from '../../images/lost-icon.svg'
 import foundIcon from '../../images/found-icon.svg'
 
@@ -13,14 +12,6 @@ const Features = ({ t }) => {
       title: t('featureAdoptionTitle'),
       text: t('featureAdoptionText'),
     },
-    /*
-    {
-      key: 'mating',
-      icon: matingIcon,
-      title: t('featureMatingTitle'),
-      text: t('featureMatingText'),
-    },
-    */
     {
       key: 'lost',
       icon: lostIcon,

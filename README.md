@@ -12,6 +12,14 @@ A development server will start on port `8001`.
 yarn start
 ```
 
+## Test Production
+
+The production build can be tested locally.
+
+```sh
+yarn build && yarn serve
+```
+
 ## License
 
 The project's source code is licensed as [MIT](./LICENSE), but the images and
