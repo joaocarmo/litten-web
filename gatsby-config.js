@@ -14,9 +14,13 @@ const description = [
 module.exports = {
   siteMetadata: {
     title: config.title,
+    titleTemplate: `${config.title} - %s`,
+    url: config.homepage,
     siteUrl: config.homepage,
     description,
     languages,
+    image: '/img/seo/social-preview.jpg',
+    twitterUsername: '@littenapp',
   },
   flags: {
     DEV_SSR: true,

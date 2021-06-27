@@ -6,12 +6,15 @@ import i18n from '../config/i18n'
 import UpgradeBrowserNotice from './upgrade-browser-notice'
 import { isIE11 } from '../config/utils'
 
+const shouldUpgrade = isIE11()
+
 const Layout = ({ children, ...otherProps }) => {
   const data = useStaticQuery(graphql`
     query LayoutMetaQuery {
       site {
         siteMetadata {
           title
+          titleTemplate
           siteUrl
           description
         }
@@ -20,11 +23,12 @@ const Layout = ({ children, ...otherProps }) => {
   `)
 
   const title = data?.site?.siteMetadata?.title
+  const titleTemplate = data?.site?.siteMetadata?.titleTemplate
 
   return (
     <I18nextProvider i18n={i18n}>
       <div id="main" role="main" {...otherProps}>
-        <Helmet titleTemplate={`${title} - %s`} defaultTitle={title}>
+        <Helmet titleTemplate={titleTemplate} defaultTitle={title}>
           <meta charSet="utf-8" />
           <meta
             name="description"
@@ -33,7 +37,7 @@ const Layout = ({ children, ...otherProps }) => {
           <link rel="canonical" href={data?.site?.siteMetadata?.siteUrl} />
         </Helmet>
         <div id="container" role="grid">
-          {isIE11() ? <UpgradeBrowserNotice /> : children}
+          {shouldUpgrade ? <UpgradeBrowserNotice /> : children}
         </div>
       </div>
     </I18nextProvider>
