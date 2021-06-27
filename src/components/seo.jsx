@@ -30,14 +30,17 @@ const SEO = ({ title, description, image, article }) => {
   } = site.siteMetadata
 
   const seo = {
-    title: title || defaultTitle,
+    title,
     description: description || defaultDescription,
     image: `${siteUrl}${image || defaultImage}`,
     url: `${siteUrl}${pathname}`,
   }
 
   return (
-    <Helmet title={seo.title} titleTemplate={titleTemplate}>
+    <Helmet
+      defaultTitle={defaultTitle}
+      title={seo.title}
+      titleTemplate={titleTemplate}>
       {/* General */}
       <meta charSet="utf-8" />
       <meta name="description" content={seo.description} />
