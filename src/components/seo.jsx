@@ -45,7 +45,7 @@ const SEO = ({ title, description, image, article }) => {
       <link rel="canonical" href={seo.url} />
       {/* Open Graph */}
       {seo.url && <meta property="og:url" content={seo.url} />}
-      {(article ? true : null) && <meta property="og:type" content="article" />}
+      {article && <meta property="og:type" content="article" />}
       {seo.title && <meta property="og:title" content={seo.title} />}
       {seo.description && (
         <meta property="og:description" content={seo.description} />
