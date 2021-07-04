@@ -30,10 +30,12 @@ const SEO = ({ title, description, image, article }) => {
   } = site.siteMetadata
 
   const seo = {
-    title,
+    name: defaultTitle,
+    title: title || defaultTitle,
     description: description || defaultDescription,
     image: `${siteUrl}${image || defaultImage}`,
     url: `${siteUrl}${pathname}`,
+    type: article ? 'article' : 'website',
   }
 
   return (
@@ -47,13 +49,15 @@ const SEO = ({ title, description, image, article }) => {
       <meta name="image" content={seo.image} />
       <link rel="canonical" href={seo.url} />
       {/* Open Graph */}
+      {seo.name && <meta property="og:site_name" content={seo.name} />}
       {seo.url && <meta property="og:url" content={seo.url} />}
-      {article && <meta property="og:type" content="article" />}
+      {article && <meta property="og:type" content={seo.type} />}
       {seo.title && <meta property="og:title" content={seo.title} />}
       {seo.description && (
         <meta property="og:description" content={seo.description} />
       )}
       {seo.image && <meta property="og:image" content={seo.image} />}
+      {seo.image && <meta property="og:image:alt" content={seo.description} />}
       {/* Twitter Card */}
       <meta name="twitter:card" content="summary_large_image" />
       {twitterUsername && (
@@ -64,6 +68,7 @@ const SEO = ({ title, description, image, article }) => {
         <meta name="twitter:description" content={seo.description} />
       )}
       {seo.image && <meta name="twitter:image" content={seo.image} />}
+      {seo.image && <meta name="twitter:image:alt" content={seo.description} />}
     </Helmet>
   )
 }
