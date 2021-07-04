@@ -12,12 +12,14 @@ const description = [
 
 module.exports = {
   siteMetadata: {
+    author: config.author.name,
+    description,
+    headline: 'Find a furry friend',
+    image: '/img/seo/social-preview.jpg',
+    languages,
+    siteUrl: config.homepage,
     title: config.title,
     titleTemplate: `${config.title} - %s`,
-    siteUrl: config.homepage,
-    description,
-    languages,
-    image: '/img/seo/social-preview.jpg',
     twitterUsername: '@littenapp',
   },
   flags: {

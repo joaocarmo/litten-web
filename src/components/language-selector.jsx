@@ -1,6 +1,5 @@
 import { useEffect, useState } from 'react'
 import PropTypes from 'prop-types'
-import { Helmet } from 'react-helmet'
 import { useTranslation } from 'react-i18next'
 import { Link } from 'gatsby'
 import useCurrentShortLang from '../hooks/use-current-short-lang'
@@ -26,9 +25,6 @@ const LanguageSelector = ({ withHome, ...otherProps }) => {
 
   return (
     <>
-      <Helmet>
-        <html lang={currentShortLang || 'en'} />
-      </Helmet>
       <nav id="language-selector-nav" {...otherProps}>
         <div id="go-back-home">
           {withHome && (

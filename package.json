@@ -7,7 +7,11 @@
   "private": true,
   "main": "src/pages/index.js",
   "repository": "git@github.com:joaocarmo/litten-web.git",
-  "author": "Joao Carmo <17721880+joaocarmo@users.noreply.github.com>",
+  "author": {
+    "name" : "João Carmo",
+    "email" : "17721880+joaocarmo@users.noreply.github.com",
+    "url" : "https://joaocarmo.com/"
+  },
   "contributors": [],
   "license": "MIT",
   "scripts": {
