@@ -7,7 +7,11 @@
   "private": true,
   "main": "src/pages/index.js",
   "repository": "git@github.com:joaocarmo/litten-web.git",
-  "author": "Joao Carmo <17721880+joaocarmo@users.noreply.github.com>",
+  "author": {
+    "name" : "João Carmo",
+    "email" : "17721880+joaocarmo@users.noreply.github.com",
+    "url" : "https://joaocarmo.com/"
+  },
   "contributors": [],
   "license": "MIT",
   "scripts": {
@@ -36,7 +40,7 @@
     "@reach/router": "^1.3.4",
     "bowser": "^2.11.0",
     "classnames": "^2.2.6",
-    "gatsby": "3.6.2",
+    "gatsby": "3.8.1",
     "gatsby-background-image": "^1.5.0",
     "gatsby-cli": "^3.8.0",
     "gatsby-image": "^3.8.0",
@@ -68,7 +72,7 @@
     "typography": "^0.16.19"
   },
   "devDependencies": {
-    "eslint": "^7.29.0",
+    "eslint": "^7.30.0",
     "eslint-config-airbnb": "^18.2.1",
     "eslint-config-prettier": "^8.1.0",
     "eslint-plugin-import": "^2.22.1",
