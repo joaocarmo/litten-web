@@ -96,7 +96,8 @@ const JoinBeta = ({ t }) => {
                 name="join-beta"
                 action="/thank-you/"
                 onSubmit={handleOnSubmit}
-                className="join-beta">
+                className="join-beta"
+              >
                 <p>{t('joinBetaFormHelp')}</p>
                 <p hidden>
                   <label htmlFor="bot-field">

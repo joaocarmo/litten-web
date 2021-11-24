@@ -23,7 +23,6 @@ module.exports = {
     twitterUsername: '@littenapp',
   },
   flags: {
-    DEV_SSR: true,
     FAST_DEV: true,
     PARALLEL_SOURCING: false,
     PRESERVE_FILE_DOWNLOAD_CACHE: true,
