@@ -40,7 +40,8 @@ const LanguageSelector = ({ withHome, ...otherProps }) => {
             name="language-selector"
             value={currentShortLang}
             onChange={changeLang}
-            aria-label="select language">
+            aria-label="select language"
+          >
             {languages.map((lang) => (
               <option value={lang} key={lang}>
                 {lang}

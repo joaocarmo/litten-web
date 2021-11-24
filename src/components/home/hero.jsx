@@ -57,7 +57,8 @@ const Hero = ({ t }) => {
           backgroundSize: 'cover',
           backgroundPosition: 'center right',
           backgroundRepeat: 'no-repeat',
-        }}>
+        }}
+      >
         <div className="hero-left" role="gridcell">
           <GatsbyImage
             image={data?.logo?.childImageSharp?.gatsbyImageData}

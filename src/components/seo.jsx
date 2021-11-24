@@ -56,7 +56,8 @@ const SEO = ({ article, description, image, title }) => {
     <Helmet
       defaultTitle={defaultTitle}
       title={seo.title}
-      titleTemplate={titleTemplate}>
+      titleTemplate={titleTemplate}
+    >
       {/* General */}
       <html lang={lang} />
       <meta charSet="utf-8" />

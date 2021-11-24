@@ -8,7 +8,8 @@ const Form = ({ action, children, method, name, onSubmit, ...otherProps }) => (
     data-netlify="true"
     data-netlify-honeypot="bot-field"
     onSubmit={onSubmit}
-    {...otherProps}>
+    {...otherProps}
+  >
     <input type="hidden" name="form-name" value={name} />
     {children}
   </form>
