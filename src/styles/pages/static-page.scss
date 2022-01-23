@@ -79,3 +79,16 @@
     }
   }
 }
+
+.theme-dark {
+  color: $sepia;
+  background-color: $lightBlack;
+
+  p, li {
+    color: $sepia;
+  }
+
+  a {
+    color: $lightBlue;
+  }
+}

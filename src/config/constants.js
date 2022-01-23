@@ -6,6 +6,8 @@ export const deepLinkPrefix = '/open'
 
 export const inAppClass = 'in-app'
 
+export const themeClass = 'theme'
+
 export const verificationPath = 'verification'
 
 export const betaEnabled = false

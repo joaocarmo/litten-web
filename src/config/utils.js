@@ -1,6 +1,6 @@
 import Bowser from 'bowser'
 import { defaultLangKey } from '../locales'
-import { deepLinkPrefix, inAppClass } from './constants'
+import { deepLinkPrefix } from './constants'
 
 export const debugLog = (...args) => {
   if (process.env.NODE_ENV === 'development') {
@@ -49,12 +49,12 @@ export const getDeepLinkPath = () => {
   return ''
 }
 
-export const appendInAppClassToBody = () => {
+export const appendClassToBody = (className) => {
   if (
     typeof document !== 'undefined' &&
-    !document.body.classList.contains(inAppClass)
+    !document.body.classList.contains(className)
   ) {
-    document.body.classList.add(inAppClass)
+    document.body.classList.add(className)
   }
 }
 
