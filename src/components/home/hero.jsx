@@ -15,28 +15,24 @@ const Hero = ({ t }) => {
           gatsbyImageData(
             height: 72
             width: 72
-            placeholder: TRACED_SVG
+            placeholder: BLURRED
             layout: FIXED
           )
         }
       }
       main: file(relativePath: { eq: "hero-main.png" }) {
         childImageSharp {
-          gatsbyImageData(width: 220, placeholder: TRACED_SVG, layout: FIXED)
+          gatsbyImageData(width: 220, placeholder: BLURRED, layout: FIXED)
         }
       }
       secondary: file(relativePath: { eq: "hero-secondary.png" }) {
         childImageSharp {
-          gatsbyImageData(width: 220, placeholder: TRACED_SVG, layout: FIXED)
+          gatsbyImageData(width: 220, placeholder: BLURRED, layout: FIXED)
         }
       }
       bg: file(relativePath: { eq: "hero-bg.png" }) {
         childImageSharp {
-          gatsbyImageData(
-            quality: 90
-            placeholder: TRACED_SVG
-            layout: FULL_WIDTH
-          )
+          gatsbyImageData(quality: 90, placeholder: BLURRED, layout: FULL_WIDTH)
         }
       }
     }

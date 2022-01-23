@@ -8,12 +8,13 @@ import Layout from '../components/layout'
 import StaticContainer from '../components/static-container'
 import useCurrentShortLang from '../hooks/use-current-short-lang'
 import {
-  appendInAppClassToBody,
+  appendClassToBody,
   debugLog,
   getSearchParams,
   i18nUpdateLocation,
   useShare,
 } from '../config/utils'
+import { inAppClass, themeClass } from '../config/constants'
 import config from '../../package.json'
 
 const shareData = {
@@ -40,6 +41,11 @@ const StaticTemplate = ({
     return inapp === 'true'
   }, [])
 
+  const theme = useMemo(() => {
+    const { theme } = getSearchParams()
+    return typeof theme === 'string' ? theme : 'light'
+  }, [])
+
   const handleClick = useCallback(async (event) => {
     const {
       target: { nodeName = '', href = '' },
@@ -61,7 +67,10 @@ const StaticTemplate = ({
 
   useEffect(() => {
     if (inApp) {
-      appendInAppClassToBody()
+      const whichThemeClass = `${themeClass}-${theme}`
+
+      appendClassToBody(inAppClass)
+      appendClassToBody(whichThemeClass)
     }
   }, [inApp])
 

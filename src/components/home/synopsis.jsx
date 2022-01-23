@@ -9,7 +9,7 @@ const Synopsis = ({ t }) => {
     query SynopsisQuery {
       file(relativePath: { eq: "synopsis-img.png" }) {
         childImageSharp {
-          gatsbyImageData(height: 520, placeholder: TRACED_SVG, layout: FIXED)
+          gatsbyImageData(height: 520, placeholder: BLURRED, layout: FIXED)
         }
       }
     }

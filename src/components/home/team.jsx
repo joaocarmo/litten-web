@@ -11,7 +11,7 @@ const Team = ({ t }) => {
           gatsbyImageData(
             height: 260
             width: 260
-            placeholder: TRACED_SVG
+            placeholder: BLURRED
             layout: FIXED
           )
         }
@@ -22,7 +22,7 @@ const Team = ({ t }) => {
           gatsbyImageData(
             height: 260
             width: 260
-            placeholder: TRACED_SVG
+            placeholder: BLURRED
             layout: FIXED
           )
         }
@@ -33,7 +33,7 @@ const Team = ({ t }) => {
           gatsbyImageData(
             height: 260
             width: 260
-            placeholder: TRACED_SVG
+            placeholder: BLURRED
             layout: FIXED
           )
         }

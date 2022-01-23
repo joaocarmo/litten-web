@@ -1,21 +1,17 @@
 module.exports = {
-  env: {
-    browser: true,
-    es2020: true,
-  },
-  extends: [
-    'plugin:react/recommended',
-    'plugin:react-hooks/recommended',
-    'airbnb',
-    'prettier',
-  ],
+  root: true,
   parserOptions: {
     ecmaFeatures: {
       jsx: true,
     },
-    ecmaVersion: 11,
+    ecmaVersion: 13,
     sourceType: 'module',
   },
+  env: {
+    browser: true,
+    es2020: true,
+  },
+  extends: ['airbnb', 'airbnb/hooks', 'plugin:prettier/recommended'],
   plugins: ['react'],
   rules: {
     'react/jsx-closing-bracket-location': 'off',
