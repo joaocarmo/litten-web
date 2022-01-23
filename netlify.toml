@@ -1,6 +1,6 @@
 [[redirects]]
   from = "/app-store"
-  to = "https://apps.apple.com/pt/app/litten/id1543915955?l=en"
+  to = "https://apps.apple.com/pt/app/litten/id1543915955"
   status = 301
   force = false
 
