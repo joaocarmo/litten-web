@@ -44,7 +44,7 @@ You can reach us through the email [help@litten.app][helpmail].
 <!-- References -->
 
 [code]: https://github.com/joaocarmo/litten-app
-[coffee]: https://www.buymeacoffee.com/litten
+[coffee]: https://ko-fi.com/littenapp
 [helpmail]: mailto:help@litten.app
 [share]: #share
 [work]: /join-us
