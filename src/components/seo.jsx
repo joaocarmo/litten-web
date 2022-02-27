@@ -63,7 +63,10 @@ const SEO = ({ article, description, image, title }) => {
       <meta charSet="utf-8" />
       <meta name="description" content={seo.description} />
       <meta name="image" content={seo.image} />
-      <meta httpEquiv="Content-Security-Policy" content="default-src 'self';" />
+      <meta
+        httpEquiv="Content-Security-Policy"
+        content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data:;"
+      />
       <link rel="canonical" href={seo.url} />
       {/* Insert schema.org data (webpage/article) */}
       {!article && (

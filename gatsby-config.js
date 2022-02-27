@@ -4,6 +4,8 @@ const config = require('./package.json')
 const colors = require('./src/config/colors')
 const languages = require('./src/locales')
 
+const isDev = process.env.NODE_ENV === 'development'
+
 const description = [
   enCommon.featureAdoptionText,
   enCommon.featureLostText,
@@ -23,10 +25,12 @@ module.exports = {
     twitterUsername: '@littenapp',
   },
   flags: {
-    DETECT_NODE_MUTATIONS: true,
-    FAST_DEV: true,
+    DETECT_NODE_MUTATIONS: isDev,
+    DEV_WEBPACK_CACHE: isDev,
+    FAST_DEV: isDev,
     PARALLEL_SOURCING: false,
-    PRESERVE_FILE_DOWNLOAD_CACHE: true,
+    PRESERVE_FILE_DOWNLOAD_CACHE: isDev,
+    PRESERVE_WEBPACK_CACHE: isDev,
   },
   plugins: [
     'gatsby-plugin-netlify',
