@@ -30,7 +30,6 @@ module.exports = {
     FAST_DEV: isDev,
     PARALLEL_SOURCING: false,
     PRESERVE_FILE_DOWNLOAD_CACHE: isDev,
-    PRESERVE_WEBPACK_CACHE: isDev,
   },
   plugins: [
     'gatsby-plugin-netlify',
