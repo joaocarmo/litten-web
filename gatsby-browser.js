@@ -1,6 +1,7 @@
 import config from './package.json'
-import './src/config/i18n'
 import 'normalize.css'
+import './src/config/trusted-security-policies'
+import './src/config/i18n'
 import './src/styles/global.scss'
 
 const polyfillIntersectionObserver = () => {
