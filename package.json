@@ -30,12 +30,13 @@
     "lint:fix": "eslint --fix . && stylelint ./src/**/*.scss --fix",
     "lint": "eslint . && stylelint ./src/**/*.scss",
     "postinstall": "patch-package",
+    "prepare": "husky install",
     "pretty:fix": "prettier --write .",
     "pretty": "prettier --check .",
     "push": "git add . && gitmoji -c && git push",
     "serve": "gatsby serve",
     "start": "gatsby develop --port 8001",
-    "prepare": "husky install"
+    "test": "echo \"Error: no test specified\" && exit "
   },
   "lint-staged": {
     "*.js": "eslint --cache --fix",

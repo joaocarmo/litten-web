@@ -14,6 +14,13 @@ module.exports = {
   extends: ['airbnb', 'airbnb/hooks', 'plugin:prettier/recommended'],
   plugins: ['react'],
   rules: {
+    'react/function-component-definition': [
+      'error',
+      {
+        namedComponents: 'arrow-function',
+        unnamedComponents: 'arrow-function',
+      },
+    ],
     'react/jsx-closing-bracket-location': 'off',
     'react/jsx-no-literals': ['error', { noStrings: true, ignoreProps: true }],
     'react/jsx-props-no-spreading': 'off',
