@@ -3,6 +3,9 @@
   [headers.values]
     Content-Security-Policy = "default-src 'self';"
 
+[[plugins]]
+  package = "@netlify/plugin-gatsby"
+
 [[redirects]]
   from = "/app-store"
   to = "https://apps.apple.com/pt/app/litten/id1543915955"

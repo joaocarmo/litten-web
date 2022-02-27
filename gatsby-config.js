@@ -29,6 +29,7 @@ module.exports = {
     PRESERVE_FILE_DOWNLOAD_CACHE: true,
   },
   plugins: [
+    'gatsby-plugin-netlify',
     {
       resolve: 'gatsby-plugin-nprogress',
       options: {
