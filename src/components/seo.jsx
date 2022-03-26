@@ -5,6 +5,8 @@ import { useStaticQuery, graphql } from 'gatsby'
 import useCurrentShortLang from '../hooks/use-current-short-lang'
 import { genSchemaOrgWebPage } from '../config/schema'
 
+const isDev = process.env.NODE_ENV === 'development'
+
 const SEO = ({ article, description, image, title }) => {
   const { pathname } = useLocation()
   const [lang = 'en'] = useCurrentShortLang()
@@ -63,10 +65,12 @@ const SEO = ({ article, description, image, title }) => {
       <meta charSet="utf-8" />
       <meta name="description" content={seo.description} />
       <meta name="image" content={seo.image} />
-      <meta
-        httpEquiv="Content-Security-Policy"
-        content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; base-uri 'self'; form-action 'self'; object-src 'none'; worker-src 'self'; child-src 'self'; frame-src 'self'; connect-src 'self'; font-src 'self'; manifest-src 'self'; media-src 'self'; prefetch-src 'self'; require-trusted-types-for 'script'; block-all-mixed-content"
-      />
+      {!isDev && (
+        <meta
+          httpEquiv="Content-Security-Policy"
+          content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; base-uri 'self'; form-action 'self'; object-src 'none'; worker-src 'self'; child-src 'self'; frame-src 'self'; connect-src 'self'; font-src 'self'; manifest-src 'self'; media-src 'self'; prefetch-src 'self'; require-trusted-types-for 'script'; block-all-mixed-content"
+        />
+      )}
       <link rel="canonical" href={seo.url} />
       {/* Insert schema.org data (webpage/article) */}
       {!article && (

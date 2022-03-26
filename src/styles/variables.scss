@@ -1,6 +1,9 @@
+@use "sass:math";
+
 // Assets
-$chevronIcon: url('../images/chevron-icon.svg');
-$globeIcon: url('../images/globe-icon.svg');
+$imagesBasePath: "../images";
+$chevronIcon: url("#{$imagesBasePath}/chevron-icon.svg");
+$globeIcon: url("#{$imagesBasePath}/globe-icon.svg");
 // Colors
 $black: #000;
 $blue: #39a4f2;
@@ -46,7 +49,7 @@ $outterPadding: 24px;
 $staticPadding: 45px;
 $synopsisContainerRatio: 0.75;
 $synopsisImgHeight: 520px;
-$synopsisImgOffset: (1 - $synopsisContainerRatio) * $synopsisImgHeight / 2;
+$synopsisImgOffset: math.div((1 - $synopsisContainerRatio) * $synopsisImgHeight, 2);
 $tabletBreakpoint: 961px;
 $teamMemberSize: 260px;
 $teamPhotoSize: 0.75 * $teamMemberSize;

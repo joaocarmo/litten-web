@@ -50,7 +50,7 @@ const Team = ({ t }) => {
         publicURL: data?.joao?.publicURL,
       },
       name: 'João Carmo',
-      jobTitle: 'co-CEO & Lead Engineer',
+      jobTitle: 'CEO & Lead Engineer',
     },
     {
       key: 'tania',
@@ -59,7 +59,7 @@ const Team = ({ t }) => {
         publicURL: data?.tania?.publicURL,
       },
       name: 'Tânia Matos',
-      jobTitle: 'co-CEO & Lead Designer',
+      jobTitle: 'Lead Designer',
     },
     {
       key: 'james',
