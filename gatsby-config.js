@@ -26,7 +26,6 @@ module.exports = {
   },
   flags: {
     DETECT_NODE_MUTATIONS: isDev,
-    DEV_WEBPACK_CACHE: isDev,
     FAST_DEV: isDev,
     PARALLEL_SOURCING: false,
     PRESERVE_FILE_DOWNLOAD_CACHE: isDev,
