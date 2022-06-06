@@ -39,8 +39,13 @@
   "langPortuguese": "Portuguese",
   "lastUpdatedOn": "Last updated",
   "notFoundButton": "Go home",
-  "notFoundContent": "It seems like you're lost... Use Litten to find your way back!",
-  "notFoundTitle": "Lost Litten <1>{{errorCode}}</1>!",
+  "notFoundContent": [
+    "Are you a little lost? Don't worry, find home with Litten.",
+    "Did you find your neighbour's yard by mistake? Use Litten to go back home!",
+    "Did you lose your way? Don't worry, Litten will get you home.",
+    "Venture too far this time? Use Litten to return home!"
+  ],
+  "notFoundTitle": "Lost Litten <1>404</1>!",
   "playStoreImgAlt": "Get Litten on the Play Store",
   "synopsisText": "Litten helps connect people looking for a new pet with a suitable owner. The app helps an adopter find a pet that matches their lifestyle, considering factors like breed, gender, color, age, and a description of the owner. It also helps to look for a missing pet.",
   "synopsisTitle": "Free and Collaborative",

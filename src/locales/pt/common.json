@@ -39,7 +39,12 @@
   "langPortuguese": "Português",
   "lastUpdatedOn": "Última revisão",
   "notFoundButton": "Vai para casa",
-  "notFoundContent": "Pareces perdido... Usa a Litten para encontrares o teu caminho!",
+  "notFoundContent": [
+    "Aventuraste-te longe demais? Usa a Litten para regressar a casa!",
+    "Encontraste o jardim do teu vizinho por engano? Usa a Litten para regressares a casa!",
+    "Estás um pouco perdido? Não te preocupes! Encontra o teu caminho com a Litten.",
+    "Perdeste o teu caminho? Não te preocupes! Com a Litten chegas a casa."
+  ],
   "notFoundTitle": "Litten perdido <1>{{errorCode}}</1>!",
   "playStoreImgAlt": "Obtém a Litten na Play Store",
   "synopsisText": "A Litten ajuda pessoas com animais a encontrarem-se com pessoas que procuram animais. Com a nossa app podes encontrar o amigo ideal para ti, podendo filtrar por várias categorias como raça, género, cor, idade, ou informações do dono atual. Podes também encontrar o teu amigo perdido.",
