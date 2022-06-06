@@ -7,13 +7,14 @@ import { HOME } from '../config/link-refs'
 import badPuppy from '../images/404.svg'
 
 const NotFound = ({ t }) => {
-  const notFoundRandom = t('notFoundContent', {
-    returnObjects: true,
-  })
-  const randomIndex = useMemo(
-    () => Math.floor(Math.random() * notFoundRandom.length),
-    [notFoundRandom.length],
-  )
+  const notFoundContent = useMemo(() => {
+    const notFoundRandom = t('notFoundContent', {
+      returnObjects: true,
+    })
+    const randomIndex = Math.floor(Math.random() * notFoundRandom.length)
+
+    return notFoundRandom[randomIndex]
+  }, [t])
 
   return (
     <Layout>
@@ -25,7 +26,7 @@ const NotFound = ({ t }) => {
               Lost Litten <mark>errorCode</mark>!{/* eslint-enable */}
             </Trans>
           </h1>
-          <p>{notFoundRandom[randomIndex]}</p>
+          <p>{notFoundContent}</p>
         </section>
         <article className="not-found-image">
           <img src={badPuppy} alt="404" className="not-found" />
