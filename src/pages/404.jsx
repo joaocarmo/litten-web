@@ -1,3 +1,4 @@
+import { useMemo } from 'react'
 import PropTypes from 'prop-types'
 import { Link } from 'gatsby'
 import { Trans, withTranslation } from 'react-i18next'
@@ -9,7 +10,10 @@ const NotFound = ({ t }) => {
   const notFoundRandom = t('notFoundContent', {
     returnObjects: true,
   })
-  const randomIndex = Math.floor(Math.random() * notFoundRandom.length)
+  const randomIndex = useMemo(
+    () => Math.floor(Math.random() * notFoundRandom.length),
+    [notFoundRandom.length],
+  )
 
   return (
     <Layout>
