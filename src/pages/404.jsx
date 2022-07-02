@@ -1,4 +1,4 @@
-import { useMemo } from 'react'
+import { useEffect, useMemo, useState } from 'react'
 import PropTypes from 'prop-types'
 import { Link } from 'gatsby'
 import { Trans, withTranslation } from 'react-i18next'
@@ -7,6 +7,8 @@ import { HOME } from '../config/link-refs'
 import badPuppy from '../images/404.svg'
 
 const NotFound = ({ t }) => {
+  const [isClient, setClient] = useState(false)
+
   const notFoundContent = useMemo(() => {
     const notFoundRandom = t('notFoundContent', {
       returnObjects: true,
@@ -15,6 +17,8 @@ const NotFound = ({ t }) => {
 
     return notFoundRandom[randomIndex]
   }, [t])
+
+  useEffect(() => setClient(true), [])
 
   return (
     <Layout>
@@ -26,7 +30,7 @@ const NotFound = ({ t }) => {
               Lost Litten <mark>errorCode</mark>!{/* eslint-enable */}
             </Trans>
           </h1>
-          <p>{notFoundContent}</p>
+          <p>{isClient && notFoundContent}</p>
         </section>
         <article className="not-found-image">
           <img src={badPuppy} alt="404" className="not-found" />
