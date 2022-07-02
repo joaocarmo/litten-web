@@ -3,8 +3,8 @@
   grid-template-columns: 1fr 3fr;
   grid-template-rows: 1fr 1fr;
   grid-template-areas:
-    "not-found-text not-found-image"
-    "not-found-button not-found-image";
+    'not-found-text not-found-image'
+    'not-found-button not-found-image';
   height: 100vh;
   padding: 1.5em;
   width: 100%;
@@ -19,6 +19,10 @@
 
   * {
     text-align: left;
+  }
+
+  p {
+    min-height: 2.5em;
   }
 }
 
@@ -51,15 +55,31 @@ a.button {
   border-radius: 2px;
 }
 
+.cursor {
+  display: inline-block;
+  background: $white;
+  line-height: 17px;
+  margin-left: 3px;
+  animation: blink 0.8s infinite;
+  width: 7px;
+  height: 15px;
+}
+
+@keyframes blink {
+  0% {background: $darkGray}
+  50% {background: $white}
+  100% {background: $darkGray}
+}
+
 @media screen and (max-width: $mobileBreakpoint) {
   .not-found-grid {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 2fr 4fr 1fr;
     grid-template-areas:
-      "not-found-text"
-      "not-found-image"
-      "not-found-button";
+      'not-found-text'
+      'not-found-image'
+      'not-found-button';
     padding: 0.5em;
   }
 

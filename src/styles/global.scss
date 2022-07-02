@@ -1,13 +1,13 @@
 /* Global Styles */
-@import './variables.scss';
-@import './components/layout.scss';
-@import './components/form.scss';
-@import './components/language-selector.scss';
-@import './components/store-badges.scss';
-@import './pages/index.scss';
-@import './pages/404.scss';
-@import './pages/join-beta.scss';
-@import './pages/static-page.scss';
+@import './variables';
+@import './components/layout';
+@import './components/form';
+@import './components/language-selector';
+@import './components/store-badges';
+@import './pages/index';
+@import './pages/404';
+@import './pages/join-beta';
+@import './pages/static-page';
 
 html {
   box-sizing: border-box;
