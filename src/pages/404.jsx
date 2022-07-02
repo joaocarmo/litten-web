@@ -19,7 +19,7 @@ const NotFound = ({ t }) => {
   }, [t])
 
   useEffect(() => {
-    setTimeout(() => setClient(true), 2000)
+    setClient(true)
   }, [])
 
   return (
