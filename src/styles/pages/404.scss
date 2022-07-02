@@ -3,8 +3,8 @@
   grid-template-columns: 1fr 3fr;
   grid-template-rows: 1fr 1fr;
   grid-template-areas:
-    "not-found-text not-found-image"
-    "not-found-button not-found-image";
+    'not-found-text not-found-image'
+    'not-found-button not-found-image';
   height: 100vh;
   padding: 1.5em;
   width: 100%;
@@ -57,9 +57,9 @@ a.button {
     grid-template-columns: 1fr;
     grid-template-rows: 2fr 4fr 1fr;
     grid-template-areas:
-      "not-found-text"
-      "not-found-image"
-      "not-found-button";
+      'not-found-text'
+      'not-found-image'
+      'not-found-button';
     padding: 0.5em;
   }
 
