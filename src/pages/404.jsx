@@ -18,7 +18,9 @@ const NotFound = ({ t }) => {
     return notFoundRandom[randomIndex]
   }, [t])
 
-  useEffect(() => setClient(true), [])
+  useEffect(() => {
+    setTimeout(() => setClient(true), 2000)
+  }, [])
 
   return (
     <Layout>
@@ -30,7 +32,10 @@ const NotFound = ({ t }) => {
               Lost Litten <mark>errorCode</mark>!{/* eslint-enable */}
             </Trans>
           </h1>
-          <p>{isClient && notFoundContent}</p>
+          <p>
+            {!isClient && <span className="cursor" />}
+            {isClient && notFoundContent}
+          </p>
         </section>
         <article className="not-found-image">
           <img src={badPuppy} alt="404" className="not-found" />

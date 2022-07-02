@@ -20,6 +20,10 @@
   * {
     text-align: left;
   }
+
+  p {
+    min-height: 2.5em;
+  }
 }
 
 .not-found-image {
@@ -49,6 +53,22 @@ a.button {
   text-decoration: none;
   padding: 14px 28px;
   border-radius: 2px;
+}
+
+.cursor {
+  display: inline-block;
+  background: $white;
+  line-height: 17px;
+  margin-left: 3px;
+  animation: blink 0.8s infinite;
+  width: 7px;
+  height: 15px;
+}
+
+@keyframes blink {
+  0% {background: $darkGray}
+  50% {background: $white}
+  100% {background: $darkGray}
 }
 
 @media screen and (max-width: $mobileBreakpoint) {
