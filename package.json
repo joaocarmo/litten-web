@@ -63,7 +63,7 @@
     "gatsby-remark-external-links": "^0.0.4",
     "gatsby-source-filesystem": "^4.17.0",
     "gatsby-transformer-remark": "^5.18.0",
-    "gatsby-transformer-sharp": "^4.17.0",
+    "gatsby-transformer-sharp": "^4.18.0",
     "i18next": "^21.8.13",
     "i18next-browser-languagedetector": "^6.1.3",
     "intersection-observer": "^0.12.2",
@@ -95,6 +95,6 @@
     "stylelint": "^14.9.1",
     "stylelint-config-prettier": "^9.0.3",
     "stylelint-config-recommended-scss": "^6.0.0",
-    "stylelint-scss": "^4.1.0"
+    "stylelint-scss": "^4.3.0"
   }
 }
