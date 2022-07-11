@@ -6203,10 +6203,10 @@ gatsby-plugin-sass@^5.18.0:
     resolve-url-loader "^3.1.4"
     sass-loader "^10.1.1"
 
-gatsby-plugin-sharp@^4.17.0:
-  version "4.17.0"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-sharp/-/gatsby-plugin-sharp-4.17.0.tgz#157901c4e3ac728f562d08d4a846fa1bd888a81c"
-  integrity sha512-+wP4hskMBSNgPYqBX2uqoqb5JUtMMvaZTzYNkZmnKkg85rHeDpUy+eMoCqrhh8wpW/NgcbQ9o6uK43jj2qv0xQ==
+gatsby-plugin-sharp@^4.18.0:
+  version "4.18.0"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-sharp/-/gatsby-plugin-sharp-4.18.0.tgz#31f04aba2f95f02cb036ac623430c6b732bd6a0d"
+  integrity sha512-ExGzy8xAwc5+4nDHgGe1k8Id/HZpETPSizLNeJ5We3T4hjshdfgvnuRiAZf2VIY60+VPuVCezYNn4n7gPTShRw==
   dependencies:
     "@babel/runtime" "^7.15.4"
     "@gatsbyjs/potrace" "^2.2.0"
@@ -6215,10 +6215,10 @@ gatsby-plugin-sharp@^4.17.0:
     debug "^4.3.4"
     filenamify "^4.3.0"
     fs-extra "^10.1.0"
-    gatsby-core-utils "^3.17.0"
-    gatsby-plugin-utils "^3.11.0"
-    gatsby-telemetry "^3.17.0"
-    got "^11.8.3"
+    gatsby-core-utils "^3.18.0"
+    gatsby-plugin-utils "^3.12.0"
+    gatsby-telemetry "^3.18.0"
+    got "^11.8.5"
     lodash "^4.17.21"
     mini-svg-data-uri "^1.4.4"
     probe-image-size "^7.2.3"
@@ -6757,7 +6757,7 @@ globjoin@^0.1.4:
   resolved "https://registry.yarnpkg.com/globjoin/-/globjoin-0.1.4.tgz#2f4494ac8919e3767c5cbb691e9f463324285d43"
   integrity sha512-xYfnw62CKG8nLkZBfWbhWwDw02CHty86jfPcc2cr3ZfeuK9ysoVPPEUxf21bAD/rWAgk52SuBrLJlefNy8mvFg==
 
-got@^11.8.2, got@^11.8.3, got@^11.8.5:
+got@^11.8.2, got@^11.8.5:
   version "11.8.5"
   resolved "https://registry.yarnpkg.com/got/-/got-11.8.5.tgz#ce77d045136de56e8f024bebb82ea349bc730046"
   integrity sha512-o0Je4NvQObAuZPHLFoRSkdG2lTgtcynqymzg2Vupdx6PorhaT5MCbIyXG6d4D94kk8ZG57QeosgdiqfJWhEhlQ==
