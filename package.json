@@ -59,7 +59,7 @@
     "gatsby-plugin-sass": "^5.18.0",
     "gatsby-plugin-sharp": "^4.18.1",
     "gatsby-plugin-typography": "^4.18.0",
-    "gatsby-remark-autolink-headers": "^5.18.0",
+    "gatsby-remark-autolink-headers": "^5.18.1",
     "gatsby-remark-external-links": "^0.0.4",
     "gatsby-source-filesystem": "^4.18.0",
     "gatsby-transformer-remark": "^5.18.0",
