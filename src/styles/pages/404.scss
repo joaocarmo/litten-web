@@ -66,9 +66,15 @@ a.button {
 }
 
 @keyframes blink {
-  0% {background: $darkGray}
-  50% {background: $white}
-  100% {background: $darkGray}
+  0% {
+    background: $darkGray;
+  }
+  50% {
+    background: $white;
+  }
+  100% {
+    background: $darkGray;
+  }
 }
 
 @media screen and (max-width: $mobileBreakpoint) {
