@@ -3,46 +3,65 @@ import { useStaticQuery, graphql } from 'gatsby'
 import { GatsbyImage, getImage } from 'gatsby-plugin-image'
 import BackgroundImage from 'gatsby-background-image'
 import { Trans, withTranslation } from 'react-i18next'
-import StoreBadges from '../store-badges'
+import useIsClient from '../../hooks/use-is-client'
 import colors from '../../config/colors'
 import { convertToBgImage } from '../../config/utils'
+import StoreBadges from '../store-badges'
 
-const Hero = ({ t }) => {
-  const data = useStaticQuery(graphql`
-    query HeroQuery {
-      logo: file(relativePath: { eq: "square-logo.png" }) {
-        childImageSharp {
-          gatsbyImageData(
-            height: 72
-            width: 72
-            placeholder: BLURRED
-            layout: FIXED
-          )
-        }
-      }
-      main: file(relativePath: { eq: "hero-main.png" }) {
-        childImageSharp {
-          gatsbyImageData(width: 220, placeholder: BLURRED, layout: FIXED)
-        }
-      }
-      secondary: file(relativePath: { eq: "hero-secondary.png" }) {
-        childImageSharp {
-          gatsbyImageData(width: 220, placeholder: BLURRED, layout: FIXED)
-        }
-      }
-      bg: file(relativePath: { eq: "hero-bg.png" }) {
-        childImageSharp {
-          gatsbyImageData(quality: 90, placeholder: BLURRED, layout: FULL_WIDTH)
-        }
+const query = graphql`
+  query HeroQuery {
+    logo: file(relativePath: { eq: "square-logo.png" }) {
+      childImageSharp {
+        gatsbyImageData(
+          height: 72
+          width: 72
+          placeholder: BLURRED
+          layout: FIXED
+        )
       }
     }
-  `)
+    main: file(relativePath: { eq: "hero-main.png" }) {
+      childImageSharp {
+        gatsbyImageData(width: 220, placeholder: BLURRED, layout: FIXED)
+      }
+    }
+    secondary: file(relativePath: { eq: "hero-secondary.png" }) {
+      childImageSharp {
+        gatsbyImageData(width: 220, placeholder: BLURRED, layout: FIXED)
+      }
+    }
+    bg: file(relativePath: { eq: "hero-bg.png" }) {
+      childImageSharp {
+        gatsbyImageData(quality: 90, placeholder: BLURRED, layout: FULL_WIDTH)
+      }
+    }
+  }
+`
 
+const Hero = ({ t }) => {
+  const data = useStaticQuery(query)
   const image = getImage(data?.bg)
   const bgImage = convertToBgImage(image)
 
+  const { isClient, key } = useIsClient()
+
+  if (!isClient) {
+    return (
+      <div className="hero-container fade-in" role="banner" key={key}>
+        <div id="hero" role="grid">
+          <p className="hero-loader">
+            {
+              // eslint-disable-next-line react/jsx-no-literals
+              '🐶 🐱 🐷 🐭 🐰'
+            }
+          </p>
+        </div>
+      </div>
+    )
+  }
+
   return (
-    <div className="hero-container" role="banner">
+    <div className="hero-container" role="banner" key={key}>
       <BackgroundImage
         {...bgImage}
         Tag="section"
