@@ -98,7 +98,30 @@
         width: $heroMobileImageWidth !important;
       }
     }
+
+    .hero-loader {
+      font-size: xxx-large;
+      text-align: center;
+      width: 100%;
+    }
   }
+}
+
+.fade-in {
+	opacity: 1;
+	animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 2s;
+}
+
+@keyframes fadeInOpacity {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
 }
 
 @media screen and (max-width: 0.9 * $maxWidthDesktop) {
