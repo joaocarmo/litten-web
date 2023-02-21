@@ -1006,10 +1006,10 @@
     "@babel/helper-validator-option" "^7.18.6"
     "@babel/plugin-transform-typescript" "^7.18.6"
 
-"@babel/runtime@^7.0.0", "@babel/runtime@^7.12.5", "@babel/runtime@^7.16.5", "@babel/runtime@^7.16.7", "@babel/runtime@^7.19.4", "@babel/runtime@^7.20.6", "@babel/runtime@^7.20.7", "@babel/runtime@^7.8.4", "@babel/runtime@^7.9.2":
-  version "7.20.13"
-  resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.20.13.tgz#7055ab8a7cff2b8f6058bf6ae45ff84ad2aded4b"
-  integrity sha512-gt3PKXs0DBoL9xCvOIIZ2NEqAGZqHjAnmVbfQtB620V0uReIQutpel14KcneZuer7UioY8ALKZ7iocavvzTNFA==
+"@babel/runtime@^7.0.0", "@babel/runtime@^7.12.5", "@babel/runtime@^7.16.5", "@babel/runtime@^7.16.7", "@babel/runtime@^7.19.4", "@babel/runtime@^7.20.13", "@babel/runtime@^7.20.6", "@babel/runtime@^7.20.7", "@babel/runtime@^7.8.4", "@babel/runtime@^7.9.2":
+  version "7.21.0"
+  resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.21.0.tgz#5b55c9d394e5fcf304909a8b00c07dc217b56673"
+  integrity sha512-xwII0//EObnq89Ji5AKYQaRYiW/nZ3llSv29d49IuxPhKbtJoLP+9QUUZ4nVragQVtaVGeZrpB+ZtG/Pdy/POw==
   dependencies:
     regenerator-runtime "^0.13.11"
 
@@ -5425,12 +5425,12 @@ gatsby-cli@^5.5.0:
     yoga-layout-prebuilt "^1.10.0"
     yurnalist "^2.1.0"
 
-gatsby-core-utils@^4.0.0, gatsby-core-utils@^4.5.0:
-  version "4.5.0"
-  resolved "https://registry.yarnpkg.com/gatsby-core-utils/-/gatsby-core-utils-4.5.0.tgz#728ef510ee987839628f704cf849347f3e60dbcc"
-  integrity sha512-8ckCNXB7iasqLLoBTJLDzXwUcJ/cNUZVHo3+3cyMA9CLc8pfZiXtlp5qaOl0J+Q1qdorfENAnTvNEddXABfIZw==
+gatsby-core-utils@^4.0.0, gatsby-core-utils@^4.5.0, gatsby-core-utils@^4.7.0:
+  version "4.7.0"
+  resolved "https://registry.yarnpkg.com/gatsby-core-utils/-/gatsby-core-utils-4.7.0.tgz#f2c9d74da334979b0ae847bc6cfe283670c2f752"
+  integrity sha512-J8bjc+ASIfkrNbbOTvHbqgPtj/scgmLVB9rGuItZrbJyyHqyB6NLNbJeN8tHL//fjQ8B3vwyoHy6B09TMLQitQ==
   dependencies:
-    "@babel/runtime" "^7.20.7"
+    "@babel/runtime" "^7.20.13"
     ci-info "2.0.0"
     configstore "^5.0.1"
     fastq "^1.13.0"
@@ -5723,13 +5723,13 @@ gatsby-telemetry@^4.5.0:
     lodash "^4.17.21"
     node-fetch "^2.6.7"
 
-gatsby-transformer-remark@^6.5.0:
-  version "6.5.0"
-  resolved "https://registry.yarnpkg.com/gatsby-transformer-remark/-/gatsby-transformer-remark-6.5.0.tgz#7a0489248671bb142dac34214fa546d8239f2bb8"
-  integrity sha512-8YnoXcJISesK/ch8qZzmp+jewCi4xnnDHpBQWcIg/zTQ5jhyLI+CGYiAyRlxqbJ1f7Tkjp2K+M/CiJG5r28Jsw==
+gatsby-transformer-remark@^6.7.0:
+  version "6.7.0"
+  resolved "https://registry.yarnpkg.com/gatsby-transformer-remark/-/gatsby-transformer-remark-6.7.0.tgz#09943f9f03c4eac9c65ab963b98f7ca55f32272e"
+  integrity sha512-Ieac33Y8Q74pvoWPN67QCXu34O1Qs2AL1tuyaCGnkYlaw3vqKb2SJfBuu3+8iW6b//GkWnBYd7HqZ46vQIG+vw==
   dependencies:
-    "@babel/runtime" "^7.20.7"
-    gatsby-core-utils "^4.5.0"
+    "@babel/runtime" "^7.20.13"
+    gatsby-core-utils "^4.7.0"
     gray-matter "^4.0.3"
     hast-util-raw "^6.1.0"
     hast-util-to-html "^7.1.3"
