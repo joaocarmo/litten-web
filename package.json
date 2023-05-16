@@ -50,7 +50,7 @@
     "dompurify": "^3.0.3",
     "gatsby": "^5.9.1",
     "gatsby-background-image": "^1.6.0",
-    "gatsby-cli": "^5.9.0",
+    "gatsby-cli": "^5.10.0",
     "gatsby-plugin-i18n": "^1.0.1",
     "gatsby-plugin-image": "^3.9.0",
     "gatsby-plugin-manifest": "^5.9.0",
