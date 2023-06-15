@@ -61,7 +61,7 @@
     "gatsby-plugin-typography": "^5.9.0",
     "gatsby-remark-autolink-headers": "^6.9.0",
     "gatsby-remark-external-links": "^0.0.4",
-    "gatsby-source-filesystem": "^5.9.0",
+    "gatsby-source-filesystem": "^5.11.0",
     "gatsby-transformer-remark": "^6.9.0",
     "gatsby-transformer-sharp": "^5.9.0",
     "i18next": "^22.4.15",
