@@ -48,7 +48,7 @@
     "bowser": "^2.11.0",
     "classnames": "^2.3.2",
     "dompurify": "^3.0.5",
-    "gatsby": "^5.12.4",
+    "gatsby": "^5.12.5",
     "gatsby-background-image": "^1.6.0",
     "gatsby-cli": "^5.12.1",
     "gatsby-plugin-i18n": "^1.0.1",
@@ -78,7 +78,7 @@
     "typography": "^0.16.24"
   },
   "devDependencies": {
-    "eslint": "^8.49.0",
+    "eslint": "^8.50.0",
     "eslint-config-airbnb": "^19.0.4",
     "eslint-config-prettier": "^9.0.0",
     "eslint-plugin-import": "^2.28.1",
@@ -86,15 +86,15 @@
     "eslint-plugin-prettier": "^5.0.0",
     "eslint-plugin-react": "^7.33.2",
     "eslint-plugin-react-hooks": "^4.6.0",
-    "gatsby-plugin-netlify": "^5.1.0",
+    "gatsby-plugin-netlify": "^5.1.1",
     "husky": ">=8.0.3",
     "lint-staged": ">=14.0.1",
     "postcss-scss": "^4.0.8",
     "prettier": "^3.0.3",
-    "sass": "^1.67.0",
+    "sass": "^1.68.0",
     "stylelint": "^15.10.3",
     "stylelint-config-prettier": "^9.0.5",
     "stylelint-config-recommended-scss": "^13.0.0",
-    "stylelint-scss": "^5.2.0"
+    "stylelint-scss": "^5.2.1"
   }
 }
