@@ -27,8 +27,8 @@
   "scripts": {
     "build": "gatsby build",
     "clean": "gatsby clean",
-    "lint:fix": "eslint --fix . && stylelint ./src/**/*.scss --fix",
-    "lint": "eslint . && stylelint ./src/**/*.scss",
+    "lint:fix": "eslint . --ext .js,.jsx,.ts,.tsx . && stylelint ./src/**/*.scss --fix",
+    "lint": "eslint . --ext .js,.jsx,.ts,.tsx . && stylelint ./src/**/*.scss",
     "postinstall": "patch-package",
     "prepare": "husky install",
     "pretty:fix": "prettier --write .",
@@ -36,7 +36,8 @@
     "push": "git add . && gitmoji -c && git push",
     "serve": "gatsby serve",
     "start": "gatsby develop --port 8001",
-    "test": "echo \"Error: no test specified\" && exit 0"
+    "test": "echo \"Error: no test specified\" && exit 0",
+    "type-check": "tsc --noEmit"
   },
   "lint-staged": {
     "*.js": "eslint --cache --fix",
@@ -47,7 +48,7 @@
     "@reach/router": "^1.3.4",
     "bowser": "^2.11.0",
     "classnames": "^2.3.2",
-    "dompurify": "^3.0.5",
+    "dompurify": "^3.0.6",
     "gatsby": "^5.12.5",
     "gatsby-background-image": "^1.6.0",
     "gatsby-cli": "^5.12.1",
@@ -78,9 +79,19 @@
     "typography": "^0.16.24"
   },
   "devDependencies": {
+    "@types/dompurify": "^3.0.3",
+    "@types/node": "^20.8.2",
+    "@types/react": "^18.2.24",
+    "@types/react-dom": "^18.2.8",
+    "@types/react-helmet": "^6.1.7",
+    "@types/stylelint": "^14.0.0",
+    "@types/typography": "^0.16.5",
+    "@typescript-eslint/eslint-plugin": "^6.7.4",
+    "@typescript-eslint/parser": "^6.7.4",
     "eslint": "^8.50.0",
-    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-airbnb-typescript": "^17.1.0",
     "eslint-config-prettier": "^9.0.0",
+    "eslint-import-resolver-typescript": "^3.6.1",
     "eslint-plugin-import": "^2.28.1",
     "eslint-plugin-jsx-a11y": "^6.7.1",
     "eslint-plugin-prettier": "^5.0.0",
@@ -89,12 +100,13 @@
     "gatsby-plugin-netlify": "^5.1.1",
     "husky": ">=8.0.3",
     "lint-staged": ">=14.0.1",
-    "postcss-scss": "^4.0.8",
+    "postcss-scss": "^4.0.9",
     "prettier": "^3.0.3",
     "sass": "^1.68.0",
     "stylelint": "^15.10.3",
     "stylelint-config-prettier": "^9.0.5",
     "stylelint-config-recommended-scss": "^13.0.0",
-    "stylelint-scss": "^5.2.1"
+    "stylelint-scss": "^5.2.1",
+    "typescript": "^5.2.2"
   }
 }

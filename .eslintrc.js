@@ -1,18 +1,24 @@
 module.exports = {
   root: true,
+  parser: '@typescript-eslint/parser',
   parserOptions: {
     ecmaFeatures: {
       jsx: true,
     },
-    ecmaVersion: 13,
+    ecmaVersion: 12,
     sourceType: 'module',
+    project: './tsconfig.json',
   },
   env: {
     browser: true,
     es2020: true,
   },
-  extends: ['airbnb', 'airbnb/hooks', 'plugin:prettier/recommended'],
-  plugins: ['react'],
+  extends: [
+    'airbnb-typescript',
+    'plugin:react-hooks/recommended',
+    'plugin:prettier/recommended',
+  ],
+  plugins: ['@typescript-eslint', 'react', 'import'],
   rules: {
     'react/function-component-definition': [
       'error',
@@ -27,5 +33,18 @@ module.exports = {
     'react/jsx-uses-react': 'off',
     'react/react-in-jsx-scope': 'off',
     semi: ['error', 'never'],
+  },
+  settings: {
+    'import/parsers': {
+      '@typescript-eslint/parser': ['.ts', '.tsx'],
+    },
+    'import/resolver': {
+      typescript: {
+        alwaysTryTypes: true,
+      },
+    },
+    react: {
+      version: 'detect',
+    },
   },
 }
