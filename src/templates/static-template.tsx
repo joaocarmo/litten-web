@@ -1,6 +1,5 @@
 import { useCallback, useEffect, useMemo } from 'react'
 import type { FC } from 'react'
-import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 import { Helmet } from 'react-helmet'
 import { useTranslation } from 'react-i18next'
@@ -24,8 +23,25 @@ const shareData = {
   url: config.homepage,
 }
 
-const StaticTemplate: FC = ({
-  // @ts-expect-error
+interface StaticTemplateProps {
+  data: {
+    markdownRemark: {
+      fields: {
+        langKey: string
+        slug: string
+      }
+      frontmatter: {
+        title: string
+        date: string
+        toc: boolean
+      }
+      html: string
+      tableOfContents: string
+    }
+  }
+}
+
+const StaticTemplate: FC<StaticTemplateProps> = ({
   data: {
     markdownRemark: {
       fields: { langKey, slug },
@@ -115,28 +131,6 @@ const StaticTemplate: FC = ({
       </StaticContainer>
     </Layout>
   )
-}
-
-StaticTemplate.propTypes = {
-  data: PropTypes.shape({
-    markdownRemark: PropTypes.shape({
-      fields: PropTypes.shape({
-        langKey: PropTypes.string,
-        slug: PropTypes.string,
-      }),
-      frontmatter: PropTypes.shape({
-        title: PropTypes.string,
-        date: PropTypes.string,
-        toc: PropTypes.bool,
-      }),
-      html: PropTypes.string,
-      tableOfContents: PropTypes.string,
-    }),
-  }),
-}
-
-StaticTemplate.defaultProps = {
-  data: null,
 }
 
 export default StaticTemplate
