@@ -1,6 +1,4 @@
-import type { Config } from 'stylelint'
-
-const config: Config = {
+module.exports = {
   extends: ['stylelint-config-recommended-scss', 'stylelint-config-prettier'],
   plugins: ['stylelint-scss'],
   customSyntax: 'postcss-scss',
@@ -9,5 +7,3 @@ const config: Config = {
     'scss/at-rule-no-unknown': true,
   },
 }
-
-export default config

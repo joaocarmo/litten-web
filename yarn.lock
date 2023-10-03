@@ -2401,13 +2401,6 @@
   resolved "https://registry.yarnpkg.com/@types/semver/-/semver-7.5.3.tgz#9a726e116beb26c24f1ccd6850201e1246122e04"
   integrity sha512-OxepLK9EuNEIPxWNME+C6WwbRAOOI2o2BaQEGzz5Lu2e4Z5eDnEo+/aVEDMIXywoJitJ7xWd641wrGLZdtwRyw==
 
-"@types/stylelint@^14.0.0":
-  version "14.0.0"
-  resolved "https://registry.yarnpkg.com/@types/stylelint/-/stylelint-14.0.0.tgz#496503f0a25cab7fc69aca92b329860a8fa93a1a"
-  integrity sha512-0eFbWemetFjcDiBBKne7QJBfdicxdmdJ1qGMye3sDYe7mCh8EfuovjkUTg6zXvYhJcWBhIIQnC6bmFYjpYetgQ==
-  dependencies:
-    stylelint "*"
-
 "@types/tmp@^0.0.33":
   version "0.0.33"
   resolved "https://registry.yarnpkg.com/@types/tmp/-/tmp-0.0.33.tgz#1073c4bc824754ae3d10cfab88ab0237ba964e4d"
@@ -11179,7 +11172,7 @@ stylelint-scss@^5.1.0, stylelint-scss@^5.2.1:
     postcss-selector-parser "^6.0.13"
     postcss-value-parser "^4.2.0"
 
-stylelint@*, stylelint@^15.10.3:
+stylelint@^15.10.3:
   version "15.10.3"
   resolved "https://registry.yarnpkg.com/stylelint/-/stylelint-15.10.3.tgz#995e4512fdad450fb83e13f3472001f6edb6469c"
   integrity sha512-aBQMMxYvFzJJwkmg+BUUg3YfPyeuCuKo2f+LOw7yYbU8AZMblibwzp9OV4srHVeQldxvSFdz0/Xu8blq2AesiA==
