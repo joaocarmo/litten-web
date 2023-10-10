@@ -63,7 +63,7 @@
     "gatsby-remark-autolink-headers": "^6.12.0",
     "gatsby-remark-external-links": "^0.0.4",
     "gatsby-source-filesystem": "^5.12.0",
-    "gatsby-transformer-remark": "^6.12.0",
+    "gatsby-transformer-remark": "^6.12.1",
     "gatsby-transformer-sharp": "^5.12.0",
     "i18next": "^23.5.1",
     "i18next-browser-languagedetector": "^7.1.0",
