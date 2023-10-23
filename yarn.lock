@@ -6025,10 +6025,10 @@ gatsby-plugin-sass@^6.12.0:
     resolve-url-loader "^3.1.5"
     sass-loader "^10.4.1"
 
-gatsby-plugin-sharp@^5.12.0:
-  version "5.12.0"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-sharp/-/gatsby-plugin-sharp-5.12.0.tgz#a88a35895c70500b487699b0cc9a21aa58f440c5"
-  integrity sha512-of9E26/eLenTgNUjzFYJGbwIIGoXRCOCA1Dsz7dKvcx11b0pNf27C65AiEWPudWXHl+OUjFX/bNNBBooqN+nlg==
+gatsby-plugin-sharp@^5.12.2:
+  version "5.12.2"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-sharp/-/gatsby-plugin-sharp-5.12.2.tgz#2232c975be071fc766292fa5612b5eacb4115411"
+  integrity sha512-NjlqPxnuAhgy/WBPmMUqbTJ9ehh/qiNWUrJAOv2wDJaTcSEpZPqL3lI84yj2qRHF64iIoEWYSx31B4Sd0Mpw5Q==
   dependencies:
     "@babel/runtime" "^7.20.13"
     async "^3.2.4"
@@ -6037,11 +6037,11 @@ gatsby-plugin-sharp@^5.12.0:
     filenamify "^4.3.0"
     fs-extra "^11.1.1"
     gatsby-core-utils "^4.12.0"
-    gatsby-plugin-utils "^4.12.0"
+    gatsby-plugin-utils "^4.12.2"
     lodash "^4.17.21"
     probe-image-size "^7.2.3"
     semver "^7.5.3"
-    sharp "^0.32.1"
+    sharp "^0.32.6"
 
 gatsby-plugin-typescript@^5.12.0:
   version "5.12.0"
@@ -6063,16 +6063,16 @@ gatsby-plugin-typography@^5.12.0:
   dependencies:
     "@babel/runtime" "^7.20.13"
 
-gatsby-plugin-utils@^4.12.0:
-  version "4.12.0"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-utils/-/gatsby-plugin-utils-4.12.0.tgz#1f6143a4ffb223fb1d4988a12285c0d2403ed074"
-  integrity sha512-lU84VmWC9qGojROMZkBgGjCAzxcAUlyGAsd75vjj2y3yqGYtyvqInvK5tZvDyNNVvU21u040Ps4AKIvRVgMV/Q==
+gatsby-plugin-utils@^4.12.0, gatsby-plugin-utils@^4.12.2:
+  version "4.12.2"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-utils/-/gatsby-plugin-utils-4.12.2.tgz#8e6d3ceaca1f485ddf1e7da674b57c067564dd52"
+  integrity sha512-N5d+fxPd7cZ9KeTl0bHF1JM4MDB2hazXbcOI2gxS9rIL0vgbyBT/ffJ9uczNwJwQuGQPOWdXO6eCspjT4zKcqw==
   dependencies:
     "@babel/runtime" "^7.20.13"
     fastq "^1.15.0"
     fs-extra "^11.1.1"
     gatsby-core-utils "^4.12.0"
-    gatsby-sharp "^1.12.0"
+    gatsby-sharp "^1.12.1"
     graphql-compose "^9.0.10"
     import-from "^4.0.0"
     joi "^17.9.2"
@@ -6118,6 +6118,13 @@ gatsby-sharp@^1.12.0:
   integrity sha512-5MbTPKfzkOCtwT74+FZTUFKaul/2UyF10apvMcmIKomq71/jHf6wJx+rHtSdgyq19r4VWL8DGG2CKgSpe0z9GQ==
   dependencies:
     sharp "^0.32.1"
+
+gatsby-sharp@^1.12.1:
+  version "1.12.1"
+  resolved "https://registry.yarnpkg.com/gatsby-sharp/-/gatsby-sharp-1.12.1.tgz#e8dfe8ddfddb6176363c02f255272feb9819a82c"
+  integrity sha512-e7lqA74UZau7MOktc9V+sNh86a8oNZPFIsY5Atk+C0sGlzHx0IcivsJjwLHJ6OF11SIC38a9z2wE8Nl6YiG/Ig==
+  dependencies:
+    sharp "^0.32.6"
 
 gatsby-source-filesystem@^5.12.0:
   version "5.12.0"
@@ -10590,7 +10597,7 @@ shallow-compare@^1.2.2:
   resolved "https://registry.yarnpkg.com/shallow-compare/-/shallow-compare-1.2.2.tgz#fa4794627bf455a47c4f56881d8a6132d581ffdb"
   integrity sha512-LUMFi+RppPlrHzbqmFnINTrazo0lPNwhcgzuAXVVcfy/mqPDrQmHAyz5bvV0gDAuRFrk804V0HpQ6u9sZ0tBeg==
 
-sharp@^0.32.1:
+sharp@^0.32.1, sharp@^0.32.6:
   version "0.32.6"
   resolved "https://registry.yarnpkg.com/sharp/-/sharp-0.32.6.tgz#6ad30c0b7cd910df65d5f355f774aa4fce45732a"
   integrity sha512-KyLTWwgcR9Oe4d9HwCwNM2l7+J0dUQwn/yf7S0EnTtb0eVS4RxO0eUSvxPtzT4F3SY+C4K6fqdv/DO27sJ/v/w==
