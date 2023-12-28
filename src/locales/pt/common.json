@@ -36,6 +36,7 @@
   "joinBetaProgramSend": "Juntar",
   "joinBetaProgramTitle": "Junta-te ao nosso <1>programa beta</1>!",
   "langEnglish": "Inglês",
+  "langSpanish": "Espanhol",
   "langPortuguese": "Português",
   "lastUpdatedOn": "Última revisão",
   "notFoundButton": "Vai para casa",
@@ -55,6 +56,5 @@
   "thankYouDescription": "Agradecemos a tua submissão e entraremos em contacto brevemente.",
   "thankYouTitle": "Obrigado !",
   "upgradeBrowserNotice": "Estás a utilizar um navegador desatualizado que não suportamos. Considera atualizar para uma tecnologia de navegação mais moderna e segura.",
-  "upgradeBrowserNoticeClickHere": "Clica aqui para mais informação.",
-  "langSpanish": "Espanhol"
+  "upgradeBrowserNoticeClickHere": "Clica aqui para mais informação."
 }
