@@ -1,45 +1,47 @@
 ---
 date: '2023-12-28'
-title: 'Frequently Asked Questions'
+title: 'Preguntas Frecuentes'
 toc: true
 ---
 
-## How do I change my password?
+## ¿Cómo cambio mi contraseña?
 
-We're currently working to make this option available from the user's profile
-settings. Meanwhile, you can change your password using these steps:
+Actualmente estamos trabajando para hacer disponible esta opción desde la
+configuración del perfil del usuario. Mientras tanto, puedes cambiar tu
+contraseña siguiendo estos pasos:
 
-1. Sign out of Litten (from the profile settings screen)
-1. Go to the sign in screen (from the welcome screen)
-1. Type in a wrong password (but use the correct email address)
-1. The option to change your password will appear
-1. Follow the steps to change your password
+1. Cierra sesión en Litten (desde la pantalla de configuración del perfil)
+1. Ve a la pantalla de inicio de sesión (desde la pantalla de bienvenida)
+1. Introduce una contraseña incorrecta (pero usa la dirección de correo
+   electrónico correcta)
+1. Aparecerá la opción para cambiar tu contraseña
+1. Sigue los pasos para cambiar tu contraseña
 
-## I made a mistake creating a new Litten. How do I fix it?
+## Cometí un error creando un nuevo Litten. ¿Cómo lo arreglo?
 
-Unfortunately, we don't have the option to make changes to a Litten yet. It's
-something we want to introduce as soon as possible. As of now, the only
-option is to delete it and create a new one.
+Desafortunadamente, aún no tenemos la opción de hacer cambios en un Litten. Es
+algo que queremos introducir lo antes posible. Por ahora, la única
+opción es eliminarlo y crear uno nuevo.
 
-## Why don't I receive notifications?
+## ¿Por qué no recibo notificaciones?
 
-At the moment, we don't support remote push notifications. We count on you to
-check the app from time to time and see if you have updates or new messages.
-We know this might not be ideal and are currently working on improving the
-overall experience.
+En este momento, no admitimos notificaciones push remotas. Contamos con que
+revises la aplicación de vez en cuando para ver si tienes actualizaciones o
+nuevos mensajes. Sabemos que esto podría no ser lo ideal y estamos trabajando
+en mejorar la experiencia general.
 
-## How can I help?
+## ¿Cómo puedo ayudar?
 
-If you'd like to help our mission, there are many things you can do!
+Si te gustaría ayudar en nuestra misión, ¡hay muchas cosas que puedes hacer!
 
-1. [Work with us][work]
-1. [Tell your friends about us][share]
-1. [Contribute to our codebase][code]
-1. [Buy us a coffee][coffee]
+1. [Trabaja con nosotros][work]
+1. [Habla de nosotros a tus amigos][share]
+1. [Contribuye a nuestro código][code]
+1. [Cómpranos un café][coffee]
 
-## How can I contact the Litten Team?
+## ¿Cómo puedo contactar al Equipo de Litten?
 
-You can reach us through the email [help@litten.app][helpmail].
+Puedes contactarnos a través del correo electrónico [help@litten.app][helpmail].
 
 <!-- References -->
 
