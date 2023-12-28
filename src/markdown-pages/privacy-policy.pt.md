@@ -64,4 +64,4 @@ prevalece em caso de conflito.
 Se tiveres mais questões sobre esta Política de Privacidade, contacta-nos atavés
 do seguinte endereço de email:
 
-Email: help@litten.app
+Email: <help@litten.app>
