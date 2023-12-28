@@ -9,7 +9,7 @@ Web page for the litten app
 A development server will start on port `8001`.
 
 ```sh
-yarn start
+pnpm start
 ```
 
 ## Test Production
@@ -17,7 +17,7 @@ yarn start
 The production build can be tested locally.
 
 ```sh
-yarn build && yarn serve
+pnpm build && pnpm serve
 ```
 
 ## License
