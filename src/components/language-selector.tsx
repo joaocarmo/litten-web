@@ -1,8 +1,8 @@
-import { useEffect, useState } from 'react'
 import type { ChangeEventHandler, FC } from 'react'
 import { useTranslation } from 'react-i18next'
 import { Link } from 'gatsby'
 import useCurrentShortLang from '../hooks/use-current-short-lang'
+import locales from '../locales'
 
 interface LanguageSelectorProps {
   className?: string
@@ -13,23 +13,17 @@ const LanguageSelector: FC<LanguageSelectorProps> = ({
   withHome = false,
   ...otherProps
 }) => {
-  const [languages, setLanguages] = useState<string[]>([])
-
-  const { i18n, t } = useTranslation()
+  const { t } = useTranslation()
 
   const [currentShortLang, setCurrentShortLang] = useCurrentShortLang()
 
   const changeLang: ChangeEventHandler<HTMLSelectElement> = (event) => {
-    const newLang = event?.target?.value
+    const newLang = event.target.value
 
     if (newLang) {
       setCurrentShortLang(newLang)
     }
   }
-
-  useEffect(() => {
-    setLanguages([...(i18n?.languages || [])])
-  }, [i18n?.languages])
 
   return (
     <>
@@ -50,7 +44,7 @@ const LanguageSelector: FC<LanguageSelectorProps> = ({
             onChange={changeLang}
             aria-label="select language"
           >
-            {languages.map((lang) => (
+            {locales.langs.map((lang) => (
               <option value={lang} key={lang}>
                 {lang}
               </option>
