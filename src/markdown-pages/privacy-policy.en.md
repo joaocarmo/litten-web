@@ -201,4 +201,4 @@ If you are under 18 years of age, reside in California, and have a registered ac
 
 If you have questions or comments about this Privacy Policy, please contact us at:
 
-Email: help@litten.app
+Email: <help@litten.app>
