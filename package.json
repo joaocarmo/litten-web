@@ -30,6 +30,7 @@
     "lint:fix": "eslint . --ext .js,.jsx,.ts,.tsx . && stylelint ./src/**/*.scss --fix",
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx . && stylelint ./src/**/*.scss",
     "postinstall": "patch-package",
+    "preinstall": "npx only-allow pnpm",
     "prepare": "husky install",
     "pretty:fix": "prettier --write .",
     "pretty": "prettier --check .",
