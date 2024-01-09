@@ -2751,28 +2751,24 @@ type SiteSiteMetadataLanguagesTranslationKeys = {
   readonly en: Maybe<Scalars['String']>;
   readonly es: Maybe<Scalars['String']>;
   readonly pt: Maybe<Scalars['String']>;
-  readonly ru: Maybe<Scalars['String']>;
 };
 
 type SiteSiteMetadataLanguagesTranslationKeysFieldSelector = {
   readonly en: InputMaybe<FieldSelectorEnum>;
   readonly es: InputMaybe<FieldSelectorEnum>;
   readonly pt: InputMaybe<FieldSelectorEnum>;
-  readonly ru: InputMaybe<FieldSelectorEnum>;
 };
 
 type SiteSiteMetadataLanguagesTranslationKeysFilterInput = {
   readonly en: InputMaybe<StringQueryOperatorInput>;
   readonly es: InputMaybe<StringQueryOperatorInput>;
   readonly pt: InputMaybe<StringQueryOperatorInput>;
-  readonly ru: InputMaybe<StringQueryOperatorInput>;
 };
 
 type SiteSiteMetadataLanguagesTranslationKeysSortInput = {
   readonly en: InputMaybe<SortOrderEnum>;
   readonly es: InputMaybe<SortOrderEnum>;
   readonly pt: InputMaybe<SortOrderEnum>;
-  readonly ru: InputMaybe<SortOrderEnum>;
 };
 
 type SiteSiteMetadataSortInput = {

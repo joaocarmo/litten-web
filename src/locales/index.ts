@@ -2,17 +2,17 @@ export enum Language {
   EN = 'en',
   ES = 'es',
   PT = 'pt',
-  RU = 'ru',
+  // RU = 'ru',
 }
 
 const locales = {
   langs: Object.values(Language),
   defaultLangKey: Language.EN,
   translationKeys: {
-    [Language.EN]: 'langEnglish',
-    [Language.ES]: 'langSpanish',
-    [Language.PT]: 'langPortuguese',
-    [Language.RU]: 'langRussian',
+    [Language.EN]: 'English',
+    [Language.ES]: 'Español',
+    [Language.PT]: 'Português',
+    // [Language.RU]: 'Русский',
   },
 }
 
