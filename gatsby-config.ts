@@ -69,7 +69,7 @@ const gatsyConfig: GatsbyConfig = {
     {
       resolve: 'gatsby-plugin-i18n',
       options: {
-        langKeyForNull: 'en',
+        langKeyForNull: languages.defaultLangKey,
         langKeyDefault: languages.defaultLangKey,
         useLangKeyLayout: false,
         prefixDefault: false,
