@@ -41,6 +41,7 @@
 
       .feature-img {
         display: flex;
+        flex-shrink: 0;
         height: $featureImgOutRatio * $featureSize;
         width: $featureImgOutRatio * $featureSize;
         margin-bottom: 2em;

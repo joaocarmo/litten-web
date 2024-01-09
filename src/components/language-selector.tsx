@@ -3,6 +3,7 @@ import { useTranslation } from 'react-i18next'
 import { Link } from 'gatsby'
 import useCurrentShortLang from '../hooks/use-current-short-lang'
 import locales from '../locales'
+import type { Language } from '../locales'
 
 interface LanguageSelectorProps {
   className?: string
@@ -18,7 +19,7 @@ const LanguageSelector: FC<LanguageSelectorProps> = ({
   const [currentShortLang, setCurrentShortLang] = useCurrentShortLang()
 
   const changeLang: ChangeEventHandler<HTMLSelectElement> = (event) => {
-    const newLang = event.target.value
+    const newLang = event.target.value as Language
 
     if (newLang) {
       setCurrentShortLang(newLang)
