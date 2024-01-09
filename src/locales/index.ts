@@ -2,7 +2,7 @@ export enum Language {
   EN = 'en',
   ES = 'es',
   PT = 'pt',
-  // RU = 'ru',
+  RU = 'ru',
 }
 
 const locales = {
@@ -12,7 +12,7 @@ const locales = {
     [Language.EN]: 'English',
     [Language.ES]: 'Español',
     [Language.PT]: 'Português',
-    // [Language.RU]: 'Русский',
+    [Language.RU]: 'Русский',
   },
 }
 
