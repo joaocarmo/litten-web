@@ -46,7 +46,7 @@ const LanguageSelector: FC<LanguageSelectorProps> = ({
           >
             {locales.langs.map((lang) => (
               <option value={lang} key={lang}>
-                {lang}
+                {locales.translationKeys[lang]}
               </option>
             ))}
           </select>

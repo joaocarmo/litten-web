@@ -2726,21 +2726,49 @@ type SiteSiteMetadataFilterInput = {
 type SiteSiteMetadataLanguages = {
   readonly defaultLangKey: Maybe<Scalars['String']>;
   readonly langs: Maybe<ReadonlyArray<Maybe<Scalars['String']>>>;
+  readonly translationKeys: Maybe<SiteSiteMetadataLanguagesTranslationKeys>;
 };
 
 type SiteSiteMetadataLanguagesFieldSelector = {
   readonly defaultLangKey: InputMaybe<FieldSelectorEnum>;
   readonly langs: InputMaybe<FieldSelectorEnum>;
+  readonly translationKeys: InputMaybe<SiteSiteMetadataLanguagesTranslationKeysFieldSelector>;
 };
 
 type SiteSiteMetadataLanguagesFilterInput = {
   readonly defaultLangKey: InputMaybe<StringQueryOperatorInput>;
   readonly langs: InputMaybe<StringQueryOperatorInput>;
+  readonly translationKeys: InputMaybe<SiteSiteMetadataLanguagesTranslationKeysFilterInput>;
 };
 
 type SiteSiteMetadataLanguagesSortInput = {
   readonly defaultLangKey: InputMaybe<SortOrderEnum>;
   readonly langs: InputMaybe<SortOrderEnum>;
+  readonly translationKeys: InputMaybe<SiteSiteMetadataLanguagesTranslationKeysSortInput>;
+};
+
+type SiteSiteMetadataLanguagesTranslationKeys = {
+  readonly en: Maybe<Scalars['String']>;
+  readonly es: Maybe<Scalars['String']>;
+  readonly pt: Maybe<Scalars['String']>;
+};
+
+type SiteSiteMetadataLanguagesTranslationKeysFieldSelector = {
+  readonly en: InputMaybe<FieldSelectorEnum>;
+  readonly es: InputMaybe<FieldSelectorEnum>;
+  readonly pt: InputMaybe<FieldSelectorEnum>;
+};
+
+type SiteSiteMetadataLanguagesTranslationKeysFilterInput = {
+  readonly en: InputMaybe<StringQueryOperatorInput>;
+  readonly es: InputMaybe<StringQueryOperatorInput>;
+  readonly pt: InputMaybe<StringQueryOperatorInput>;
+};
+
+type SiteSiteMetadataLanguagesTranslationKeysSortInput = {
+  readonly en: InputMaybe<SortOrderEnum>;
+  readonly es: InputMaybe<SortOrderEnum>;
+  readonly pt: InputMaybe<SortOrderEnum>;
 };
 
 type SiteSiteMetadataSortInput = {

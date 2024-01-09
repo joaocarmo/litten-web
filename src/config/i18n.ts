@@ -2,22 +2,7 @@ import i18n from 'i18next'
 import { initReactI18next } from 'react-i18next'
 import detector from 'i18next-browser-languagedetector'
 import languages from '../locales'
-import translationEN from '../locales/en/common.json'
-import translationES from '../locales/es/common.json'
-import translationPT from '../locales/pt/common.json'
-
-// The translations
-const resources = {
-  en: {
-    translation: translationEN,
-  },
-  es: {
-    translation: translationES,
-  },
-  pt: {
-    translation: translationPT,
-  },
-}
+import { resources } from '../locales/resources'
 
 i18n
   .use(detector)
