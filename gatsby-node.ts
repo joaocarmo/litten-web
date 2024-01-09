@@ -1,14 +1,26 @@
 import { join, resolve } from 'path'
 import type { GatsbyNode } from 'gatsby'
-import { Language } from './src/locales'
 
-interface MarkdownRemarkPage {
-  node: {
-    fields: {
-      slug: string
-      langKey: Language
+interface MarkdownFields {
+  slug: string
+  langKey: string
+}
+
+interface MarkdownNode {
+  fields: MarkdownFields
+}
+
+interface MarkdownEdge {
+  node: MarkdownNode
+}
+
+interface MarkdownResult {
+  data?: {
+    allMarkdownRemark: {
+      edges: MarkdownEdge[]
     }
   }
+  errors?: any[]
 }
 
 export const createPages: GatsbyNode['createPages'] = async ({
@@ -32,7 +44,7 @@ export const createPages: GatsbyNode['createPages'] = async ({
     join(__dirname, 'src', 'templates', 'static-template.tsx'),
   )
 
-  const result = await graphql<any, any>(`
+  const result: MarkdownResult = await graphql<any, any>(`
     query GetAllMarkdownRemarks {
       allMarkdownRemark(sort: { fields: { slug: ASC } }, limit: 1000) {
         edges {
@@ -47,18 +59,17 @@ export const createPages: GatsbyNode['createPages'] = async ({
     }
   `)
 
-  // Handle errors
   if (result.errors) {
     reporter.panicOnBuild('Error while running GraphQL query.')
     return
   }
 
-  result.data.allMarkdownRemark.edges.forEach(
+  result.data?.allMarkdownRemark.edges.forEach(
     ({
       node: {
         fields: { slug, langKey },
       },
-    }: MarkdownRemarkPage) => {
+    }) => {
       createPage({
         path: slug,
         component: staticPageTemplate,
