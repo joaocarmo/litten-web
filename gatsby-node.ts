@@ -1,5 +1,15 @@
-import path from 'path'
+import { join, resolve } from 'path'
 import type { GatsbyNode } from 'gatsby'
+import { Language } from './src/locales'
+
+interface MarkdownRemarkPage {
+  node: {
+    fields: {
+      slug: string
+      langKey: Language
+    }
+  }
+}
 
 export const createPages: GatsbyNode['createPages'] = async ({
   actions,
@@ -8,8 +18,8 @@ export const createPages: GatsbyNode['createPages'] = async ({
 }) => {
   const { createPage } = actions
 
-  const staticUniversalLinksTemplate = path.resolve(
-    path.join(__dirname, 'src', 'templates', 'open-template.tsx'),
+  const staticUniversalLinksTemplate = resolve(
+    join(__dirname, 'src', 'templates', 'open-template.tsx'),
   )
 
   createPage({
@@ -18,8 +28,8 @@ export const createPages: GatsbyNode['createPages'] = async ({
     component: staticUniversalLinksTemplate,
   })
 
-  const staticPageTemplate = path.resolve(
-    path.join(__dirname, 'src', 'templates', 'static-template.tsx'),
+  const staticPageTemplate = resolve(
+    join(__dirname, 'src', 'templates', 'static-template.tsx'),
   )
 
   const result = await graphql<any, any>(`
@@ -46,10 +56,9 @@ export const createPages: GatsbyNode['createPages'] = async ({
   result.data.allMarkdownRemark.edges.forEach(
     ({
       node: {
-        // @ts-expect-error
         fields: { slug, langKey },
       },
-    }) => {
+    }: MarkdownRemarkPage) => {
       createPage({
         path: slug,
         component: staticPageTemplate,
