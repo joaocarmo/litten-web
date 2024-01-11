@@ -36,6 +36,6 @@ export const onClientEntry = () => {
   polyfillIntersectionObserver()
 }
 
-export const onRouteUpdate = ({ location }: RouteUpdateArgs) => {
+export const onPreRouteUpdate = ({ location }: RouteUpdateArgs) => {
   redirectOnLink(location)
 }
