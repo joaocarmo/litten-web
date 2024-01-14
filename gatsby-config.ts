@@ -13,6 +13,8 @@ const description = [
   enCommon.featureFoundText,
 ].join(' ')
 
+const staticPagesDir = path.join(__dirname, 'src', 'markdown-pages')
+
 const gatsyConfig: GatsbyConfig = {
   graphqlTypegen: true,
   siteMetadata: {
@@ -47,7 +49,7 @@ const gatsyConfig: GatsbyConfig = {
       resolve: 'gatsby-source-filesystem',
       options: {
         name: 'markdown-pages',
-        path: path.join(__dirname, 'src', 'markdown-pages'),
+        path: staticPagesDir,
       },
     },
     {
@@ -73,7 +75,7 @@ const gatsyConfig: GatsbyConfig = {
         langKeyDefault: languages.defaultLangKey,
         useLangKeyLayout: false,
         prefixDefault: false,
-        pagesPaths: [path.join(__dirname, 'src', 'markdown-pages')],
+        pagesPaths: [staticPagesDir],
         markdownRemark: {
           postPage: 'src/templates/static-template.tsx',
           query: `
