@@ -50,7 +50,7 @@
     "bowser": "^2.11.0",
     "classnames": "^2.5.1",
     "dompurify": "^3.0.8",
-    "gatsby": "^5.13.1",
+    "gatsby": "^5.13.3",
     "gatsby-background-image": "^1.6.0",
     "gatsby-cli": "^5.13.1",
     "gatsby-plugin-i18n": "^1.0.1",
