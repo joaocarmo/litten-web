@@ -1,5 +1,5 @@
 ---
-date: '2023-12-28'
+date: '2024-03-09'
 title: 'Preguntas Frecuentes'
 toc: true
 ---
@@ -30,6 +30,36 @@ revises la aplicación de vez en cuando para ver si tienes actualizaciones o
 nuevos mensajes. Sabemos que esto podría no ser lo ideal y estamos trabajando
 en mejorar la experiencia general.
 
+## ¿Qué datos personales recopilamos?
+
+Recolectamos únicamente los datos personales esenciales para brindarte nuestros
+servicios. Esto incluye tu dirección de correo electrónico, nombre e imagen de
+perfil. Además, recopilamos información acerca de tus interacciones con la
+aplicación, como los Littens que creas y los mensajes que envías.
+
+Nos comprometemos a no compartir tus datos personales con terceros ni
+utilizarlos para fines publicitarios. El uso de tus datos se limita
+estrictamente a proporcionarte nuestros servicios.
+
+Para más detalles, por favor revisa nuestra [Política de Privacidad][privacy].
+
+## ¿Cómo puedo solicitar mis datos personales?
+
+Actualmente, no hay una función dentro de la aplicación para solicitar
+directamente tus datos personales. Sin embargo, puedes contactarnos, y estaremos
+encantados de ayudarte a acceder a tus datos. Aprende cómo contactarnos
+[aquí](#how-can-i-contact-the-litten-team).
+
+## ¿Cómo puedo eliminar mi cuenta?
+
+Puedes eliminar tu cuenta directamente desde la aplicación. Navega a la
+configuración de tu perfil y selecciona la opción para eliminar tu cuenta. Se te
+pedirá que confirmes tu decisión, después de lo cual tu cuenta será eliminada
+permanentemente.
+
+Si prefieres, también puedes contactarnos directamente para la eliminación de tu
+cuenta. Descubre cómo contactarnos [aquí](#how-can-i-contact-the-litten-team).
+
 ## ¿Cómo puedo ayudar?
 
 Si te gustaría ayudar en nuestra misión, ¡hay muchas cosas que puedes hacer!
@@ -49,4 +79,5 @@ Puedes contactarnos a través del correo electrónico [help@litten.app][helpmail
 [coffee]: https://ko-fi.com/littenapp
 [helpmail]: mailto:help@litten.app
 [share]: #share
+[privacy]: /privacy-policy
 [work]: /join-us
