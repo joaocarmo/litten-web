@@ -1,5 +1,5 @@
 ---
-date: '2022-02-21'
+date: '2024-03-09'
 title: 'Frequently Asked Questions'
 toc: true
 ---
@@ -21,12 +21,41 @@ Unfortunately, we don't have the option to make changes to a Litten yet. It's
 something we want to introduce as soon as possible. As of now, the only
 option is to delete it and create a new one.
 
-## Why don't I receive notifications?
+## Why didn't I receive a notification?
 
 At the moment, we don't support remote push notifications. We count on you to
 check the app from time to time and see if you have updates or new messages.
 We know this might not be ideal and are currently working on improving the
 overall experience.
+
+## What Personal Data Do We Collect?
+
+We collect only the essential personal data needed to deliver our services to
+you. This includes your email address, name, and profile picture. Additionally,
+we gather information regarding your interactions with the app, like the Littens
+you create and the messages you send.
+
+We commit to not sharing your personal data with third-party entities nor using
+it for advertising purposes. Our use of your data is strictly limited to
+providing you with our services.
+
+For more details, please review our [Privacy Policy][privacy].
+
+## How Can I Request My Personal Data?
+
+Currently, there is no feature within the app to directly request your personal
+data. However, you can contact us, and we will assist you in accessing your
+data. Learn how to reach us [here](#how-can-i-contact-the-litten-team).
+
+## How Do I Delete My Account?
+
+You have the option to delete your account directly within the app. Navigate to
+your profile settings and select the option to delete your account. You will be
+asked to confirm your decision, after which your account will be permanently
+removed.
+
+Should you prefer, you can also contact us directly for account deletion. Find
+out how to reach us [here](#how-can-i-contact-the-litten-team).
 
 ## How can I help?
 
@@ -47,4 +76,5 @@ You can reach us through the email [help@litten.app][helpmail].
 [coffee]: https://ko-fi.com/littenapp
 [helpmail]: mailto:help@litten.app
 [share]: #share
+[privacy]: /privacy-policy
 [work]: /join-us
