@@ -28,7 +28,7 @@ check the app from time to time and see if you have updates or new messages.
 We know this might not be ideal and are currently working on improving the
 overall experience.
 
-## What Personal Data Do We Collect?
+## What personal data do we collect?
 
 We collect only the essential personal data needed to deliver our services to
 you. This includes your email address, name, and profile picture. Additionally,
@@ -41,13 +41,13 @@ providing you with our services.
 
 For more details, please review our [Privacy Policy][privacy].
 
-## How Can I Request My Personal Data?
+## How can I request my personal data?
 
 Currently, there is no feature within the app to directly request your personal
 data. However, you can contact us, and we will assist you in accessing your
 data. Learn how to reach us [here](#how-can-i-contact-the-litten-team).
 
-## How Do I Delete My Account?
+## How do I delete my account?
 
 You have the option to delete your account directly within the app. Navigate to
 your profile settings and select the option to delete your account. You will be
