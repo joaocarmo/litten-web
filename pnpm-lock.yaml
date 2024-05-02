@@ -43,7 +43,7 @@ dependencies:
     version: 6.13.1(gatsby@5.13.3)(react-helmet@6.1.0)
   gatsby-plugin-sass:
     specifier: ^6.13.1
-    version: 6.13.1(gatsby@5.13.3)(sass@1.71.1)(webpack@5.90.3)
+    version: 6.13.1(gatsby@5.13.3)(sass@1.76.0)(webpack@5.90.3)
   gatsby-plugin-sharp:
     specifier: ^5.13.1
     version: 5.13.1(gatsby@5.13.3)(graphql@16.8.1)
@@ -176,8 +176,8 @@ devDependencies:
     specifier: ^3.2.5
     version: 3.2.5
   sass:
-    specifier: ^1.71.1
-    version: 1.71.1
+    specifier: ^1.76.0
+    version: 1.76.0
   stylelint:
     specifier: ^16.2.1
     version: 16.2.1(typescript@5.4.2)
@@ -6619,7 +6619,7 @@ packages:
       react-helmet: 6.1.0(react@18.2.0)
     dev: false
 
-  /gatsby-plugin-sass@6.13.1(gatsby@5.13.3)(sass@1.71.1)(webpack@5.90.3):
+  /gatsby-plugin-sass@6.13.1(gatsby@5.13.3)(sass@1.76.0)(webpack@5.90.3):
     resolution: {integrity: sha512-pHS1hJhOPMEaC1eLsuXgqskLBUxbpYR1lUb7yxL4jva0PX2HOQTYTczFYtueOWz/7RD0GjrDCHIWOzUIGauRsQ==}
     engines: {node: '>=18.0.0'}
     peerDependencies:
@@ -6629,8 +6629,8 @@ packages:
       '@babel/runtime': 7.24.0
       gatsby: 5.13.3(babel-eslint@10.1.0)(eslint-import-resolver-typescript@3.6.1)(react-dom@18.2.0)(react@18.2.0)(typescript@5.4.2)
       resolve-url-loader: 3.1.5
-      sass: 1.71.1
-      sass-loader: 10.5.2(sass@1.71.1)(webpack@5.90.3)
+      sass: 1.76.0
+      sass-loader: 10.5.2(sass@1.76.0)(webpack@5.90.3)
     transitivePeerDependencies:
       - fibers
       - node-sass
@@ -10574,7 +10574,7 @@ packages:
       postcss: 8.4.35
     dev: false
 
-  /sass-loader@10.5.2(sass@1.71.1)(webpack@5.90.3):
+  /sass-loader@10.5.2(sass@1.76.0)(webpack@5.90.3):
     resolution: {integrity: sha512-vMUoSNOUKJILHpcNCCyD23X34gve1TS7Rjd9uXHeKqhvBG39x6XbswFDtpbTElj6XdMFezoWhkh5vtKudf2cgQ==}
     engines: {node: '>= 10.13.0'}
     peerDependencies:
@@ -10593,14 +10593,14 @@ packages:
       klona: 2.0.6
       loader-utils: 2.0.4
       neo-async: 2.6.2
-      sass: 1.71.1
+      sass: 1.76.0
       schema-utils: 3.3.0
       semver: 7.6.0
       webpack: 5.90.3
     dev: false
 
-  /sass@1.71.1:
-    resolution: {integrity: sha512-wovtnV2PxzteLlfNzbgm1tFXPLoZILYAMJtvoXXkD7/+1uP41eKkIt1ypWq5/q2uT94qHjXehEYfmjKOvjL9sg==}
+  /sass@1.76.0:
+    resolution: {integrity: sha512-nc3LeqvF2FNW5xGF1zxZifdW3ffIz5aBb7I7tSvOoNu7z1RQ6pFt9MBuiPtjgaI62YWrM/txjWlOCFiGtf2xpw==}
     engines: {node: '>=14.0.0'}
     hasBin: true
     dependencies:
