@@ -73,7 +73,6 @@ const StaticTemplate: FC<StaticTemplateProps> = ({
       event.preventDefault()
 
       try {
-        // eslint-disable-next-line react-hooks/rules-of-hooks
         await useShare(shareData)
       } catch (err) {
         debugLog(err)
@@ -116,14 +115,12 @@ const StaticTemplate: FC<StaticTemplateProps> = ({
                 <h2 className="uppercase">{t('tableOfContents')}</h2>
                 <div
                   className="page-toc-content"
-                  // eslint-disable-next-line react/no-danger
                   dangerouslySetInnerHTML={{ __html: tableOfContents }}
                 />
               </div>
             )}
             <div
               className="page-content"
-              // eslint-disable-next-line react/no-danger
               dangerouslySetInnerHTML={{ __html: html }}
             />
           </article>

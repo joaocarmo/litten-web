@@ -14,7 +14,6 @@ const Verification: FC = () => {
   const dynamicLink = useRef(`${scheme}://${verificationPath}`)
 
   useEffect(() => {
-    // eslint-disable-next-line react-hooks/rules-of-hooks
     if (useIntent()) {
       dynamicLink.current = buildIntent(scheme, androidPackageName, {
         // @ts-expect-error

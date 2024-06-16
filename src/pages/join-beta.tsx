@@ -42,7 +42,6 @@ const JoinBeta: FC = () => {
     event.preventDefault()
 
     if (!isValidForm()) {
-      // eslint-disable-next-line no-alert
       window.alert(t('joinBetaProgramInvalidForm'))
       return
     }
@@ -58,7 +57,7 @@ const JoinBeta: FC = () => {
       }),
     })
       .then(() => navigate(form.getAttribute('action')!))
-      // eslint-disable-next-line no-alert
+
       .catch((error) => window.alert(error))
   }
 

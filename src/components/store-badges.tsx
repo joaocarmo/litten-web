@@ -33,7 +33,6 @@ const StoreBadges: FC<StoreBadgesProps> = ({
     }
     try {
       if (suffix !== 'small') {
-        // eslint-disable-next-line no-param-reassign
         ext = 'png'
       }
       const playStore = await import(

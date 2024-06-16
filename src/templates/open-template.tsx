@@ -14,7 +14,6 @@ const Open: FC = () => {
   const dynamicLink = useRef(`${scheme}://${deepLinkPath}`)
 
   useEffect(() => {
-    // eslint-disable-next-line react-hooks/rules-of-hooks
     if (useIntent()) {
       dynamicLink.current = buildIntent(scheme, androidPackageName, {
         // @ts-expect-error
