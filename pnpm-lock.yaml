@@ -187,7 +187,7 @@ importers:
         specifier: ^4.0.9
         version: 4.0.9(postcss@8.4.38)
       prettier:
-        specifier: ^3.2.5
+        specifier: ^3.3.2
         version: 3.3.2
       sass:
         specifier: ^1.77.5
