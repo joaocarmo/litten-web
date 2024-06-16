@@ -73,7 +73,6 @@ const StaticTemplate: FC<StaticTemplateProps> = ({
       event.preventDefault()
 
       try {
-         
         await useShare(shareData)
       } catch (err) {
         debugLog(err)
@@ -116,14 +115,12 @@ const StaticTemplate: FC<StaticTemplateProps> = ({
                 <h2 className="uppercase">{t('tableOfContents')}</h2>
                 <div
                   className="page-toc-content"
-                   
                   dangerouslySetInnerHTML={{ __html: tableOfContents }}
                 />
               </div>
             )}
             <div
               className="page-content"
-               
               dangerouslySetInnerHTML={{ __html: html }}
             />
           </article>

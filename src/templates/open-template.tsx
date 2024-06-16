@@ -14,7 +14,6 @@ const Open: FC = () => {
   const dynamicLink = useRef(`${scheme}://${deepLinkPath}`)
 
   useEffect(() => {
-     
     if (useIntent()) {
       dynamicLink.current = buildIntent(scheme, androidPackageName, {
         // @ts-expect-error

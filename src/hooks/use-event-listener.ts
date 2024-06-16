@@ -32,7 +32,7 @@ const useEventListener = (
       element.addEventListener(eventName, eventListener)
 
       // Remove the event listener on cleanup
-       
+
       return () => {
         element.removeEventListener(eventName, eventListener)
       }

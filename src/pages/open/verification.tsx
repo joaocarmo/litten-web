@@ -14,7 +14,6 @@ const Verification: FC = () => {
   const dynamicLink = useRef(`${scheme}://${verificationPath}`)
 
   useEffect(() => {
-     
     if (useIntent()) {
       dynamicLink.current = buildIntent(scheme, androidPackageName, {
         // @ts-expect-error

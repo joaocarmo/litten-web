@@ -42,7 +42,6 @@ const JoinBeta: FC = () => {
     event.preventDefault()
 
     if (!isValidForm()) {
-       
       window.alert(t('joinBetaProgramInvalidForm'))
       return
     }
@@ -58,7 +57,7 @@ const JoinBeta: FC = () => {
       }),
     })
       .then(() => navigate(form.getAttribute('action')!))
-       
+
       .catch((error) => window.alert(error))
   }
 

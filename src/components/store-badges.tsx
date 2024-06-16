@@ -33,7 +33,6 @@ const StoreBadges: FC<StoreBadgesProps> = ({
     }
     try {
       if (suffix !== 'small') {
-         
         ext = 'png'
       }
       const playStore = await import(
