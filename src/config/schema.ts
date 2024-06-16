@@ -1,4 +1,4 @@
-/* eslint-disable import/prefer-default-export */
+ 
 /**
  * Schema.org in JSON-LD format
  * @link https://developers.google.com/search/docs/guides/intro-structured-data

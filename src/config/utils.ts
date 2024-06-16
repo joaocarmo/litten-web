@@ -5,7 +5,7 @@ import { deepLinkPrefix } from './constants'
 
 export const debugLog = (...args: any[]) => {
   if (process.env.NODE_ENV === 'development') {
-    // eslint-disable-next-line no-console
+     
     console.log(...args)
   }
 }
