@@ -175,8 +175,8 @@ importers:
         specifier: ^1.2.10
         version: 1.2.10(gatsby@5.13.6(babel-eslint@10.1.0(eslint@9.5.0))(eslint-import-resolver-typescript@3.6.1(@typescript-eslint/parser@5.62.0(eslint@7.32.0)(typescript@5.4.5))(eslint-plugin-import@2.29.1)(eslint@9.5.0))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(type-fest@0.21.3)(typescript@5.4.5))
       globals:
-        specifier: ^15.5.0
-        version: 15.5.0
+        specifier: ^15.8.0
+        version: 15.8.0
       husky:
         specifier: ^9.0.11
         version: 9.0.11
@@ -3804,8 +3804,8 @@ packages:
     resolution: {integrity: sha512-oahGvuMGQlPw/ivIYBjVSrWAfWLBeku5tpPE2fOPLi+WHffIWbuh2tCjhyQhTBPMf5E9jDEH4FOmTYgYwbKwtQ==}
     engines: {node: '>=18'}
 
-  globals@15.5.0:
-    resolution: {integrity: sha512-r7/9tQj5RylGxt/BKGv0D2SvehYvRFYg4ukSNk+EuZxvWI7uK/MJFmOCLq8aKvgh3EVBYFbBlOMAtaITXZr80w==}
+  globals@15.8.0:
+    resolution: {integrity: sha512-VZAJ4cewHTExBWDHR6yptdIBlx9YSSZuwojj9Nt5mBRXQzrKakDsVKQ1J63sklLvzAJm0X5+RpO4i3Y2hcOnFw==}
     engines: {node: '>=18'}
 
   globalthis@1.0.4:
@@ -11889,7 +11889,7 @@ snapshots:
 
   globals@14.0.0: {}
 
-  globals@15.5.0: {}
+  globals@15.8.0: {}
 
   globalthis@1.0.4:
     dependencies:
