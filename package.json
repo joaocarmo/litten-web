@@ -116,5 +116,10 @@
     "stylelint-scss": "^6.5.1",
     "typescript": "^5.5.4",
     "typescript-eslint": "^8.4.0"
+  },
+  "pnpm": {
+    "patchedDependencies": {
+      "eslint-config-react-app": "patches/eslint-config-react-app.patch"
+    }
   }
 }
