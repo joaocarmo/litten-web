@@ -1,0 +1,36 @@
+diff --git a/index.js b/index.js
+index 06e9fb6287d7d18960e69841da48abf00db6c012..eec353bfb2afca18536005e1e9698661ebffb669 100644
+--- a/index.js
++++ b/index.js
+@@ -26,7 +26,7 @@ const restrictedGlobals = require('confusing-browser-globals');
+ module.exports = {
+   extends: [require.resolve('./base')],
+ 
+-  plugins: ['import', 'flowtype', 'jsx-a11y', 'react-hooks'],
++  plugins: ['import', 'jsx-a11y', 'react-hooks'],
+ 
+   overrides: [
+     {
+@@ -282,10 +282,5 @@ module.exports = {
+ 
+     // https://github.com/facebook/react/tree/master/packages/eslint-plugin-react-hooks
+     'react-hooks/rules-of-hooks': 'error',
+-
+-    // https://github.com/gajus/eslint-plugin-flowtype
+-    'flowtype/define-flow-type': 'warn',
+-    'flowtype/require-valid-file-annotation': 'warn',
+-    'flowtype/use-flow-type': 'warn',
+   },
+ };
+diff --git a/package.json b/package.json
+index c2890ffce75fa24b0866619403b669ad42d6c27a..a8da875f34037adc49bee223c41c6e3b52e6af33 100644
+--- a/package.json
++++ b/package.json
+@@ -21,7 +21,6 @@
+     "@typescript-eslint/parser": "^4.0.0",
+     "babel-eslint": "^10.0.0",
+     "eslint": "^7.5.0",
+-    "eslint-plugin-flowtype": "^5.2.0",
+     "eslint-plugin-import": "^2.22.0",
+     "eslint-plugin-jest": "^24.0.0",
+     "eslint-plugin-jsx-a11y": "^6.3.1",
