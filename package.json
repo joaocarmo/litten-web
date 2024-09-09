@@ -68,7 +68,7 @@
     "gatsby-source-filesystem": "^5.13.1",
     "gatsby-transformer-remark": "^6.13.1",
     "gatsby-transformer-sharp": "^5.13.1",
-    "i18next": "^23.14.0",
+    "i18next": "^23.15.0",
     "i18next-browser-languagedetector": "^8.0.0",
     "intersection-observer": "^0.12.2",
     "normalize.css": "^8.0.1",
@@ -114,8 +114,8 @@
     "stylelint-config-prettier": "^9.0.5",
     "stylelint-config-recommended-scss": "^14.1.0",
     "stylelint-scss": "^6.5.1",
-    "typescript": "^5.5.4",
-    "typescript-eslint": "^8.4.0"
+    "typescript": "^5.6.2",
+    "typescript-eslint": "^8.5.0"
   },
   "pnpm": {
     "patchedDependencies": {
