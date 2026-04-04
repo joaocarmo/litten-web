@@ -1,10 +1,11 @@
 import { useCallback, useEffect, useMemo } from 'react'
 import type { FC } from 'react'
 import { graphql } from 'gatsby'
-import { Helmet } from 'react-helmet'
+import type { HeadFC } from 'gatsby'
 import { useTranslation } from 'react-i18next'
 import useEventListener from '../hooks/use-event-listener'
 import Layout from '../components/layout'
+import SEO from '../components/seo'
 import StaticContainer from '../components/static-container'
 import useCurrentShortLang from '../hooks/use-current-short-lang'
 import {
@@ -101,9 +102,6 @@ const StaticTemplate: FC<StaticTemplateProps> = ({
 
   return (
     <Layout>
-      <Helmet>
-        <title>{frontmatter.title}</title>
-      </Helmet>
       <StaticContainer inApp={inApp}>
         <section id="static-page" className="page-container static-page">
           <article className="page">
@@ -131,6 +129,16 @@ const StaticTemplate: FC<StaticTemplateProps> = ({
 }
 
 export default StaticTemplate
+
+export const Head: HeadFC<StaticTemplateProps['data']> = ({
+  location,
+  data,
+}) => (
+  <SEO
+    pathname={location.pathname}
+    title={data.markdownRemark.frontmatter.title}
+  />
+)
 
 export const pageQuery = graphql`
   query ($slug: String!) {

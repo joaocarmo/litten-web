@@ -1,27 +1,23 @@
-import type { FC } from 'react'
-import { Helmet } from 'react-helmet'
-import { useLocation } from '@reach/router'
 import { useStaticQuery, graphql } from 'gatsby'
-import useCurrentShortLang from '../hooks/use-current-short-lang'
 import { genSchemaOrgWebPage } from '../config/schema'
 
 interface SEOProps {
   article?: boolean
   description?: string
   image?: string
+  pathname: string
   title?: string
 }
 
 const isDev = process.env.NODE_ENV === 'development'
 
-const SEO: FC<SEOProps> = ({
+const SEO = ({
   article = false,
   description = '',
   image = '',
+  pathname,
   title = '',
-}) => {
-  const { pathname } = useLocation()
-  const [lang = 'en'] = useCurrentShortLang()
+}: SEOProps) => {
   const { site } = useStaticQuery(graphql`
     query SEO {
       site {
@@ -52,7 +48,6 @@ const SEO: FC<SEOProps> = ({
   const seo = {
     description: description || defaultDescription,
     image: `${siteUrl}${image || defaultImage}`,
-    lang,
     name: defaultTitle,
     title: title || defaultTitle,
     type: article ? 'article' : 'website',
@@ -63,17 +58,19 @@ const SEO: FC<SEOProps> = ({
     ...site.siteMetadata,
     buildTime: site.buildTime,
     image: image || defaultImage,
-    lang,
+    lang: 'en',
   })
 
+  const resolvedTitle =
+    seo.title && seo.title !== defaultTitle
+      ? titleTemplate.replace('%s', seo.title)
+      : defaultTitle
+
   return (
-    <Helmet
-      defaultTitle={defaultTitle}
-      title={seo.title}
-      titleTemplate={titleTemplate}
-    >
+    <>
+      {/* Title */}
+      <title>{resolvedTitle}</title>
       {/* General */}
-      <html lang={lang} />
       <meta charSet="utf-8" />
       <meta name="description" content={seo.description} />
       <meta name="image" content={seo.image} />
@@ -92,7 +89,7 @@ const SEO: FC<SEOProps> = ({
       )}
       {/* Open Graph */}
       {seo.name && <meta property="og:site_name" content={seo.name} />}
-      {seo.lang && <meta property="og:locale" content={seo.lang} />}
+      <meta property="og:locale" content="en" />
       {seo.url && <meta property="og:url" content={seo.url} />}
       {article && <meta property="og:type" content={seo.type} />}
       {seo.title && <meta property="og:title" content={seo.title} />}
@@ -112,7 +109,7 @@ const SEO: FC<SEOProps> = ({
       )}
       {seo.image && <meta name="twitter:image" content={seo.image} />}
       {seo.image && <meta name="twitter:image:alt" content={seo.description} />}
-    </Helmet>
+    </>
   )
 }
 

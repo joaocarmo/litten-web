@@ -1,8 +1,10 @@
 import { useEffect, useMemo, useState } from 'react'
 import type { FC } from 'react'
 import { Link } from 'gatsby'
+import type { HeadFC } from 'gatsby'
 import { Trans, useTranslation } from 'react-i18next'
 import Layout from '../components/layout'
+import SEO from '../components/seo'
 import { HOME } from '../config/link-refs'
 import badPuppy from '../images/404.svg'
 
@@ -52,3 +54,7 @@ const NotFound: FC = () => {
 }
 
 export default NotFound
+
+export const Head: HeadFC = ({ location }) => (
+  <SEO pathname={location.pathname} />
+)

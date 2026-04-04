@@ -1,7 +1,9 @@
 import type { FC } from 'react'
 import { Link } from 'gatsby'
+import type { HeadFC } from 'gatsby'
 import { useTranslation } from 'react-i18next'
 import Layout from '../components/layout'
+import SEO from '../components/seo'
 import { HOME } from '../config/link-refs'
 
 const ThankYou: FC = () => {
@@ -23,3 +25,7 @@ const ThankYou: FC = () => {
 }
 
 export default ThankYou
+
+export const Head: HeadFC = ({ location }) => (
+  <SEO pathname={location.pathname} />
+)

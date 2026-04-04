@@ -14,6 +14,7 @@ export default tseslint.config(
       '.cache',
       'babel.config.js',
       'eslint.config.mjs',
+      'gatsby-ssr.tsx',
       'node_modules',
       'public',
       'stylelint.config.mjs',
@@ -92,6 +93,7 @@ export default tseslint.config(
         { noStrings: true, ignoreProps: true },
       ],
       'react/jsx-props-no-spreading': 'off',
+      'react/prop-types': 'off',
     },
   },
 )
