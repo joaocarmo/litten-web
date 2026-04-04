@@ -3,6 +3,10 @@ declare module '*.svg' {
   export default content
 }
 
+declare module '*.scss'
+declare module '*.css'
+declare module 'normalize.css'
+
 interface TrustedTypePolicy {
   createHTML(input: string): string
   createScript(input: string): string
