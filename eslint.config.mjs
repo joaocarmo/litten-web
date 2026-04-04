@@ -1,66 +1,85 @@
-// @ts-check
 import globals from 'globals'
 import eslint from '@eslint/js'
 import tseslint from 'typescript-eslint'
-import { fixupConfigRules, fixupPluginRules } from '@eslint/compat'
-import { FlatCompat } from '@eslint/eslintrc'
-// eslint-disable-next-line import/extensions
-import reactRecommended from 'eslint-plugin-react/configs/recommended.js'
-import eslintConfigPrettier from 'eslint-config-prettier'
-
-const flatCompat = new FlatCompat({
-  baseDirectory: import.meta.dirname,
-  recommendedConfig: eslint.configs.recommended,
-})
+import reactPlugin from 'eslint-plugin-react'
+import reactHooks from 'eslint-plugin-react-hooks'
+import jsxA11y from 'eslint-plugin-jsx-a11y'
+import importX from 'eslint-plugin-import-x'
+import { createTypeScriptImportResolver } from 'eslint-import-resolver-typescript'
+import prettierRecommended from 'eslint-plugin-prettier/recommended'
 
 export default tseslint.config(
-  eslint.configs.recommended,
-  // ...tseslint.configs.recommendedTypeChecked,
-  // ...tseslint.configs.stylisticTypeChecked,
-  ...fixupConfigRules(reactRecommended),
-  ...fixupConfigRules(flatCompat.extends('eslint-config-airbnb-typescript')),
-  ...fixupConfigRules(flatCompat.extends('plugin:import/typescript')),
-  eslintConfigPrettier,
   {
     ignores: [
       '.cache',
       'babel.config.js',
+      'eslint.config.mjs',
       'node_modules',
       'public',
-      'stylelint.config.js',
+      'stylelint.config.mjs',
     ],
   },
+
+  // Base JS + TypeScript
+  eslint.configs.recommended,
+  tseslint.configs.recommended,
+
+  // React
+  reactPlugin.configs.flat.recommended,
+  reactPlugin.configs.flat['jsx-runtime'],
+
+  // React Hooks — only classic rules (v7 recommended includes Compiler rules)
+  {
+    plugins: { 'react-hooks': reactHooks },
+    rules: {
+      'react-hooks/rules-of-hooks': 'error',
+      'react-hooks/exhaustive-deps': 'warn',
+    },
+  },
+
+  // Accessibility
+  jsxA11y.flatConfigs.recommended,
+
+  // Imports
+  importX.flatConfigs.recommended,
+  importX.flatConfigs.typescript,
+
+  // Prettier — must be last to override formatting rules
+  prettierRecommended,
+
+  // Global settings
   {
     languageOptions: {
-      parserOptions: {
-        project: true,
-        tsconfigRootDir: import.meta.dirname,
-        ecmaFeatures: {
-          jsx: true,
-        },
-      },
       globals: {
         ...globals.browser,
       },
+      parserOptions: {
+        projectService: true,
+        tsconfigRootDir: import.meta.dirname,
+      },
+    },
+    settings: {
+      'import-x/resolver-next': [
+        createTypeScriptImportResolver({
+          alwaysTryTypes: true,
+        }),
+      ],
+      react: {
+        version: '18.3',
+      },
     },
   },
-  {
-    plugins: {
-      'react-hooks': legacyPlugin('eslint-plugin-react-hooks', 'react-hooks'),
-      import: legacyPlugin('eslint-plugin-import', 'import'),
-    },
-  },
+
+  // Custom rules
   {
     rules: {
-      // '@typescript-eslint/no-unsafe-argument': 'off',
-      // '@typescript-eslint/no-unsafe-assignment': 'off',
-      // '@typescript-eslint/no-unsafe-call': 'off',
-      // '@typescript-eslint/no-unsafe-member-access': 'off',
-      '@typescript-eslint/no-use-before-define': 'off',
-      'import/no-extraneous-dependencies': [
+      '@typescript-eslint/ban-ts-comment': [
         'error',
-        { devDependencies: ['eslint.config.mjs'] },
+        { 'ts-expect-error': 'allow-with-description' },
       ],
+      '@typescript-eslint/no-explicit-any': 'warn',
+      '@typescript-eslint/no-use-before-define': 'off',
+      'import-x/default': 'off',
       'react/function-component-definition': [
         'error',
         {
@@ -68,44 +87,11 @@ export default tseslint.config(
           unnamedComponents: 'arrow-function',
         },
       ],
-      'react/jsx-closing-bracket-location': 'off',
       'react/jsx-no-literals': [
         'error',
         { noStrings: true, ignoreProps: true },
       ],
       'react/jsx-props-no-spreading': 'off',
-      'react/jsx-uses-react': 'off',
-      'react/react-in-jsx-scope': 'off',
-    },
-  },
-  {
-    settings: {
-      'import/parsers': {
-        '@typescript-eslint/parser': ['.ts', '.tsx'],
-      },
-      'import/resolver': {
-        typescript: {
-          alwaysTryTypes: true,
-        },
-      },
-      react: {
-        version: 'detect',
-      },
     },
   },
 )
-
-/**
- * @param {string} name the pugin name
- * @param {string} alias the plugin alias
- * @returns {import("eslint").ESLint.Plugin}
- */
-function legacyPlugin(name, alias = name) {
-  const plugin = flatCompat.plugins(name)[0]?.plugins?.[alias]
-
-  if (!plugin) {
-    throw new Error(`Unable to resolve plugin ${name} and/or alias ${alias}`)
-  }
-
-  return fixupPluginRules(plugin)
-}

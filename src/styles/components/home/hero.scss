@@ -1,3 +1,5 @@
+@use '../../variables' as *;
+
 .hero-container {
   min-height: $heroHeight;
   width: 100%;

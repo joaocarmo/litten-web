@@ -2,7 +2,7 @@ import { useEffect, useRef } from 'react'
 import type { FC } from 'react'
 import { Trans, useTranslation } from 'react-i18next'
 import Layout from '../../components/layout'
-import { buildIntent, useIntent } from '../../config/utils'
+import { buildIntent, supportsIntent } from '../../config/utils'
 import {
   androidPackageName,
   scheme,
@@ -14,9 +14,9 @@ const Verification: FC = () => {
   const dynamicLink = useRef(`${scheme}://${verificationPath}`)
 
   useEffect(() => {
-    if (useIntent()) {
+    if (supportsIntent()) {
       dynamicLink.current = buildIntent(scheme, androidPackageName, {
-        // @ts-expect-error
+        // @ts-expect-error -- shorthand property not in buildIntent's type
         verificationPath,
       })
     }

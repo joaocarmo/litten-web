@@ -12,7 +12,7 @@ import {
   debugLog,
   getSearchParams,
   i18nUpdateLocation,
-  useShare,
+  triggerShare,
 } from '../config/utils'
 import { inAppClass, themeClass } from '../config/constants'
 import config from '../../package.json'
@@ -73,7 +73,7 @@ const StaticTemplate: FC<StaticTemplateProps> = ({
       event.preventDefault()
 
       try {
-        await useShare(shareData)
+        await triggerShare(shareData)
       } catch (err) {
         debugLog(err)
       }

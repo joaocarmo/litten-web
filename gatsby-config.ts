@@ -35,7 +35,6 @@ const gatsyConfig: GatsbyConfig = {
     PRESERVE_FILE_DOWNLOAD_CACHE: isDev,
   },
   plugins: [
-    'gatsby-plugin-pnpm',
     'gatsby-plugin-netlify',
     {
       resolve: 'gatsby-plugin-nprogress',

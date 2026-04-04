@@ -5,13 +5,6 @@ import './src/config/trusted-security-policies'
 import './src/config/i18n'
 import './src/styles/global.scss'
 
-const polyfillIntersectionObserver = () => {
-  // IntersectionObserver polyfill for gatsby-background-image (Safari, IE)
-  if (!('IntersectionObserver' in window)) {
-    require('intersection-observer')
-  }
-}
-
 const redirectOnLink = ({ search }: RouteUpdateArgs['location']) => {
   const dynamicLinkPrefix = '/open'
 
@@ -29,10 +22,6 @@ const redirectOnLink = ({ search }: RouteUpdateArgs['location']) => {
       }
     }
   }
-}
-
-export const onClientEntry = () => {
-  polyfillIntersectionObserver()
 }
 
 export const onPreRouteUpdate = ({ location }: RouteUpdateArgs) => {

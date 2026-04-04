@@ -28,7 +28,7 @@ const StoreBadges: FC<StoreBadgesProps> = ({
         `../images/app-store-black-${suffix}.${ext}`
       )
       setAppStoreBadge(appStore?.default)
-    } catch (err) {
+    } catch {
       setAppStoreBadge(null)
     }
     try {
@@ -39,7 +39,7 @@ const StoreBadges: FC<StoreBadgesProps> = ({
         `../images/play-store-black-${suffix}.${ext}`
       )
       setPlayStoreBadge(playStore?.default)
-    } catch (err) {
+    } catch {
       setPlayStoreBadge(null)
     }
   }

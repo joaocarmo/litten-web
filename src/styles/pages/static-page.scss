@@ -1,3 +1,5 @@
+@use '../variables' as *;
+
 @mixin static-page {
   flex: 1;
   width: 100%;
