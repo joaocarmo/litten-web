@@ -37,8 +37,8 @@
     "pretty:fix": "prettier --write .",
     "pretty": "prettier --check .",
     "push": "git add . && gitmoji -c && git push",
-    "serve": "gatsby serve",
-    "start": "gatsby develop --port 8001",
+    "serve": "NODE_OPTIONS='--disable-warning=DEP0040' gatsby serve",
+    "start": "NODE_OPTIONS='--disable-warning=DEP0040' gatsby develop --port 8001",
     "test": "echo \"Error: no test specified\" && exit 0",
     "type-check": "tsc --noEmit"
   },
