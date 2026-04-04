@@ -25,9 +25,10 @@ export default tseslint.config(
     ignores: [
       '.cache',
       'babel.config.js',
+      'eslint.config.mjs',
       'node_modules',
       'public',
-      'stylelint.config.js',
+      'stylelint.config.mjs',
     ],
   },
   {
@@ -56,6 +57,24 @@ export default tseslint.config(
       // '@typescript-eslint/no-unsafe-assignment': 'off',
       // '@typescript-eslint/no-unsafe-call': 'off',
       // '@typescript-eslint/no-unsafe-member-access': 'off',
+      // Rules removed in typescript-eslint v8 (formatting moved to @stylistic)
+      // but still referenced by eslint-config-airbnb-typescript
+      '@typescript-eslint/brace-style': 'off',
+      '@typescript-eslint/comma-dangle': 'off',
+      '@typescript-eslint/comma-spacing': 'off',
+      '@typescript-eslint/func-call-spacing': 'off',
+      '@typescript-eslint/indent': 'off',
+      '@typescript-eslint/keyword-spacing': 'off',
+      '@typescript-eslint/lines-between-class-members': 'off',
+      '@typescript-eslint/no-extra-parens': 'off',
+      '@typescript-eslint/no-extra-semi': 'off',
+      '@typescript-eslint/no-throw-literal': 'off',
+      '@typescript-eslint/object-curly-spacing': 'off',
+      '@typescript-eslint/quotes': 'off',
+      '@typescript-eslint/semi': 'off',
+      '@typescript-eslint/space-before-blocks': 'off',
+      '@typescript-eslint/space-before-function-paren': 'off',
+      '@typescript-eslint/space-infix-ops': 'off',
       '@typescript-eslint/no-use-before-define': 'off',
       'import/no-extraneous-dependencies': [
         'error',

@@ -109,7 +109,7 @@
     "gatsby-browser.tsx",
     "gatsby-config.ts",
     "gatsby-node.ts",
-    "stylelint.config.js",
+    "stylelint.config.mjs",
     "plugins/**/*"
   ]
 }

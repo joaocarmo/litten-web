@@ -11,9 +11,9 @@ const NotFound: FC = () => {
   const [isClient, setClient] = useState(false)
 
   const notFoundContent = useMemo<string>(() => {
-    const notFoundRandom: string[] = t('notFoundContent', {
+    const notFoundRandom = t('notFoundContent', {
       returnObjects: true,
-    })
+    }) as string[]
     const randomIndex = Math.floor(Math.random() * notFoundRandom.length)
 
     return notFoundRandom[randomIndex]

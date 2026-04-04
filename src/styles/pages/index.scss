@@ -93,14 +93,16 @@ $phoneMobileMultiplier: 0.75;
 
     &::before {
       height: $phoneButtonLeftHeight * $phoneMobileMultiplier;
-      left: -($phoneButtonBorderWidth * $phoneMobileMultiplier +
-            $phoneButtonWidth);
+      left: -(
+          $phoneButtonBorderWidth * $phoneMobileMultiplier + $phoneButtonWidth
+        );
     }
 
     &::after {
       height: $phoneButtonRightHeight * $phoneMobileMultiplier;
-      right: -($phoneButtonBorderWidth * $phoneMobileMultiplier +
-            $phoneButtonWidth);
+      right: -(
+          $phoneButtonBorderWidth * $phoneMobileMultiplier + $phoneButtonWidth
+        );
     }
   }
 }

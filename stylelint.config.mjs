@@ -1,5 +1,5 @@
-module.exports = {
-  extends: ['stylelint-config-recommended-scss', 'stylelint-config-prettier'],
+export default {
+  extends: ['stylelint-config-recommended-scss'],
   plugins: ['stylelint-scss'],
   customSyntax: 'postcss-scss',
   rules: {
