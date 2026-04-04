@@ -71,7 +71,6 @@
     "i18next": "^26.0.3",
     "i18next-browser-languagedetector": "^8.2.1",
     "normalize.css": "^8.0.1",
-    "prop-types": "^15.8.1",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-helmet": "^6.1.0",
@@ -89,6 +88,8 @@
     "@types/react-dom": "^18.3.0",
     "@types/react-helmet": "^6.1.11",
     "@types/typography": "^0.16.9",
+    "@typescript-eslint/eslint-plugin": "^8.58.0",
+    "@typescript-eslint/parser": "^8.58.0",
     "eslint": "^10.2.0",
     "eslint-config-airbnb": "^19.0.4",
     "eslint-config-airbnb-typescript": "^18.0.0",
@@ -100,7 +101,6 @@
     "eslint-plugin-react": "^7.37.5",
     "eslint-plugin-react-hooks": "^7.0.1",
     "gatsby-plugin-netlify": "^5.1.1",
-    "gatsby-plugin-pnpm": "^1.2.10",
     "globals": "^17.4.0",
     "husky": "^9.1.7",
     "lint-staged": "^16.4.0",
@@ -120,7 +120,21 @@
     "onlyBuiltDependencies": [
       "gatsby",
       "gatsby-cli",
+      "lmdb",
+      "msgpackr-extract",
+      "sharp",
       "unrs-resolver"
-    ]
+    ],
+    "peerDependencyRules": {
+      "allowedVersions": {
+        "eslint": "10",
+        "eslint-plugin-react-hooks": "7",
+        "@typescript-eslint/parser": "8",
+        "@typescript-eslint/eslint-plugin": "8",
+        "react": "18",
+        "react-dom": "18",
+        "gatsby": "5"
+      }
+    }
   }
 }
