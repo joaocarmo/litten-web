@@ -127,6 +127,11 @@
         "react-dom": "18",
         "gatsby": "5"
       }
+    },
+    "overrides": {
+      "@typescript-eslint/eslint-plugin": "^8.58.0",
+      "@typescript-eslint/parser": "^8.58.0",
+      "@typescript-eslint/typescript-estree": "^8.58.0"
     }
   }
 }
