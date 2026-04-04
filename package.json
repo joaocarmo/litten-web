@@ -108,6 +108,9 @@
     "typescript-eslint": "^8.58.0"
   },
   "pnpm": {
+    "patchedDependencies": {
+      "eslint-config-react-app": "patches/eslint-config-react-app.patch"
+    },
     "onlyBuiltDependencies": [
       "@parcel/watcher",
       "core-js",

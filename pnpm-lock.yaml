@@ -9,6 +9,11 @@ overrides:
   '@typescript-eslint/parser': ^8.58.0
   '@typescript-eslint/typescript-estree': ^8.58.0
 
+patchedDependencies:
+  eslint-config-react-app:
+    hash: 102b8052c89f2c36cc62328b3bae951dbad06a30f2176cc18b7c8ae608233cbb
+    path: patches/eslint-config-react-app.patch
+
 importers:
 
   .:
@@ -10574,7 +10579,7 @@ snapshots:
     dependencies:
       eslint: 10.2.0
 
-  eslint-config-react-app@6.0.0(@typescript-eslint/eslint-plugin@8.58.0(@typescript-eslint/parser@8.58.0(eslint@7.32.0)(typescript@5.9.3))(eslint@7.32.0)(typescript@5.9.3))(@typescript-eslint/parser@8.58.0(eslint@7.32.0)(typescript@5.9.3))(babel-eslint@10.1.0(eslint@10.2.0))(eslint-plugin-flowtype@5.10.0(eslint@7.32.0))(eslint-plugin-import@2.32.0)(eslint-plugin-jsx-a11y@6.10.2(eslint@10.2.0))(eslint-plugin-react-hooks@4.6.2(eslint@7.32.0))(eslint-plugin-react@7.37.5(eslint@10.2.0))(eslint@7.32.0)(typescript@5.9.3):
+  eslint-config-react-app@6.0.0(patch_hash=102b8052c89f2c36cc62328b3bae951dbad06a30f2176cc18b7c8ae608233cbb)(@typescript-eslint/eslint-plugin@8.58.0(@typescript-eslint/parser@8.58.0(eslint@7.32.0)(typescript@5.9.3))(eslint@7.32.0)(typescript@5.9.3))(@typescript-eslint/parser@8.58.0(eslint@7.32.0)(typescript@5.9.3))(babel-eslint@10.1.0(eslint@10.2.0))(eslint-plugin-flowtype@5.10.0(eslint@7.32.0))(eslint-plugin-import@2.32.0)(eslint-plugin-jsx-a11y@6.10.2(eslint@10.2.0))(eslint-plugin-react-hooks@4.6.2(eslint@7.32.0))(eslint-plugin-react@7.37.5(eslint@10.2.0))(eslint@7.32.0)(typescript@5.9.3):
     dependencies:
       '@typescript-eslint/eslint-plugin': 8.58.0(@typescript-eslint/parser@8.58.0(eslint@10.2.0)(typescript@5.9.3))(eslint@10.2.0)(typescript@5.9.3)
       '@typescript-eslint/parser': 8.58.0(eslint@10.2.0)(typescript@5.9.3)
@@ -11747,7 +11752,7 @@ snapshots:
       enhanced-resolve: 5.20.1
       error-stack-parser: 2.1.4
       eslint: 7.32.0
-      eslint-config-react-app: 6.0.0(@typescript-eslint/eslint-plugin@8.58.0(@typescript-eslint/parser@8.58.0(eslint@7.32.0)(typescript@5.9.3))(eslint@7.32.0)(typescript@5.9.3))(@typescript-eslint/parser@8.58.0(eslint@7.32.0)(typescript@5.9.3))(babel-eslint@10.1.0(eslint@10.2.0))(eslint-plugin-flowtype@5.10.0(eslint@7.32.0))(eslint-plugin-import@2.32.0)(eslint-plugin-jsx-a11y@6.10.2(eslint@10.2.0))(eslint-plugin-react-hooks@4.6.2(eslint@7.32.0))(eslint-plugin-react@7.37.5(eslint@10.2.0))(eslint@7.32.0)(typescript@5.9.3)
+      eslint-config-react-app: 6.0.0(patch_hash=102b8052c89f2c36cc62328b3bae951dbad06a30f2176cc18b7c8ae608233cbb)(@typescript-eslint/eslint-plugin@8.58.0(@typescript-eslint/parser@8.58.0(eslint@7.32.0)(typescript@5.9.3))(eslint@7.32.0)(typescript@5.9.3))(@typescript-eslint/parser@8.58.0(eslint@7.32.0)(typescript@5.9.3))(babel-eslint@10.1.0(eslint@10.2.0))(eslint-plugin-flowtype@5.10.0(eslint@7.32.0))(eslint-plugin-import@2.32.0)(eslint-plugin-jsx-a11y@6.10.2(eslint@10.2.0))(eslint-plugin-react-hooks@4.6.2(eslint@7.32.0))(eslint-plugin-react@7.37.5(eslint@10.2.0))(eslint@7.32.0)(typescript@5.9.3)
       eslint-plugin-flowtype: 5.10.0(eslint@10.2.0)
       eslint-plugin-import: 2.32.0(@typescript-eslint/parser@8.58.0(eslint@7.32.0)(typescript@5.9.3))(eslint-import-resolver-typescript@4.4.4)(eslint@7.32.0)
       eslint-plugin-jsx-a11y: 6.10.2(eslint@7.32.0)
