@@ -17,7 +17,7 @@ export const getWindow = () => {
   return null
 }
 
-export const useShare = async (shareData?: ShareData) => {
+export const triggerShare = async (shareData?: ShareData) => {
   if (typeof window !== 'undefined') {
     await window.navigator.share(shareData)
   }
@@ -100,7 +100,7 @@ export const buildIntent = (
     fallbackUrl ? `;S.browser_fallback_url=${fallbackUrl}` : ''
   };end`
 
-export const useIntent = () => {
+export const supportsIntent = () => {
   const browser = Bowser.getParser(getUserAgent())
   return browser.satisfies({ mobile: { chrome: '>=25' } })
 }

@@ -3,7 +3,7 @@ import type { FC } from 'react'
 import { Link } from 'gatsby'
 import { Trans, useTranslation } from 'react-i18next'
 import Layout from '../components/layout'
-import { buildIntent, getDeepLinkPath, useIntent } from '../config/utils'
+import { buildIntent, getDeepLinkPath, supportsIntent } from '../config/utils'
 import { androidPackageName, scheme } from '../config/constants'
 import { HOME } from '../config/link-refs'
 
@@ -14,9 +14,9 @@ const Open: FC = () => {
   const dynamicLink = useRef(`${scheme}://${deepLinkPath}`)
 
   useEffect(() => {
-    if (useIntent()) {
+    if (supportsIntent()) {
       dynamicLink.current = buildIntent(scheme, androidPackageName, {
-        // @ts-expect-error
+        // @ts-expect-error -- shorthand property not in buildIntent's type
         deepLinkPath,
       })
     }
