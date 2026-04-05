@@ -48,7 +48,6 @@
     "*.{js,json,css,md}": "prettier --write"
   },
   "dependencies": {
-    "@reach/router": "^1.3.4",
     "bowser": "^2.14.1",
     "classnames": "^2.5.1",
     "dompurify": "^3.3.3",
@@ -59,7 +58,6 @@
     "gatsby-plugin-image": "^3.16.0",
     "gatsby-plugin-manifest": "^5.16.0",
     "gatsby-plugin-nprogress": "^5.16.0",
-    "gatsby-plugin-react-helmet": "^6.16.0",
     "gatsby-plugin-sass": "^6.16.0",
     "gatsby-plugin-sharp": "^5.16.0",
     "gatsby-plugin-typography": "^5.16.0",
@@ -71,9 +69,8 @@
     "i18next": "^26.0.3",
     "i18next-browser-languagedetector": "^8.2.1",
     "normalize.css": "^8.0.1",
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1",
-    "react-helmet": "^6.1.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
     "react-i18next": "^17.0.2",
     "react-typography": "^0.16.23",
     "typography": "^0.16.24"
@@ -81,10 +78,8 @@
   "devDependencies": {
     "@eslint/js": "^10.0.1",
     "@types/node": "^25.5.2",
-    "@types/reach__router": "^1.3.15",
-    "@types/react": "^18.3.13",
-    "@types/react-dom": "^18.3.0",
-    "@types/react-helmet": "^6.1.11",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
     "@types/typography": "^0.16.9",
     "eslint": "^10.2.0",
     "eslint-config-prettier": "^10.1.8",
@@ -104,7 +99,7 @@
     "stylelint": "^17.6.0",
     "stylelint-config-recommended-scss": "^17.0.0",
     "stylelint-scss": "^7.0.0",
-    "typescript": "^5.6.2",
+    "typescript": "^6.0.2",
     "typescript-eslint": "^8.58.0"
   },
   "pnpm": {
@@ -126,8 +121,8 @@
     "peerDependencyRules": {
       "allowedVersions": {
         "eslint": "10",
-        "react": "18",
-        "react-dom": "18",
+        "react": "19",
+        "react-dom": "19",
         "gatsby": "5"
       }
     },

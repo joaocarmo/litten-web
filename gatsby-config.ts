@@ -43,7 +43,6 @@ const gatsyConfig: GatsbyConfig = {
         showSpinner: false,
       },
     },
-    'gatsby-plugin-react-helmet',
     {
       resolve: 'gatsby-source-filesystem',
       options: {

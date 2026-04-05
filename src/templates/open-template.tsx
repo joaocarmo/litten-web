@@ -1,8 +1,10 @@
 import { useEffect, useRef } from 'react'
 import type { FC } from 'react'
 import { Link } from 'gatsby'
+import type { HeadFC } from 'gatsby'
 import { Trans, useTranslation } from 'react-i18next'
 import Layout from '../components/layout'
+import SEO from '../components/seo'
 import { buildIntent, getDeepLinkPath, supportsIntent } from '../config/utils'
 import { androidPackageName, scheme } from '../config/constants'
 import { HOME } from '../config/link-refs'
@@ -47,3 +49,7 @@ const Open: FC = () => {
 }
 
 export default Open
+
+export const Head: HeadFC = ({ location }) => (
+  <SEO pathname={location.pathname} />
+)

@@ -1,4 +1,6 @@
+import type { HeadFC } from 'gatsby'
 import Layout from '../components/layout'
+import SEO from '../components/seo'
 import LanguageSelector from '../components/language-selector'
 import Hero from '../components/home/hero'
 import Features from '../components/home/features'
@@ -22,3 +24,7 @@ const Home = () => (
 )
 
 export default Home
+
+export const Head: HeadFC = ({ location }) => (
+  <SEO pathname={location.pathname} />
+)

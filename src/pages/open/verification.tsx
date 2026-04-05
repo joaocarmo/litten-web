@@ -1,7 +1,9 @@
 import { useEffect, useRef } from 'react'
 import type { FC } from 'react'
+import type { HeadFC } from 'gatsby'
 import { Trans, useTranslation } from 'react-i18next'
 import Layout from '../../components/layout'
+import SEO from '../../components/seo'
 import { buildIntent, supportsIntent } from '../../config/utils'
 import {
   androidPackageName,
@@ -48,3 +50,7 @@ const Verification: FC = () => {
 }
 
 export default Verification
+
+export const Head: HeadFC = ({ location }) => (
+  <SEO pathname={location.pathname} />
+)

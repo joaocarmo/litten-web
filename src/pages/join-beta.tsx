@@ -1,9 +1,11 @@
 import { useState } from 'react'
 import type { ChangeEventHandler, FC, FormEventHandler } from 'react'
 import { navigate } from 'gatsby'
+import type { HeadFC } from 'gatsby'
 import { Trans, useTranslation } from 'react-i18next'
 import StaticContainer from '../components/static-container'
 import Layout from '../components/layout'
+import SEO from '../components/seo'
 import Footer from '../components/home/footer'
 import Form from '../components/form'
 import Input from '../components/input'
@@ -176,3 +178,7 @@ const JoinBeta: FC = () => {
 }
 
 export default JoinBeta
+
+export const Head: HeadFC = ({ location }) => (
+  <SEO pathname={location.pathname} />
+)
