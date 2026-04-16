@@ -50,7 +50,7 @@
   "dependencies": {
     "bowser": "^2.14.1",
     "classnames": "^2.5.1",
-    "dompurify": "^3.3.3",
+    "dompurify": "^3.4.0",
     "gatsby": "^5.16.1",
     "gatsby-background-image": "^1.6.0",
     "gatsby-cli": "^5.16.0",
